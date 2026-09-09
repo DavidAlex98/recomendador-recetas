@@ -17,7 +17,7 @@ df = pd.read_csv("main.csv")
 # Limpiamos posibles columnas vacías o nulas que causan conflictos
 df = df.dropna(how="all")
 if "Unnamed: 0" in df.columns:
-  df = df.drop(columns=["Unnamed: 0"])
+ df = df.drop(columns=["Unnamed: 0"])
 if "id" in df.columns:
   # Dejamos que MySQL maneje el ID autoincrementable
   df = df.drop(columns=["id"])
