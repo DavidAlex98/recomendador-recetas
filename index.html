@@ -2,168 +2,24 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Recipe App</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121214;
-            color: #e1e1e6;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #00875f;
-            border-bottom: 2px solid #29292e;
-            padding-bottom: 10px;
-        }
-
-        .section {
-            background-color: #202024;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        .checkbox-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .checkbox-item {
-            background-color: #29292e;
-            padding: 8px 14px;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            cursor: pointer;
-        }
-
-        .checkbox-item:hover {
-            background-color: #323238;
-        }
-
-        button {
-            background-color: #00875f;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 6px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        button:hover {
-            background-color: #00b37e;
-        }
-
-        .recipe-card {
-            background-color: #29292e;
-            border-left: 4px solid #00875f;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 4px;
-        }
-
-        .recipe-title {
-            margin-top: 0;
-            color: #00b37e;
-        }
-    </style>
+    <title>Recetario</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>🍳 Smart Recipe App</h1>
+    <h1>Mi Recetario</h1>
 
-    <div class="section">
-        <h3>Selecciona tus ingredientes disponibles:</h3>
-        <div id="contenedorIngredientes" class="checkbox-group">
-            <p>Cargando ingredientes desde la base de datos...</p>
-        </div>
-        <br>
-        <button onclick="buscarRecetas()">Buscar Recetas</button>
+    <!-- Formulario de filtros por ingredientes -->
+    <div id="filtro-container">
+        <h3>¿Qué tienes en casa?</h3>
+        <label><input type="checkbox" name="ingrediente" value="Pollo"> Pollo</label>
+        <label><input type="checkbox" name="ingrediente" value="Cebolla"> Cebolla</label>
+        <label><input type="checkbox" name="ingrediente" value="Tomate"> Tomate</label>
     </div>
 
-    <h2>Recetas encontradas:</h2>
-    <div id="contenedorResultados">
-        <p style="color: #8d8d99;">Selecciona ingredientes y presiona "Buscar Recetas".</p>
-    </div>
+    <!-- Contenedor dedicado donde se insertarán las tarjetas -->
+    <div id="contenedor-recetas"></div>
 
-    <script>
-        // 1. Cargar la lista de ingredientes desde la API FastAPI
-        async function cargarIngredientes() {
-            try {
-                const response = await fetch('http://127.0.0.1:8000/api/ingredientes');
-                const ingredientes = await response.json();
-                
-                const contenedor = document.getElementById('contenedorIngredientes');
-                contenedor.innerHTML = '';
-
-                ingredientes.forEach(ing => {
-                    const label = document.createElement('label');
-                    label.className = 'checkbox-item';
-                    label.innerHTML = `
-                        <input type="checkbox" value="${ing}" class="ingrediente-check">
-                        ${ing}
-                    `;
-                    contenedor.appendChild(label);
-                });
-            } catch (error) {
-                console.error('Error al cargar ingredientes:', error);
-                document.getElementById('contenedorIngredientes').innerHTML = 
-                    '<p style="color: #f75a68;">No se pudo conectar con la API (Asegúrate que uvicorn esté corriendo).</p>';
-            }
-        }
-
-        // 2. Enviar los ingredientes seleccionados para consultar las recetas
-        async function buscarRecetas() {
-            const checkboxes = document.querySelectorAll('.ingrediente-check:checked');
-            const seleccionados = Array.from(checkboxes).map(cb => cb.value);
-
-            if (seleccionados.length === 0) {
-                alert("Por favor, selecciona al menos un ingrediente.");
-                return;
-            }
-
-            const queryParam = encodeURIComponent(seleccionados.join(','));
-            const contenedor = document.getElementById('contenedorResultados');
-            contenedor.innerHTML = '<p>Buscando recetas en la base de datos...</p>';
-
-            try {
-                const response = await fetch(`http://127.0.0.1:8000/api/buscar?ingredientes=${queryParam}`);
-                const recetas = await response.json();
-
-                contenedor.innerHTML = '';
-
-                if (recetas.length === 0) {
-                    contenedor.innerHTML = '<p style="color: #f75a68;">No se encontraron recetas con esos ingredientes.</p>';
-                    return;
-                }
-
-                recetas.forEach(r => {
-                    contenedor.innerHTML += `
-                        <div class="recipe-card">
-                            <h3 class="recipe-title">${r.nombre}</h3>
-                            <p><strong>Ingredientes:</strong> ${r.ingredientes}</p>
-                            <p><strong>Instrucciones:</strong> ${r.instrucciones}</p>
-                        </div>
-                    `;
-                });
-            } catch (error) {
-                console.error('Error al buscar recetas:', error);
-                contenedor.innerHTML = '<p style="color: #f75a68;">Error al consultar el servidor.</p>';
-            }
-        }
-
-        // Cargar los ingredientes automáticamente al abrir la página
-        cargarIngredientes();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
