@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RecetApp</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- PÁGINA DE EJEMPLO (David): úsala como modelo para las demás páginas -->
+
+    <nav class="barra">
+        <a class="marca" href="index.html">RecetApp</a>
+        <a href="checklist.html">¿Qué tengo en casa?</a>
+        <a href="login.html">Iniciar sesión</a>
+    </nav>
+
+    <main>
+        <h1>Bienvenido a RecetApp</h1>
+        <p>Marca los ingredientes que tienes y te decimos qué puedes cocinar.</p>
+
+        <section class="tarjeta">
+            <h3>Estado del sistema</h3>
+            <!-- inicio.js llena este párrafo con lo que responda /api/estado -->
+            <p id="estado">Consultando...</p>
+        </section>
+
+        <section class="tarjeta">
+            <h3>Categorías de ingredientes</h3>
+            <!-- inicio.js llena este div con lo que responda /api/categorias -->
+            <div id="categorias">Cargando...</div>
+        </section>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/inicio.js"></script>
+</body>
+</html>

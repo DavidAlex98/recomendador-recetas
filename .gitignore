@@ -1,2 +1,13 @@
-*.pyc
+# Python
 __pycache__/
+*.pyc
+venv/
+.venv/
+
+# Configuración local: tiene contraseñas, NUNCA se sube
+.env
+
+# Editores y sistema
+.vscode/
+.DS_Store
+Thumbs.db

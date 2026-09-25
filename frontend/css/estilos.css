@@ -1,0 +1,80 @@
+/* =====================================================================
+   Estilos compartidos de RecetApp.
+   Responsable: Brandon (diseño de pantallas)
+   Si una página necesita estilos propios, agréguenlos al final con un
+   comentario que diga de qué página son.
+   ===================================================================== */
+
+:root {
+    --verde: #2e7d32;
+    --verde-claro: #e8f5e9;
+    --texto: #222;
+    --gris: #666;
+    --borde: #ddd;
+    --fondo: #fafafa;
+    --error: #c62828;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+    background: var(--fondo);
+}
+
+/* Barra de navegación */
+.barra {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    padding: 12px 24px;
+    background: var(--verde);
+}
+.barra a { color: #fff; text-decoration: none; }
+.barra .marca { font-weight: bold; font-size: 1.2rem; margin-right: auto; }
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+/* Tarjetas (recetas, resultados...) */
+.tarjeta {
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+.tarjeta h3 { margin-top: 0; color: var(--verde); }
+
+/* Botones */
+.boton {
+    background: var(--verde);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.boton:hover { opacity: 0.9; }
+
+/* Mensajes */
+.mensaje-error { color: var(--error); }
+.pendiente { color: var(--gris); font-style: italic; }
+
+/* Etiquetas pequeñas (categorías, filtros) */
+.etiqueta {
+    display: inline-block;
+    background: var(--verde-claro);
+    color: var(--verde);
+    border-radius: 12px;
+    padding: 4px 10px;
+    margin: 4px;
+    font-size: 0.9rem;
+}
