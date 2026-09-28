@@ -1,14 +1,14 @@
 """
-Importa el catálogo de recetas (datos/recetas-guatemala.ndjson) a MySQL.
+Importa el catálogo de recetas (datos/recetas-guatemala.ndjson) a PostgreSQL.
 Responsable: David
 
 Qué hace:
   1. Lee las 3,248 recetas del archivo NDJSON (una receta por línea).
   2. Quita las recetas repetidas: mismo plato, mismos ingredientes y mismos pasos.
   3. Revisa que cada ingrediente exista en el catálogo JSON.
-  4. Borra las recetas que ya había en MySQL y guarda las nuevas.
+  4. Borra las recetas que ya había en la base de datos y guarda las nuevas.
 
-Cómo correrlo (desde la carpeta principal del proyecto, con MySQL encendido
+Cómo correrlo (desde la carpeta principal del proyecto, con PostgreSQL encendido
 y después de correr base_datos/crear_tablas.sql):
     python base_datos/importar_recetas.py
 
@@ -52,8 +52,8 @@ def quitar_repetidas(recetas):
 
 def insertar_por_lotes(cursor, sql, filas, tamano=200):
     """
-    Inserta las filas en grupos pequeños. MySQL de XAMPP no acepta paquetes
-    de más de 1 MB, así que no se puede mandar todo de una sola vez.
+    Inserta las filas en grupos pequeños. Mandar miles de filas de una sola vez
+    es lento y puede fallar, así que se mandan de 200 en 200.
     """
     for inicio in range(0, len(filas), tamano):
         cursor.executemany(sql, filas[inicio:inicio + tamano])

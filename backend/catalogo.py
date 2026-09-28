@@ -4,8 +4,8 @@ Responsable: David
 
 Enfoque híbrido del proyecto:
   - Los ingredientes y sus categorías viven en datos/ingredientes-guatemala.json
-  - MySQL guarda solo datos que cambian: usuarios, recetas, despensas, favoritos...
-  - En MySQL, un ingrediente se guarda por su CLAVE del JSON (por ejemplo "cebolla").
+  - PostgreSQL guarda solo datos que cambian: usuarios, recetas, despensas, favoritos...
+  - En PostgreSQL, un ingrediente se guarda por su CLAVE del JSON (por ejemplo "cebolla").
 
 Este archivo carga el JSON una sola vez, al arrancar el servidor, y ofrece
 funciones para buscar y validar ingredientes.

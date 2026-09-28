@@ -3,10 +3,11 @@ Prepara la base de datos completa con un solo comando.
 Responsable: David
 
 Qué hace:
-  1. Corre base_datos/crear_tablas.sql (crea la base 'recetapp' y sus tablas).
-  2. Importa las recetas (lo mismo que importar_recetas.py).
+  1. Crea la base de datos 'recetapp' en PostgreSQL (si no existe).
+  2. Corre base_datos/crear_tablas.sql (crea las tablas).
+  3. Importa las recetas (lo mismo que importar_recetas.py).
 
-Cómo correrlo (desde la carpeta principal del proyecto, con MySQL encendido):
+Cómo correrlo (desde la carpeta principal del proyecto, con PostgreSQL instalado):
     python base_datos/preparar_bd.py
 
 OJO: borra las tablas y las vuelve a crear. Úsalo al instalar el proyecto o
@@ -20,46 +21,49 @@ CARPETA = Path(__file__).resolve().parent
 sys.path.insert(0, str(CARPETA.parent / "backend"))
 sys.path.insert(0, str(CARPETA))
 
-import mysql.connector  # noqa: E402
-from dotenv import load_dotenv  # noqa: E402
-
-load_dotenv(CARPETA.parent / ".env")
+import psycopg  # noqa: E402
+from db import conectar  # noqa: E402
 
 
-def correr_sql(ruta):
-    """Ejecuta un archivo .sql instrucción por instrucción."""
-    texto = ruta.read_text(encoding="utf-8")
-    # Quitar comentarios de línea (--) para poder separar por ';'
-    lineas = [l for l in texto.splitlines() if not l.strip().startswith("--")]
-    instrucciones = [i.strip() for i in "\n".join(lineas).split(";") if i.strip()]
-
-    # Se conecta sin elegir base de datos, porque el script la crea
-    conexion = mysql.connector.connect(
-        host=os.getenv("DB_HOST", "localhost"),
-        port=int(os.getenv("DB_PORT", "3306")),
-        user=os.getenv("DB_USER", "root"),
-        password=os.getenv("DB_PASSWORD", ""),
-    )
+def crear_base_de_datos():
+    """Crea la base de datos si todavía no existe."""
+    nombre = os.getenv("DB_NAME", "recetapp")
+    # Nos conectamos a la base 'postgres', que siempre existe, para crear la nuestra
+    conexion = conectar("postgres")
+    conexion.autocommit = True  # CREATE DATABASE no se puede hacer dentro de una transacción
     try:
         cursor = conexion.cursor()
-        for instruccion in instrucciones:
-            cursor.execute(instruccion)
-        conexion.commit()
+        cursor.execute("SELECT 1 FROM pg_database WHERE datname = %s", (nombre,))
+        if cursor.fetchone() is None:
+            cursor.execute(f'CREATE DATABASE "{nombre}"')
+            print(f"    Base de datos '{nombre}' creada.")
+        else:
+            print(f"    La base de datos '{nombre}' ya existía.")
     finally:
         conexion.close()
 
 
+def crear_tablas():
+    """Corre el archivo crear_tablas.sql completo."""
+    sql = (CARPETA / "crear_tablas.sql").read_text(encoding="utf-8")
+    with conectar() as conexion:
+        conexion.cursor().execute(sql)
+
+
 def main():
-    print("1/2 Creando la base de datos y las tablas...")
+    print("1/3 Creando la base de datos...")
     try:
-        correr_sql(CARPETA / "crear_tablas.sql")
-    except mysql.connector.Error as error:
-        print(f"No se pudo conectar o crear las tablas: {error}")
-        print("Revisa que MySQL esté encendido (XAMPP: Start en MySQL) y los datos de tu archivo .env.")
+        crear_base_de_datos()
+    except psycopg.OperationalError as error:
+        print(f"No se pudo conectar a PostgreSQL: {error}")
+        print("Revisa que PostgreSQL esté instalado y encendido, y la contraseña en tu archivo .env.")
         sys.exit(1)
+
+    print("2/3 Creando las tablas...")
+    crear_tablas()
     print("    Listo.")
 
-    print("2/2 Importando recetas...")
+    print("3/3 Importando recetas...")
     import importar_recetas
     importar_recetas.main()
 

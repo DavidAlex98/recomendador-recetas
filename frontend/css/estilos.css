@@ -1,80 +1,112 @@
-/* =====================================================================
-   Estilos compartidos de RecetApp.
-   Responsable: Brandon (diseño de pantallas)
-   Si una página necesita estilos propios, agréguenlos al final con un
-   comentario que diga de qué página son.
-   ===================================================================== */
-
-:root {
-    --verde: #2e7d32;
-    --verde-claro: #e8f5e9;
-    --texto: #222;
-    --gris: #666;
-    --borde: #ddd;
-    --fondo: #fafafa;
-    --error: #c62828;
-}
-
-* { box-sizing: border-box; }
+/* Estilos de RecetApp
+   Responsable: Brandon
+   Color principal: morado #7366fe */
 
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--texto);
-    background: var(--fondo);
+    color: #333333;
+    background-color: #f5f3f2;
 }
 
-/* Barra de navegación */
+/* ----- Barra de arriba ----- */
 .barra {
     display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
     align-items: center;
-    padding: 12px 24px;
-    background: var(--verde);
+    gap: 20px;
+    padding: 15px 30px;
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
 }
-.barra a { color: #fff; text-decoration: none; }
-.barra .marca { font-weight: bold; font-size: 1.2rem; margin-right: auto; }
 
+.barra a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.barra a:hover {
+    color: #7366fe;
+}
+
+.barra .marca {
+    margin-right: auto;
+    font-size: 22px;
+    font-weight: bold;
+    color: #7366fe;
+}
+
+/* ----- Contenido ----- */
 main {
-    max-width: 960px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 24px 16px;
+    padding: 30px 20px;
 }
 
-/* Tarjetas (recetas, resultados...) */
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* ----- Tarjetas ----- */
 .tarjeta {
-    background: #fff;
-    border: 1px solid var(--borde);
-    border-radius: 8px;
-    padding: 16px;
-    margin-bottom: 16px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-.tarjeta h3 { margin-top: 0; color: var(--verde); }
 
-/* Botones */
+.tarjeta h3 {
+    margin-top: 0;
+    color: #7366fe;
+}
+
+/* ----- Botones ----- */
 .boton {
-    background: var(--verde);
-    color: #fff;
+    display: inline-block;
+    background-color: #7366fe;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 6px;
-    padding: 10px 18px;
-    font-size: 1rem;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
     cursor: pointer;
 }
-.boton:hover { opacity: 0.9; }
 
-/* Mensajes */
-.mensaje-error { color: var(--error); }
-.pendiente { color: var(--gris); font-style: italic; }
+.boton:hover {
+    background-color: #5a4de0;
+}
 
-/* Etiquetas pequeñas (categorías, filtros) */
+/* ----- Etiquetas (categorías, ingredientes) ----- */
 .etiqueta {
     display: inline-block;
-    background: var(--verde-claro);
-    color: var(--verde);
-    border-radius: 12px;
-    padding: 4px 10px;
+    background-color: #e8e5fb;
+    color: #5a4de0;
+    padding: 5px 12px;
     margin: 4px;
-    font-size: 0.9rem;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+/* ----- Mensajes ----- */
+.mensaje-error {
+    color: #c0392b;
+}
+
+.pendiente {
+    color: #888888;
+    font-style: italic;
+}
+
+/* ----- Celulares ----- */
+@media (max-width: 600px) {
+    .barra {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
 }

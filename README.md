@@ -3,7 +3,7 @@
 Aplicación web que recomienda recetas guatemaltecas según los ingredientes que tienes en casa.
 Proyecto del curso de Ingeniería de Software, Universidad Regional de Guatemala.
 
-**Tecnologías:** Python (FastAPI) · MySQL · HTML, CSS y JavaScript.
+**Tecnologías:** Python (FastAPI) · PostgreSQL · HTML, CSS y JavaScript.
 
 ## Integrantes
 
@@ -18,7 +18,7 @@ Cada archivo tiene un responsable. Trabaja solo en tus archivos para no chocar c
 RecetApp/
 ├── backend/                  ← servidor (FastAPI)
 │   ├── main.py               David    · une todas las rutas; casi no se toca
-│   ├── db.py                 David    · conexión a MySQL: consultar() y ejecutar()
+│   ├── db.py                 David    · conexión a PostgreSQL: consultar() y ejecutar()
 │   ├── catalogo.py           David    · lee el catálogo JSON de ingredientes
 │   └── rutas/
 │       ├── ejemplo.py        David    · EJEMPLO: cópialo como modelo
@@ -38,22 +38,27 @@ RecetApp/
 │   └── css/estilos.css       Brandon  · estilos de todas las páginas
 ├── base_datos/
 │   ├── crear_tablas.sql      Cristian, Manrique, Rubí
-│   ├── importar_recetas.py   David    · carga las recetas en MySQL
+│   ├── importar_recetas.py   David    · carga las recetas en la base de datos
 │   └── preparar_bd.py        David    · crea todo y carga las recetas con un comando
 ├── datos/
 │   ├── ingredientes-guatemala.json     catálogo de 197 ingredientes
 │   └── recetas-guatemala.ndjson        3,248 recetas (se importan 2,665 sin repetidas)
-├── prototipo_anterior/       primera versión, solo como referencia
 ├── .env.example              modelo de la configuración (sin contraseñas)
 └── requirements.txt          librerías de Python
 ```
 
-**Enfoque híbrido:** los ingredientes viven en el archivo JSON, no en MySQL. En la base de datos
+**Enfoque híbrido:** los ingredientes viven en el archivo JSON, no en PostgreSQL. En la base de datos
 un ingrediente se guarda por su **clave** (`cebolla`, `pollo_granja`), nunca por su nombre escrito.
 
 ## Instalación (una sola vez)
 
-Necesitas tener instalados **Python 3.11 o más nuevo**, **MySQL** (o XAMPP), **Git** y **VS Code**.
+Necesitas tener instalados **Python 3.11 o más nuevo**, **PostgreSQL**, **Git** y **VS Code**.
+
+**Instalar PostgreSQL (gratis):** descárgalo de https://www.postgresql.org/download/windows/
+(botón *Download the installer*). En el instalador deja todo por defecto (incluye **pgAdmin**,
+el programa para ver la base de datos). Cuando pida una **contraseña** para el usuario `postgres`,
+escribe una que recuerdes: la vas a poner en el archivo `.env`. El puerto déjalo en **5432**.
+PostgreSQL queda encendido solo cada vez que prendes la computadora; no hay que abrir nada.
 Los comandos van en la terminal de VS Code (menú *Terminal → New Terminal*), dentro de la carpeta del proyecto.
 
 **1. Crear el entorno virtual e instalar las librerías**
@@ -62,7 +67,7 @@ Los comandos van en la terminal de VS Code (menú *Terminal → New Terminal*), 
 python -m venv venv
 venv\Scripts\activate          # en Windows
 # source venv/bin/activate     # en Mac o Linux
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 Cada vez que abras VS Code, activa el entorno con `venv\Scripts\activate`. Sabrás que está activo
@@ -77,12 +82,15 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 
 **2. Crear tu archivo de configuración**
 
-Copia `.env.example`, renombra la copia a `.env` y escribe tu contraseña de MySQL en `DB_PASSWORD`.
-Si usas XAMPP, normalmente se deja vacía.
+```bash
+Copy-Item .env.example .env
+```
+
+Abre el `.env` y en `DB_PASSWORD=` escribe la contraseña que pusiste al instalar PostgreSQL.
 
 **3. Crear la base de datos y cargar las recetas**
 
-Enciende MySQL (en XAMPP: botón *Start* de MySQL) y corre:
+Corre:
 
 ```bash
 python base_datos/preparar_bd.py
@@ -130,6 +138,12 @@ def detalle_receta(id_receta: str):
 3. Mientras el endpoint no exista, trabaja con datos de prueba escritos en tu `.js`.
    Cuando esté listo, cambia los datos de prueba por la llamada a la API.
 
+## Ver la base de datos (pgAdmin)
+
+Abre **pgAdmin** (se instaló con PostgreSQL) → *Servers* → *PostgreSQL* (pide tu contraseña) →
+*Databases* → **recetapp** → *Schemas* → *public* → *Tables*. Clic derecho en una tabla →
+*View/Edit Data* → *All Rows*. Para escribir consultas: clic derecho en **recetapp** → *Query Tool*.
+
 ## Cómo subir tus cambios (Git)
 
 Nunca trabajes directo en `main`. Usa siempre una rama con tu nombre y la tarea:
@@ -158,9 +172,10 @@ git push -u origin rubi/login         # 4. subir tu rama
 
 | Mensaje | Solución |
 |---|---|
-| `Base de datos sin conexión` | Enciende MySQL (o XAMPP) y revisa usuario y contraseña en `.env`. |
-| `Table 'recetapp.recetas' doesn't exist` | Corre `python base_datos/preparar_bd.py`. |
-| `ModuleNotFoundError` | Activa el entorno (`venv\Scripts\activate`) y corre `pip install -r requirements.txt`. |
+| `password authentication failed` | La contraseña en `.env` no es la que pusiste al instalar PostgreSQL. |
+| `Connection refused` | PostgreSQL está apagado. Busca *Servicios* en Windows y enciende `postgresql`. |
+| `relation "recetas" does not exist` | Corre `python base_datos/preparar_bd.py`. |
+| `ModuleNotFoundError` | Activa el entorno (`venv\Scripts\activate`) y corre `python -m pip install -r requirements.txt`. |
 | `la ejecución de scripts está deshabilitada` | Corre `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` una vez. |
 | `uvicorn` no se reconoce | Usa `python -m uvicorn main:app --reload` dentro de la carpeta `backend`. |
 | La página no cambia | Recarga con `Ctrl + F5` para que el navegador no use la versión guardada. |

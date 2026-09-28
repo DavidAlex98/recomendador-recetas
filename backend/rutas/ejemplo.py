@@ -3,7 +3,7 @@ ARCHIVO DE EJEMPLO: cópialo como modelo para tus propias rutas.
 Responsable: David
 
 Aquí hay tres endpoints que muestran los tres casos que vamos a usar:
-  1. GET que consulta MySQL             -> /api/estado
+  1. GET que consulta PostgreSQL        -> /api/estado
   2. GET que lee el catálogo JSON       -> /api/categorias
   3. POST que recibe datos y los valida -> /api/validar-ingredientes
 
@@ -20,7 +20,7 @@ router = APIRouter(prefix="/api", tags=["Ejemplo"])
 
 
 # ---------------------------------------------------------------------------
-# 1. GET que consulta MySQL
+# 1. GET que consulta PostgreSQL
 # ---------------------------------------------------------------------------
 @router.get("/estado")
 def estado_del_sistema():
@@ -29,12 +29,12 @@ def estado_del_sistema():
         filas = consultar("SELECT COUNT(*) AS total FROM recetas")
         return {"base_de_datos": "conectada", "total_recetas": filas[0]["total"]}
     except Exception as error:
-        # Si MySQL no está encendido o faltan las tablas, avisamos sin romper la app
+        # Si PostgreSQL no está encendido o faltan las tablas, avisamos sin romper la app
         return {"base_de_datos": "sin conexión", "detalle": str(error)}
 
 
 # ---------------------------------------------------------------------------
-# 2. GET que lee el catálogo JSON (no necesita MySQL)
+# 2. GET que lee el catálogo JSON (no necesita la base de datos)
 # ---------------------------------------------------------------------------
 @router.get("/categorias")
 def listar_categorias():

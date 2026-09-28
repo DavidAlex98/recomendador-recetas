@@ -13,7 +13,7 @@ async function mostrarEstado() {
         if (estado.base_de_datos === "conectada") {
             parrafo.textContent = `Base de datos conectada: ${estado.total_recetas} recetas disponibles.`;
         } else {
-            parrafo.textContent = "La base de datos no está conectada. Revisa que MySQL esté encendido y tu archivo .env.";
+            parrafo.textContent = "La base de datos no está conectada. Revisa que PostgreSQL esté encendido y tu archivo .env.";
             parrafo.className = "mensaje-error";
         }
     } catch (error) {
