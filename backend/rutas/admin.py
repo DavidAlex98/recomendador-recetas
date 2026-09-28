@@ -1,22 +1,17 @@
-"""
-Rutas de Administrador.
-Responsable: Brandon   (Semanas 4 a 6 del cronograma)
+# Responsable: Brandon
+#
+# Por hacer:
+#   Crear, editar y borrar recetas
+#   Aprobar o rechazar recetas propuestas
+#
+# Guíate con rutas/ejemplo.py y prueba en http://localhost:8000/docs
 
-Por hacer:
-  Semana 4: listar y eliminar recetas
-  Semana 5: crear y editar recetas (con bitácora de Shanda)
-  Semana 6: aprobar o rechazar recetas propuestas: pendiente -> aprobada / rechazada
-
-Cómo empezar: abre rutas/ejemplo.py, copia la forma de un endpoint y pégalo aquí.
-Prueba tu endpoint en http://localhost:8000/docs
-"""
-from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
+from fastapi import APIRouter
 
 import catalogo
 from db import consultar, ejecutar
 
-router = APIRouter(prefix="/api", tags=["Administrador"])
+router = APIRouter(prefix="/api")
 
 
-# Escribe tus endpoints debajo de esta línea.
+# Escribe tus endpoints aquí abajo

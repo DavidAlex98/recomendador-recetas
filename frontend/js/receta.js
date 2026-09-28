@@ -1,14 +1,10 @@
-// =====================================================================
 // Detalle de receta
-// Responsable: Brandon (Semana 3 del cronograma)
+// Responsable: Brandon
 //
 // Por hacer:
-//   - Leer el id de la URL (receta.html?id=gt-0001) y pedir GET /api/recetas/{id}
-//   - Mostrar nombre, ingredientes con cantidades, pasos, tiempo, dificultad y porciones
+//   - Leer el id de la dirección (receta.html?id=gt-0001)
+//   - Pedir /api/recetas/{id} y mostrar ingredientes y pasos
 //
-// Modelo a seguir: js/inicio.js. Usa pedirGET, enviarPOST y escapar de js/api.js
-// =====================================================================
+// Guíate con js/inicio.js
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Tu código empieza aquí
-});
+// Tu código empieza aquí

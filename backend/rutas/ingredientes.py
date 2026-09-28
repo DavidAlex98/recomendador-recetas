@@ -1,21 +1,16 @@
-"""
-Rutas de Ingredientes.
-Responsable: Shanda   (Semana 2 del cronograma)
+# Responsable: Shanda
+#
+# Por hacer:
+#   GET /api/ingredientes  ->  ingredientes del JSON agrupados por categoría
+#
+# Guíate con rutas/ejemplo.py y prueba en http://localhost:8000/docs
 
-Por hacer:
-  GET /api/ingredientes  -> ingredientes del catálogo JSON agrupados por categoría
-     (usa catalogo.INGREDIENTES; no necesita la base de datos)
-
-Cómo empezar: abre rutas/ejemplo.py, copia la forma de un endpoint y pégalo aquí.
-Prueba tu endpoint en http://localhost:8000/docs
-"""
-from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
+from fastapi import APIRouter
 
 import catalogo
 from db import consultar, ejecutar
 
-router = APIRouter(prefix="/api", tags=["Ingredientes"])
+router = APIRouter(prefix="/api")
 
 
-# Escribe tus endpoints debajo de esta línea.
+# Escribe tus endpoints aquí abajo

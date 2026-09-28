@@ -1,23 +1,16 @@
-"""
-Rutas de Recomendación.
-Responsable: David   (Semanas 3 y 4 del cronograma)
+# Responsable: David
+#
+# Por hacer:
+#   POST /api/recomendaciones  ->  recetas que se pueden hacer con los ingredientes
+#
+# Guíate con rutas/ejemplo.py y prueba en http://localhost:8000/docs
 
-Por hacer:
-  POST /api/recomendaciones -> recibe claves de ingredientes y devuelve:
-     - 'completas': recetas que se pueden hacer con lo que hay
-     - 'casi': recetas a las que les falta 1 ingrediente (con la lista de faltantes)
-     Básicos que siempre se asumen: sal, aceite, azúcar. Los opcionales no cuentan.
-
-Cómo empezar: abre rutas/ejemplo.py, copia la forma de un endpoint y pégalo aquí.
-Prueba tu endpoint en http://localhost:8000/docs
-"""
-from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
+from fastapi import APIRouter
 
 import catalogo
 from db import consultar, ejecutar
 
-router = APIRouter(prefix="/api", tags=["Recomendación"])
+router = APIRouter(prefix="/api")
 
 
-# Escribe tus endpoints debajo de esta línea.
+# Escribe tus endpoints aquí abajo

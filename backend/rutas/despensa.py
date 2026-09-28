@@ -1,21 +1,17 @@
-"""
-Rutas de Despensa.
-Responsable: Shanda   (Semana 4 del cronograma)
+# Responsable: Shanda
+#
+# Por hacer:
+#   GET /api/despensa  ->  ingredientes guardados del usuario
+#   POST /api/despensa  ->  guardar la despensa
+#
+# Guíate con rutas/ejemplo.py y prueba en http://localhost:8000/docs
 
-Por hacer:
-  GET  /api/despensa -> ingredientes guardados del usuario
-  POST /api/despensa -> guardar la despensa (validar claves con catalogo.claves_invalidas)
-
-Cómo empezar: abre rutas/ejemplo.py, copia la forma de un endpoint y pégalo aquí.
-Prueba tu endpoint en http://localhost:8000/docs
-"""
-from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
+from fastapi import APIRouter
 
 import catalogo
 from db import consultar, ejecutar
 
-router = APIRouter(prefix="/api", tags=["Despensa"])
+router = APIRouter(prefix="/api")
 
 
-# Escribe tus endpoints debajo de esta línea.
+# Escribe tus endpoints aquí abajo

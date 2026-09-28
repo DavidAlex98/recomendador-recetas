@@ -1,61 +1,48 @@
-"""
-ARCHIVO DE EJEMPLO: cópialo como modelo para tus propias rutas.
-Responsable: David
+# EJEMPLO: copia estos endpoints como modelo para los tuyos.
+# Responsable: David
+#
+# Pruébalos en http://localhost:8000/docs
 
-Aquí hay tres endpoints que muestran los tres casos que vamos a usar:
-  1. GET que consulta PostgreSQL        -> /api/estado
-  2. GET que lee el catálogo JSON       -> /api/categorias
-  3. POST que recibe datos y los valida -> /api/validar-ingredientes
-
-Para probarlos, corre el servidor y abre http://localhost:8000/docs
-"""
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 from pydantic import BaseModel
 
 import catalogo
 from db import consultar
 
-# Todas las rutas de este archivo empiezan con /api
-router = APIRouter(prefix="/api", tags=["Ejemplo"])
+router = APIRouter(prefix="/api")
 
 
-# ---------------------------------------------------------------------------
-# 1. GET que consulta PostgreSQL
-# ---------------------------------------------------------------------------
+# 1. GET que consulta la base de datos
 @router.get("/estado")
-def estado_del_sistema():
-    """Dice si la base de datos está conectada y cuántas recetas hay."""
+def estado():
     try:
         filas = consultar("SELECT COUNT(*) AS total FROM recetas")
         return {"base_de_datos": "conectada", "total_recetas": filas[0]["total"]}
     except Exception as error:
-        # Si PostgreSQL no está encendido o faltan las tablas, avisamos sin romper la app
         return {"base_de_datos": "sin conexión", "detalle": str(error)}
 
 
-# ---------------------------------------------------------------------------
-# 2. GET que lee el catálogo JSON (no necesita la base de datos)
-# ---------------------------------------------------------------------------
+# 2. GET que lee el archivo JSON de ingredientes
 @router.get("/categorias")
-def listar_categorias():
-    """Devuelve las categorías de ingredientes del catálogo JSON."""
-    return catalogo.categorias()
+def categorias():
+    lista = []
+    for ingrediente in catalogo.INGREDIENTES:
+        if ingrediente["categoria"] not in lista:
+            lista.append(ingrediente["categoria"])
+    lista.sort()
+    return lista
 
 
-# ---------------------------------------------------------------------------
-# 3. POST que recibe datos del frontend y los valida
-# ---------------------------------------------------------------------------
-# Un "modelo" describe qué datos esperamos recibir. FastAPI revisa solo
-# que vengan con el tipo correcto y, si no, responde un error 422.
-class ListaDeIngredientes(BaseModel):
+# 3. POST que recibe datos
+# La clase dice qué datos esperamos recibir
+class Ingredientes(BaseModel):
     ingredientes: list[str]
 
 
 @router.post("/validar-ingredientes")
-def validar_ingredientes(datos: ListaDeIngredientes):
-    """Revisa que todas las claves recibidas existan en el catálogo JSON."""
-    invalidas = catalogo.claves_invalidas(datos.ingredientes)
-    if invalidas:
-        # HTTPException corta la función y devuelve un error claro al frontend
-        raise HTTPException(status_code=400, detail=f"Ingredientes que no existen: {', '.join(invalidas)}")
-    return {"validos": True, "total": len(datos.ingredientes)}
+def validar_ingredientes(datos: Ingredientes):
+    no_existen = []
+    for clave in datos.ingredientes:
+        if not catalogo.existe(clave):
+            no_existen.append(clave)
+    return {"no_existen": no_existen}
