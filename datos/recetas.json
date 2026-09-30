@@ -134825,6 +134825,12 @@
   "sin_gluten": true,
   "ingredientes": [
    {
+    "clave": "chorizo",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
+   {
     "clave": "chile_chiltepe",
     "cantidad": 6.0,
     "unidad": "unidad",
@@ -134887,6 +134893,12 @@
   "vegano": false,
   "sin_gluten": true,
   "ingredientes": [
+   {
+    "clave": "chorizo",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
    {
     "clave": "chile_jalapeno",
     "cantidad": 3.0,
@@ -134951,6 +134963,12 @@
   "sin_gluten": true,
   "ingredientes": [
    {
+    "clave": "chorizo",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
+   {
     "clave": "chile_pimiento",
     "cantidad": 1.0,
     "unidad": "unidad",
@@ -135014,6 +135032,12 @@
   "sin_gluten": true,
   "ingredientes": [
    {
+    "clave": "chorizo",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
+   {
     "clave": "huevo",
     "cantidad": 8.0,
     "unidad": "unidad",
@@ -135070,6 +135094,12 @@
   "vegano": false,
   "sin_gluten": true,
   "ingredientes": [
+   {
+    "clave": "frijol_negro",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
    {
     "clave": "chile_chiltepe",
     "cantidad": 6.0,
@@ -135134,6 +135164,12 @@
   "sin_gluten": true,
   "ingredientes": [
    {
+    "clave": "frijol_negro",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
+   {
     "clave": "chile_jalapeno",
     "cantidad": 3.0,
     "unidad": "unidad",
@@ -135197,6 +135233,12 @@
   "sin_gluten": true,
   "ingredientes": [
    {
+    "clave": "frijol_negro",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
+   {
     "clave": "chile_pimiento",
     "cantidad": 1.0,
     "unidad": "unidad",
@@ -135259,6 +135301,12 @@
   "vegano": false,
   "sin_gluten": true,
   "ingredientes": [
+   {
+    "clave": "frijol_negro",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
    {
     "clave": "huevo",
     "cantidad": 8.0,
@@ -188791,6 +188839,12 @@
   "sin_gluten": true,
   "ingredientes": [
    {
+    "clave": "chorizo",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
+   {
     "clave": "frijol_negro",
     "cantidad": 1.5,
     "unidad": "libra",
@@ -188849,6 +188903,12 @@
   "sin_gluten": true,
   "ingredientes": [
    {
+    "clave": "queso_fresco",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
+   {
     "clave": "frijol_negro",
     "cantidad": 1.5,
     "unidad": "libra",
@@ -188906,6 +188966,12 @@
   "vegano": false,
   "sin_gluten": true,
   "ingredientes": [
+   {
+    "clave": "loroco",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
    {
     "clave": "frijol_negro",
     "cantidad": 1.5,
@@ -189023,6 +189089,12 @@
   "sin_gluten": true,
   "ingredientes": [
    {
+    "clave": "crema",
+    "cantidad": 1,
+    "unidad": "taza",
+    "opcional": false
+   },
+   {
     "clave": "frijol_negro",
     "cantidad": 1.5,
     "unidad": "libra",
@@ -189138,6 +189210,12 @@
   "vegano": false,
   "sin_gluten": true,
   "ingredientes": [
+   {
+    "clave": "longaniza",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
    {
     "clave": "frijol_negro",
     "cantidad": 1.5,
@@ -189432,6 +189510,12 @@
   "sin_gluten": true,
   "ingredientes": [
    {
+    "clave": "frijol_negro",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
+   {
     "clave": "arroz",
     "cantidad": 2.0,
     "unidad": "taza",
@@ -189490,6 +189574,12 @@
   "vegano": true,
   "sin_gluten": true,
   "ingredientes": [
+   {
+    "clave": "coco",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": false
+   },
    {
     "clave": "arroz",
     "cantidad": 2.0,
@@ -189550,6 +189640,12 @@
   "sin_gluten": true,
   "ingredientes": [
    {
+    "clave": "elote_tierno",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": false
+   },
+   {
     "clave": "arroz",
     "cantidad": 2.0,
     "unidad": "taza",
@@ -189608,6 +189704,12 @@
   "vegano": true,
   "sin_gluten": true,
   "ingredientes": [
+   {
+    "clave": "loroco",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
    {
     "clave": "arroz",
     "cantidad": 2.0,
@@ -189668,6 +189770,12 @@
   "sin_gluten": true,
   "ingredientes": [
    {
+    "clave": "camaron",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
+   {
     "clave": "arroz",
     "cantidad": 2.0,
     "unidad": "taza",
@@ -189726,6 +189834,12 @@
   "vegano": true,
   "sin_gluten": true,
   "ingredientes": [
+   {
+    "clave": "chorizo",
+    "cantidad": 1,
+    "unidad": "libra",
+    "opcional": false
+   },
    {
     "clave": "arroz",
     "cantidad": 2.0,
@@ -192359,6 +192473,12 @@
   "sin_gluten": false,
   "ingredientes": [
    {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
+   {
     "clave": "chile_guaque",
     "cantidad": 3.0,
     "unidad": "unidad",
@@ -192522,6 +192642,12 @@
   "vegano": false,
   "sin_gluten": false,
   "ingredientes": [
+   {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
    {
     "clave": "chile_guaque",
     "cantidad": 3.0,
@@ -193161,6 +193287,12 @@
   "sin_gluten": false,
   "ingredientes": [
    {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
+   {
     "clave": "chile_pimiento",
     "cantidad": 1.0,
     "unidad": "unidad",
@@ -193629,6 +193761,12 @@
   "sin_gluten": false,
   "ingredientes": [
    {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
+   {
     "clave": "chile_guaque",
     "cantidad": 3.0,
     "unidad": "unidad",
@@ -194039,6 +194177,12 @@
   "sin_gluten": false,
   "ingredientes": [
    {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
+   {
     "clave": "tortilla_maiz",
     "cantidad": 18.0,
     "unidad": "unidad",
@@ -194114,6 +194258,12 @@
   "vegano": false,
   "sin_gluten": false,
   "ingredientes": [
+   {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
    {
     "clave": "chile_pimiento",
     "cantidad": 1.0,
@@ -194197,6 +194347,12 @@
   "sin_gluten": false,
   "ingredientes": [
    {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
+   {
     "clave": "tortilla_maiz",
     "cantidad": 18.0,
     "unidad": "unidad",
@@ -194272,6 +194428,12 @@
   "vegano": false,
   "sin_gluten": false,
   "ingredientes": [
+   {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
    {
     "clave": "chile_pimiento",
     "cantidad": 1.0,
@@ -194355,6 +194517,12 @@
   "sin_gluten": false,
   "ingredientes": [
    {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
+   {
     "clave": "tortilla_maiz",
     "cantidad": 18.0,
     "unidad": "unidad",
@@ -194430,6 +194598,12 @@
   "vegano": false,
   "sin_gluten": false,
   "ingredientes": [
+   {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
    {
     "clave": "chile_pimiento",
     "cantidad": 1.0,
@@ -195321,6 +195495,12 @@
   "sin_gluten": false,
   "ingredientes": [
    {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
+   {
     "clave": "chile_pimiento",
     "cantidad": 1.0,
     "unidad": "unidad",
@@ -195560,6 +195740,12 @@
   "vegano": false,
   "sin_gluten": false,
   "ingredientes": [
+   {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
    {
     "clave": "chile_guaque",
     "cantidad": 3.0,
@@ -195883,6 +196069,12 @@
   "sin_gluten": false,
   "ingredientes": [
    {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
+   {
     "clave": "arroz",
     "cantidad": 2.0,
     "unidad": "taza",
@@ -195958,6 +196150,12 @@
   "vegano": false,
   "sin_gluten": false,
   "ingredientes": [
+   {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
    {
     "clave": "tortilla_maiz",
     "cantidad": 18.0,
@@ -196274,6 +196472,12 @@
   "vegano": false,
   "sin_gluten": false,
   "ingredientes": [
+   {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
    {
     "clave": "chile_pimiento",
     "cantidad": 1.0,
@@ -196673,6 +196877,12 @@
   "sin_gluten": false,
   "ingredientes": [
    {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
+   {
     "clave": "chile_pimiento",
     "cantidad": 1.0,
     "unidad": "unidad",
@@ -196754,6 +196964,12 @@
   "vegano": false,
   "sin_gluten": false,
   "ingredientes": [
+   {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
    {
     "clave": "chile_pimiento",
     "cantidad": 1.0,
@@ -197399,6 +197615,12 @@
   "sin_gluten": false,
   "ingredientes": [
    {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
+   {
     "clave": "chile_guaque",
     "cantidad": 3.0,
     "unidad": "unidad",
@@ -197802,6 +198024,12 @@
   "vegano": false,
   "sin_gluten": false,
   "ingredientes": [
+   {
+    "clave": "pepitoria",
+    "cantidad": 1,
+    "unidad": "onza",
+    "opcional": false
+   },
    {
     "clave": "arroz",
     "cantidad": 2.0,
@@ -204472,6 +204700,12 @@
   "sin_gluten": false,
   "ingredientes": [
    {
+    "clave": "leche",
+    "cantidad": 1,
+    "unidad": "taza",
+    "opcional": false
+   },
+   {
     "clave": "harina_trigo",
     "cantidad": 1.0,
     "unidad": "libra",
@@ -204696,6 +204930,12 @@
   "vegano": false,
   "sin_gluten": false,
   "ingredientes": [
+   {
+    "clave": "tostada",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": false
+   },
    {
     "clave": "tortilla_maiz",
     "cantidad": 18.0,
@@ -209282,7 +209522,7 @@
  },
  {
   "id": "gt-2669",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Carne de res navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -209396,7 +209636,7 @@
  },
  {
   "id": "gt-2670",
-  "nombre": "Pierna navideño",
+  "nombre": "Lomo de cerdo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -209510,7 +209750,7 @@
  },
  {
   "id": "gt-2671",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Pierna de cerdo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -209738,7 +209978,7 @@
  },
  {
   "id": "gt-2673",
-  "nombre": "Pierna navideño",
+  "nombre": "Pollo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -209846,7 +210086,7 @@
  },
  {
   "id": "gt-2674",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Lomo de cerdo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -209960,7 +210200,7 @@
  },
  {
   "id": "gt-2675",
-  "nombre": "Pollo al horno navideño",
+  "nombre": "Pavo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -210074,7 +210314,7 @@
  },
  {
   "id": "gt-2676",
-  "nombre": "Lomo relleno navideño",
+  "nombre": "Pierna de cerdo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -210188,7 +210428,7 @@
  },
  {
   "id": "gt-2677",
-  "nombre": "Lomo relleno navideño",
+  "nombre": "Pavo relleno navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -210296,7 +210536,7 @@
  },
  {
   "id": "gt-2678",
-  "nombre": "Pollo al horno navideño",
+  "nombre": "Pierna de cerdo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -210404,7 +210644,7 @@
  },
  {
   "id": "gt-2680",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Pierna de cerdo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -210518,7 +210758,7 @@
  },
  {
   "id": "gt-2681",
-  "nombre": "Pierna navideño",
+  "nombre": "Carne de res navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -210632,7 +210872,7 @@
  },
  {
   "id": "gt-2682",
-  "nombre": "Pierna navideño",
+  "nombre": "Lomo de cerdo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -210746,7 +210986,7 @@
  },
  {
   "id": "gt-2683",
-  "nombre": "Pierna en adobo navideño",
+  "nombre": "Carne de res en adobo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -210854,7 +211094,7 @@
  },
  {
   "id": "gt-2684",
-  "nombre": "Pierna en adobo navideño",
+  "nombre": "Carne de res en adobo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -210962,7 +211202,7 @@
  },
  {
   "id": "gt-2685",
-  "nombre": "Lomo relleno navideño",
+  "nombre": "Pavo relleno navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -211076,7 +211316,7 @@
  },
  {
   "id": "gt-2686",
-  "nombre": "Pierna en adobo navideño",
+  "nombre": "Pollo en adobo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -211190,7 +211430,7 @@
  },
  {
   "id": "gt-2687",
-  "nombre": "Pollo al horno navideño",
+  "nombre": "Pollo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -211298,7 +211538,7 @@
  },
  {
   "id": "gt-2688",
-  "nombre": "Lomo relleno navideño",
+  "nombre": "Pollo relleno navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -211412,7 +211652,7 @@
  },
  {
   "id": "gt-2689",
-  "nombre": "Pierna en adobo navideño",
+  "nombre": "Carne de res en adobo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -211526,7 +211766,7 @@
  },
  {
   "id": "gt-2690",
-  "nombre": "Lomo relleno navideño",
+  "nombre": "Pollo relleno navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -211640,7 +211880,7 @@
  },
  {
   "id": "gt-2691",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Pierna de cerdo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -211754,7 +211994,7 @@
  },
  {
   "id": "gt-2692",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Pierna de cerdo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -211868,7 +212108,7 @@
  },
  {
   "id": "gt-2693",
-  "nombre": "Pierna en adobo navideño",
+  "nombre": "Lomo de cerdo en adobo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -211976,7 +212216,7 @@
  },
  {
   "id": "gt-2698",
-  "nombre": "Pierna navideño",
+  "nombre": "Pierna de cerdo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -212090,7 +212330,7 @@
  },
  {
   "id": "gt-2699",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Carne de res navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -212204,7 +212444,7 @@
  },
  {
   "id": "gt-2700",
-  "nombre": "Pierna en adobo navideño",
+  "nombre": "Lomo de cerdo en adobo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -212318,7 +212558,7 @@
  },
  {
   "id": "gt-2701",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Pollo relleno navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -212432,7 +212672,7 @@
  },
  {
   "id": "gt-2702",
-  "nombre": "Pollo al horno navideño",
+  "nombre": "Lomo de cerdo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -212546,7 +212786,7 @@
  },
  {
   "id": "gt-2703",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Carne de res navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -212660,7 +212900,7 @@
  },
  {
   "id": "gt-2704",
-  "nombre": "Lomo relleno navideño",
+  "nombre": "Pavo relleno navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -212774,7 +213014,7 @@
  },
  {
   "id": "gt-2705",
-  "nombre": "Pierna navideño",
+  "nombre": "Carne de res navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -212888,7 +213128,7 @@
  },
  {
   "id": "gt-2706",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Pollo relleno navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -213002,7 +213242,7 @@
  },
  {
   "id": "gt-2707",
-  "nombre": "Lomo relleno navideño",
+  "nombre": "Lomo de cerdo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -213110,7 +213350,7 @@
  },
  {
   "id": "gt-2708",
-  "nombre": "Pierna en adobo navideño",
+  "nombre": "Pavo en adobo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -213224,7 +213464,7 @@
  },
  {
   "id": "gt-2709",
-  "nombre": "Pierna navideño",
+  "nombre": "Carne de res navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -213440,7 +213680,7 @@
  },
  {
   "id": "gt-2712",
-  "nombre": "Pierna navideño",
+  "nombre": "Lomo de cerdo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -213554,7 +213794,7 @@
  },
  {
   "id": "gt-2713",
-  "nombre": "Pierna navideño",
+  "nombre": "Pollo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -213668,7 +213908,7 @@
  },
  {
   "id": "gt-2717",
-  "nombre": "Pierna navideño",
+  "nombre": "Pollo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -213782,7 +214022,7 @@
  },
  {
   "id": "gt-2718",
-  "nombre": "Lomo relleno navideño",
+  "nombre": "Pierna de cerdo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -213890,7 +214130,7 @@
  },
  {
   "id": "gt-2720",
-  "nombre": "Pierna navideño",
+  "nombre": "Lomo de cerdo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -214004,7 +214244,7 @@
  },
  {
   "id": "gt-2721",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Carne de res navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -214118,7 +214358,7 @@
  },
  {
   "id": "gt-2722",
-  "nombre": "Pierna en adobo navideño",
+  "nombre": "Carne de res en adobo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -214232,7 +214472,7 @@
  },
  {
   "id": "gt-2726",
-  "nombre": "Lomo relleno navideño",
+  "nombre": "Pavo relleno navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -214346,7 +214586,7 @@
  },
  {
   "id": "gt-2728",
-  "nombre": "Pollo al horno navideño",
+  "nombre": "Pollo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -214454,7 +214694,7 @@
  },
  {
   "id": "gt-2731",
-  "nombre": "Pierna en adobo navideño",
+  "nombre": "Pierna de cerdo en adobo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -214568,7 +214808,7 @@
  },
  {
   "id": "gt-2737",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Pollo relleno navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -214682,7 +214922,7 @@
  },
  {
   "id": "gt-2744",
-  "nombre": "Pollo al horno navideño",
+  "nombre": "Pollo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -214796,7 +215036,7 @@
  },
  {
   "id": "gt-2745",
-  "nombre": "Lomo relleno navideño",
+  "nombre": "Pavo relleno navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -214910,7 +215150,7 @@
  },
  {
   "id": "gt-2746",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Lomo de cerdo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -215018,7 +215258,7 @@
  },
  {
   "id": "gt-2747",
-  "nombre": "Pierna navideño",
+  "nombre": "Lomo de cerdo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -215132,7 +215372,7 @@
  },
  {
   "id": "gt-2749",
-  "nombre": "Lomo relleno navideño",
+  "nombre": "Carne de res navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -215246,7 +215486,7 @@
  },
  {
   "id": "gt-2762",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Pierna de cerdo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -215354,7 +215594,7 @@
  },
  {
   "id": "gt-2782",
-  "nombre": "Pierna navideño",
+  "nombre": "Pavo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -215462,7 +215702,7 @@
  },
  {
   "id": "gt-2783",
-  "nombre": "Pavo relleno navideño",
+  "nombre": "Pierna de cerdo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -215576,7 +215816,7 @@
  },
  {
   "id": "gt-2788",
-  "nombre": "Pollo al horno navideño",
+  "nombre": "Pavo navideño",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
@@ -215690,7 +215930,7 @@
  },
  {
   "id": "gt-2827",
-  "nombre": "Pierna navideño",
+  "nombre": "Pierna de cerdo navideña",
   "categoria": "Fiestas y temporada",
   "descripcion": "Plato de la cena navideña guatemalteca, que se sirve a la medianoche del 24 de diciembre junto a los tamales y el ponche.",
   "dificultad": "media",
