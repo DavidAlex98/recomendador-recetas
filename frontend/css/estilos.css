@@ -99,6 +99,54 @@ h1 {
     font-style: italic;
 }
 
+/* ----- Checklist de ingredientes ----- */
+.buscador {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.categoria {
+    text-transform: capitalize;
+}
+
+.casilla {
+    display: inline-block;
+    width: 200px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+/* ----- Cuadro de "¿Te falta marcar algo?" ----- */
+.aviso {
+    background-color: #fff8e1;
+}
+
+.sugerencia {
+    border: none;
+    cursor: pointer;
+}
+
+.sugerencia:hover {
+    background-color: #7366fe;
+    color: white;
+}
+
+/* ----- Recetas encontradas ----- */
+.receta {
+    display: block;
+    color: #333333;
+    text-decoration: none;
+}
+
+.receta:hover {
+    border: 1px solid #7366fe;
+}
+
 /* ----- Celulares ----- */
 @media (max-width: 600px) {
     .barra {
