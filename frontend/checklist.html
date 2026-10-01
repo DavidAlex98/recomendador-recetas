@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>¿Qué tengo en casa? · RecetApp</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css?v=4">
 </head>
 <body>
     <!-- Responsable: Manrique -->
@@ -17,10 +17,23 @@
 
     <main>
         <h1>¿Qué tengo en casa?</h1>
-        <p class="pendiente">Página en construcción.</p>
+        <p>Marca lo que tienes. El aceite, el azúcar y las especias ya los contamos, van al gusto.</p>
+
+        <input id="buscador" class="buscador" type="text" placeholder="Buscar ingrediente...">
+
+        <!-- checklist.js llena este div con las casillas -->
+        <div id="ingredientes">Cargando ingredientes...</div>
+
+        <p><button id="boton-buscar" class="boton">Ver qué puedo cocinar</button></p>
+
+        <!-- checklist.js pone aquí el cuadro de "¿no tienes ajo?" -->
+        <div id="sugerencias"></div>
+
+        <!-- checklist.js llena este div con las recetas -->
+        <div id="resultados"></div>
     </main>
 
     <script src="js/api.js"></script>
-    <script src="js/checklist.js"></script>
+    <script src="js/checklist.js?v=4"></script>
 </body>
 </html>
