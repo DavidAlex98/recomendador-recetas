@@ -147,6 +147,12 @@ h1 {
     border: 1px solid #7366fe;
 }
 
+/* ----- Página de la receta ----- */
+.tarjeta li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
 /* ----- Celulares ----- */
 @media (max-width: 600px) {
     .barra {

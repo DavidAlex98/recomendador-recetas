@@ -6,6 +6,7 @@
 
 from fastapi import APIRouter, HTTPException
 
+import catalogo
 from db import consultar
 
 router = APIRouter(prefix="/api")
@@ -38,6 +39,10 @@ def ver_receta(receta_id: str):
         "SELECT clave, cantidad, unidad, opcional FROM receta_ingredientes WHERE receta_id = %s",
         (receta_id,),
     )
+    # Agregar el nombre bonito de cada ingrediente (frijol_negro -> Frijol negro)
+    for ingrediente in receta["ingredientes"]:
+        ingrediente["nombre"] = catalogo.nombre(ingrediente["clave"])
+
     receta["pasos"] = consultar(
         "SELECT numero, instruccion FROM pasos WHERE receta_id = %s ORDER BY numero",
         (receta_id,),
