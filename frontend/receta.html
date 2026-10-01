@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Detalle de receta · RecetApp</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Receta · RecetApp</title>
+    <link rel="stylesheet" href="css/estilos.css?v=5">
 </head>
 <body>
-    <!-- Responsable: Brandon -->
+    <!-- Responsable: David -->
 
     <nav class="barra">
         <a class="marca" href="index.html">RecetApp</a>
@@ -16,11 +16,13 @@
     </nav>
 
     <main>
-        <h1>Detalle de receta</h1>
-        <p class="pendiente">Página en construcción.</p>
+        <p><a href="javascript:history.back()">← Volver</a></p>
+
+        <!-- receta.js llena este div con la receta -->
+        <div id="receta">Cargando receta...</div>
     </main>
 
     <script src="js/api.js"></script>
-    <script src="js/receta.js"></script>
+    <script src="js/receta.js?v=4"></script>
 </body>
 </html>

@@ -22,6 +22,14 @@ def existe(clave):
     return False
 
 
+def nombre(clave):
+    """Devuelve el nombre bonito de un ingrediente, por ejemplo 'Frijol negro'."""
+    for ingrediente in INGREDIENTES:
+        if ingrediente["clave"] == clave:
+            return ingrediente["nombre"]
+    return clave
+
+
 # Lo que se da por hecho que hay en toda casa: el azúcar, las especias
 # (sal, pimienta, orégano... van "al gusto") y las grasas (aceite, manteca).
 # Estos no salen en el checklist y nunca hacen que una receta se quede fuera.
