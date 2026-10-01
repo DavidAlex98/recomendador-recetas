@@ -110,8 +110,8 @@ h1 {
     box-sizing: border-box;
 }
 
-.categoria {
-    text-transform: capitalize;
+.categoria::first-letter {
+    text-transform: uppercase;
 }
 
 .casilla {

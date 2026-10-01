@@ -37,16 +37,32 @@ def recomendar(despensa: Despensa):
 
     resultado = []
     for receta in recetas:
+        receta["usados"] = 0   # cuántos de tus ingredientes usa
+        tiene_proteina = False
         usa_algo_mio = False   # que lo principal sea algo de lo que marcaste
         le_falta_algo = False  # que no le falte nada importante
 
         for ingrediente in ingredientes_de[receta["id"]]:
-            if ingrediente["clave"] in marcados and ingrediente["opcional"] == False:
-                usa_algo_mio = True
+            if ingrediente["clave"] in marcados:
+                receta["usados"] = receta["usados"] + 1
+                if ingrediente["opcional"] == False:
+                    usa_algo_mio = True
+            if ingrediente["opcional"] == False and ingrediente["clave"] in catalogo.PROTEINAS:
+                tiene_proteina = True
             if ingrediente["opcional"] == False and ingrediente["clave"] not in tengo:
                 le_falta_algo = True
 
         if usa_algo_mio and not le_falta_algo:
+            # Puntos para ordenar: primero las que llevan proteína,
+            # y después las que usan más de lo que tienes
+            receta["puntos"] = receta["usados"]
+            if tiene_proteina:
+                receta["puntos"] = receta["puntos"] + 10
             resultado.append(receta)
 
+    resultado.sort(key=sacar_puntos, reverse=True)
     return resultado
+
+
+def sacar_puntos(receta):
+    return receta["puntos"]

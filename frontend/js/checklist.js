@@ -73,6 +73,7 @@ async function buscarRecetas() {
         for (const receta of recetas) {
             html += '<a class="tarjeta receta" href="receta.html?id=' + escapar(receta.id) + '">';
             html += "<strong>" + escapar(receta.nombre) + "</strong><br>";
+            html += '<span class="etiqueta">Usa ' + receta.usados + " de lo que tienes</span>";
             html += '<span class="etiqueta">' + escapar(receta.categoria) + "</span>";
             html += '<span class="etiqueta">' + receta.tiempo_min + " min</span>";
             html += '<span class="etiqueta">' + escapar(receta.dificultad) + "</span>";
