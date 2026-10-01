@@ -37,11 +37,11 @@ def recomendar(despensa: Despensa):
 
     resultado = []
     for receta in recetas:
-        usa_algo_mio = False   # que use al menos algo de lo que marcaste
+        usa_algo_mio = False   # que lo principal sea algo de lo que marcaste
         le_falta_algo = False  # que no le falte nada importante
 
         for ingrediente in ingredientes_de[receta["id"]]:
-            if ingrediente["clave"] in marcados:
+            if ingrediente["clave"] in marcados and ingrediente["opcional"] == False:
                 usa_algo_mio = True
             if ingrediente["opcional"] == False and ingrediente["clave"] not in tengo:
                 le_falta_algo = True
