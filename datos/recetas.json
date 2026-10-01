@@ -165540,926 +165540,6 @@
   ]
  },
  {
-  "id": "gt-1906",
-  "nombre": "Fresco de rosa de jamaica",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "rosa_jamaica",
-    "cantidad": 3.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la rosa de jamaica, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1907",
-  "nombre": "Fresco de tamarindo",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "tamarindo",
-    "cantidad": 0.75,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la tamarindo, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1908",
-  "nombre": "Fresco de piña",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "pina",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la piña, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1909",
-  "nombre": "Fresco de sandía",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "sandia",
-    "cantidad": 3.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la sandía, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1910",
-  "nombre": "Fresco de melón",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "melon",
-    "cantidad": 3.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la melón, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1911",
-  "nombre": "Fresco de papaya",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "papaya",
-    "cantidad": 2.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la papaya, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1912",
-  "nombre": "Fresco de mango",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "mango",
-    "cantidad": 4.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la mango, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1913",
-  "nombre": "Fresco de marañon",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "maranon",
-    "cantidad": 2.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la marañon, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1914",
-  "nombre": "Fresco de limón",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "limon",
-    "cantidad": 10.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la limón, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1915",
-  "nombre": "Fresco de naranja",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "naranja",
-    "cantidad": 8.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la naranja, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1916",
-  "nombre": "Fresco de zapote",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "zapote",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la zapote, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1917",
-  "nombre": "Fresco de guayaba",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "guayaba",
-    "cantidad": 2.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la guayaba, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1918",
-  "nombre": "Fresco de jocote",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "jocote",
-    "cantidad": 2.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la jocote, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1919",
-  "nombre": "Fresco de nance",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "nance",
-    "cantidad": 2.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la nance, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1920",
-  "nombre": "Fresco de mora",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "mora",
-    "cantidad": 1.5,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la mora, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1921",
-  "nombre": "Fresco de chan",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "chan",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la chan, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1922",
-  "nombre": "Fresco de horchata",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "arroz",
-    "cantidad": 1.0,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "pepitoria",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la horchata, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1923",
-  "nombre": "Fresco de pepino con limón",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "pepino",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 6.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la pepino con limón, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1924",
-  "nombre": "Fresco de maracuyá",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "maracuya",
-    "cantidad": 8.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la maracuyá, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-1925",
-  "nombre": "Fresco de carambola",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Agua fresca de fruta de temporada, la bebida de todos los almuerzos en Guatemala. Se sirve en jarra en la mesa y se toma durante toda la comida.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "carambola",
-    "cantidad": 2.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 2.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Lavar y pelar la carambola, quitando semillas y partes duras.",
-   "Licuar con agua fría, en proporción de una parte de fruta por tres de agua.",
-   "Colar si la fruta tiene fibra o semillas pequeñas.",
-   "Endulzar poco a poco, probando. Es más fácil agregar azúcar que quitarla.",
-   "Agregar un chorrito de limón: realza el sabor de casi cualquier fruta.",
-   "Servir bien frío con hielo."
-  ]
- },
- {
   "id": "gt-1926",
   "nombre": "Ponche de frutas navideño",
   "categoria": "Bebidas y atoles",
@@ -167039,76 +166119,6 @@
    "Agregar la avena si se quiere un licuado más espeso y que llene más.",
    "Licuar 30 segundos más hasta que quede homogeneo.",
    "Servir de inmediato con hielo."
-  ]
- },
- {
-  "id": "gt-1937",
-  "nombre": "Horchata guatemalteca",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Bebida fría de arroz, pepitoria, ajonjolí y canela, más espesa y con más semillas que la horchata de otros paises.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": false,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "arroz",
-    "cantidad": 1.0,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "pepitoria",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "ajonjoli",
-    "cantidad": 1.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "mani",
-    "cantidad": 1.0,
-    "unidad": "onza",
-    "opcional": true
-   },
-   {
-    "clave": "canela",
-    "cantidad": 3.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 1.0,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "leche",
-    "cantidad": 2.0,
-    "unidad": "taza",
-    "opcional": true
-   },
-   {
-    "clave": "vainilla",
-    "cantidad": 1.0,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Remojar el arroz con la canela en agua desde la noche anterior.",
-   "Tostar la pepitoria, el ajonjolí y el maní en el comal, cuidando que no se quemen.",
-   "Licuar el arroz remojado con su agua, las semillas tostadas y la canela, hasta que quede lo más fino posible.",
-   "Colar dos veces con colador fino o manta: la horchata guatemalteca queda con cuerpo, pero sin arenilla.",
-   "Agregar agua fría, azúcar, la leche si se usa y la vainilla.",
-   "Refrigerar al menos 2 horas y servir con hielo y canela molida encima."
   ]
  },
  {
@@ -206406,2622 +205416,6 @@
    "Congelar en recipiente tapado, sacando a batir cada hora las primeras tres veces para romper los cristales.",
    "Si se usa maquina de sorbete, batir según las instrucciones hasta que espese.",
    "Servir en barquillo o en vaso."
-  ]
- },
- {
-  "id": "gt-2609",
-  "nombre": "Agua de manzanilla",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Infusión caliente de hierbas, remedio de casa y bebida de la noche. En Guatemala se toma para el estómago, para el frío y para dormir.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 4,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "manzanilla",
-    "cantidad": 2.0,
-    "unidad": "manojo",
-    "opcional": false
-   },
-   {
-    "clave": "panela",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "canela",
-    "cantidad": 1.0,
-    "unidad": "rama",
-    "opcional": true
-   },
-   {
-    "clave": "limon",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "miel",
-    "cantidad": 2.0,
-    "unidad": "cucharada",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Hervir cuatro tazas de agua.",
-   "Retirar del fuego y agregar la manzanilla lavada.",
-   "Tapar y dejar reposar de 5 a 10 minutos. Hervir la hierba le quita el aroma.",
-   "Colar y endulzar con panela, azúcar o miel.",
-   "Servir caliente, con limón si se quiere."
-  ]
- },
- {
-  "id": "gt-2610",
-  "nombre": "Agua de hierbabuena",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Infusión caliente de hierbas, remedio de casa y bebida de la noche. En Guatemala se toma para el estómago, para el frío y para dormir.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 4,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "hierbabuena",
-    "cantidad": 6.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "panela",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "canela",
-    "cantidad": 1.0,
-    "unidad": "rama",
-    "opcional": true
-   },
-   {
-    "clave": "limon",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "miel",
-    "cantidad": 2.0,
-    "unidad": "cucharada",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Hervir cuatro tazas de agua.",
-   "Retirar del fuego y agregar la hierbabuena lavada.",
-   "Tapar y dejar reposar de 5 a 10 minutos. Hervir la hierba le quita el aroma.",
-   "Colar y endulzar con panela, azúcar o miel.",
-   "Servir caliente, con limón si se quiere."
-  ]
- },
- {
-  "id": "gt-2611",
-  "nombre": "Agua de té de limón",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Infusión caliente de hierbas, remedio de casa y bebida de la noche. En Guatemala se toma para el estómago, para el frío y para dormir.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 4,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "te_limon",
-    "cantidad": 1.0,
-    "unidad": "manojo",
-    "opcional": false
-   },
-   {
-    "clave": "panela",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "canela",
-    "cantidad": 1.0,
-    "unidad": "rama",
-    "opcional": true
-   },
-   {
-    "clave": "limon",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "miel",
-    "cantidad": 2.0,
-    "unidad": "cucharada",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Hervir cuatro tazas de agua.",
-   "Retirar del fuego y agregar la té de limón lavada.",
-   "Tapar y dejar reposar de 5 a 10 minutos. Hervir la hierba le quita el aroma.",
-   "Colar y endulzar con panela, azúcar o miel.",
-   "Servir caliente, con limón si se quiere."
-  ]
- },
- {
-  "id": "gt-2612",
-  "nombre": "Agua de canela",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Infusión caliente de hierbas, remedio de casa y bebida de la noche. En Guatemala se toma para el estómago, para el frío y para dormir.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 4,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "canela",
-    "cantidad": 3.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "panela",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "limon",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "miel",
-    "cantidad": 2.0,
-    "unidad": "cucharada",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Hervir cuatro tazas de agua.",
-   "Retirar del fuego y agregar la canela lavada.",
-   "Tapar y dejar reposar de 5 a 10 minutos. Hervir la hierba le quita el aroma.",
-   "Colar y endulzar con panela, azúcar o miel.",
-   "Servir caliente, con limón si se quiere."
-  ]
- },
- {
-  "id": "gt-2613",
-  "nombre": "Agua de jengibre",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Infusión caliente de hierbas, remedio de casa y bebida de la noche. En Guatemala se toma para el estómago, para el frío y para dormir.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 4,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "jengibre",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "panela",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "canela",
-    "cantidad": 1.0,
-    "unidad": "rama",
-    "opcional": true
-   },
-   {
-    "clave": "limon",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "miel",
-    "cantidad": 2.0,
-    "unidad": "cucharada",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Hervir cuatro tazas de agua.",
-   "Retirar del fuego y agregar la jengibre lavada.",
-   "Tapar y dejar reposar de 5 a 10 minutos. Hervir la hierba le quita el aroma.",
-   "Colar y endulzar con panela, azúcar o miel.",
-   "Servir caliente, con limón si se quiere."
-  ]
- },
- {
-  "id": "gt-2614",
-  "nombre": "Agua de apazote",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Infusión caliente de hierbas, remedio de casa y bebida de la noche. En Guatemala se toma para el estómago, para el frío y para dormir.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 4,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "apazote",
-    "cantidad": 4.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "panela",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "canela",
-    "cantidad": 1.0,
-    "unidad": "rama",
-    "opcional": true
-   },
-   {
-    "clave": "limon",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "miel",
-    "cantidad": 2.0,
-    "unidad": "cucharada",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Hervir cuatro tazas de agua.",
-   "Retirar del fuego y agregar la apazote lavada.",
-   "Tapar y dejar reposar de 5 a 10 minutos. Hervir la hierba le quita el aroma.",
-   "Colar y endulzar con panela, azúcar o miel.",
-   "Servir caliente, con limón si se quiere."
-  ]
- },
- {
-  "id": "gt-2615",
-  "nombre": "Agua de flor de tilo",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Infusión caliente de hierbas, remedio de casa y bebida de la noche. En Guatemala se toma para el estómago, para el frío y para dormir.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 4,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "tilo",
-    "cantidad": 1.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "panela",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "canela",
-    "cantidad": 1.0,
-    "unidad": "rama",
-    "opcional": true
-   },
-   {
-    "clave": "limon",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "miel",
-    "cantidad": 2.0,
-    "unidad": "cucharada",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Hervir cuatro tazas de agua.",
-   "Retirar del fuego y agregar la flor de tilo lavada.",
-   "Tapar y dejar reposar de 5 a 10 minutos. Hervir la hierba le quita el aroma.",
-   "Colar y endulzar con panela, azúcar o miel.",
-   "Servir caliente, con limón si se quiere."
-  ]
- },
- {
-  "id": "gt-2616",
-  "nombre": "Agua de eucalipto",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Infusión caliente de hierbas, remedio de casa y bebida de la noche. En Guatemala se toma para el estómago, para el frío y para dormir.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 4,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "eucalipto",
-    "cantidad": 1.0,
-    "unidad": "manojo",
-    "opcional": false
-   },
-   {
-    "clave": "panela",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "canela",
-    "cantidad": 1.0,
-    "unidad": "rama",
-    "opcional": true
-   },
-   {
-    "clave": "limon",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "miel",
-    "cantidad": 2.0,
-    "unidad": "cucharada",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Hervir cuatro tazas de agua.",
-   "Retirar del fuego y agregar la eucalipto lavada.",
-   "Tapar y dejar reposar de 5 a 10 minutos. Hervir la hierba le quita el aroma.",
-   "Colar y endulzar con panela, azúcar o miel.",
-   "Servir caliente, con limón si se quiere."
-  ]
- },
- {
-  "id": "gt-2617",
-  "nombre": "Agua de ruda",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Infusión caliente de hierbas, remedio de casa y bebida de la noche. En Guatemala se toma para el estómago, para el frío y para dormir.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 4,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "ruda",
-    "cantidad": 3.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "panela",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "canela",
-    "cantidad": 1.0,
-    "unidad": "rama",
-    "opcional": true
-   },
-   {
-    "clave": "limon",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "miel",
-    "cantidad": 2.0,
-    "unidad": "cucharada",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Hervir cuatro tazas de agua.",
-   "Retirar del fuego y agregar la ruda lavada.",
-   "Tapar y dejar reposar de 5 a 10 minutos. Hervir la hierba le quita el aroma.",
-   "Colar y endulzar con panela, azúcar o miel.",
-   "Servir caliente, con limón si se quiere."
-  ]
- },
- {
-  "id": "gt-2618",
-  "nombre": "Agua de anís estrellado",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Infusión caliente de hierbas, remedio de casa y bebida de la noche. En Guatemala se toma para el estómago, para el frío y para dormir.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 4,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "anis_estrellado",
-    "cantidad": 4.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "panela",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "canela",
-    "cantidad": 1.0,
-    "unidad": "rama",
-    "opcional": true
-   },
-   {
-    "clave": "limon",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "miel",
-    "cantidad": 2.0,
-    "unidad": "cucharada",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Hervir cuatro tazas de agua.",
-   "Retirar del fuego y agregar la anís estrellado lavada.",
-   "Tapar y dejar reposar de 5 a 10 minutos. Hervir la hierba le quita el aroma.",
-   "Colar y endulzar con panela, azúcar o miel.",
-   "Servir caliente, con limón si se quiere."
-  ]
- },
- {
-  "id": "gt-2619",
-  "nombre": "Agua de hoja de naranjo",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Infusión caliente de hierbas, remedio de casa y bebida de la noche. En Guatemala se toma para el estómago, para el frío y para dormir.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 4,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "hoja_naranjo",
-    "cantidad": 8.0,
-    "unidad": "hoja",
-    "opcional": false
-   },
-   {
-    "clave": "panela",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "canela",
-    "cantidad": 1.0,
-    "unidad": "rama",
-    "opcional": true
-   },
-   {
-    "clave": "limon",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "miel",
-    "cantidad": 2.0,
-    "unidad": "cucharada",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Hervir cuatro tazas de agua.",
-   "Retirar del fuego y agregar la hoja de naranjo lavada.",
-   "Tapar y dejar reposar de 5 a 10 minutos. Hervir la hierba le quita el aroma.",
-   "Colar y endulzar con panela, azúcar o miel.",
-   "Servir caliente, con limón si se quiere."
-  ]
- },
- {
-  "id": "gt-2620",
-  "nombre": "Agua de albahaca",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Infusión caliente de hierbas, remedio de casa y bebida de la noche. En Guatemala se toma para el estómago, para el frío y para dormir.",
-  "dificultad": "fácil",
-  "tiempo_min": 15,
-  "porciones": 4,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "albahaca",
-    "cantidad": 1.0,
-    "unidad": "manojo",
-    "opcional": false
-   },
-   {
-    "clave": "panela",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "canela",
-    "cantidad": 1.0,
-    "unidad": "rama",
-    "opcional": true
-   },
-   {
-    "clave": "limon",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "miel",
-    "cantidad": 2.0,
-    "unidad": "cucharada",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Hervir cuatro tazas de agua.",
-   "Retirar del fuego y agregar la albahaca lavada.",
-   "Tapar y dejar reposar de 5 a 10 minutos. Hervir la hierba le quita el aroma.",
-   "Colar y endulzar con panela, azúcar o miel.",
-   "Servir caliente, con limón si se quiere."
-  ]
- },
- {
-  "id": "gt-2621",
-  "nombre": "Refresco de rosa de jamaica con chan",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "rosa_jamaica",
-    "cantidad": 3.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "chan",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de rosa de jamaica: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el chan en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el chan y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2622",
-  "nombre": "Refresco de rosa de jamaica con semilla de linaza",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "rosa_jamaica",
-    "cantidad": 3.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "linaza",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de rosa de jamaica: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el semilla de linaza en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el semilla de linaza y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2623",
-  "nombre": "Refresco de rosa de jamaica con hierbabuena",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "rosa_jamaica",
-    "cantidad": 3.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "hierbabuena",
-    "cantidad": 6.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de rosa de jamaica: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el hierbabuena en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el hierbabuena y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2624",
-  "nombre": "Refresco de rosa de jamaica con canela",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "rosa_jamaica",
-    "cantidad": 3.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "canela",
-    "cantidad": 3.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de rosa de jamaica: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el canela en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el canela y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2625",
-  "nombre": "Refresco de rosa de jamaica con jengibre",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "rosa_jamaica",
-    "cantidad": 3.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "jengibre",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de rosa de jamaica: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el jengibre en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el jengibre y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2626",
-  "nombre": "Refresco de tamarindo con chan",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "tamarindo",
-    "cantidad": 0.75,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "chan",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de tamarindo: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el chan en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el chan y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2627",
-  "nombre": "Refresco de tamarindo con semilla de linaza",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "tamarindo",
-    "cantidad": 0.75,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "linaza",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de tamarindo: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el semilla de linaza en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el semilla de linaza y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2628",
-  "nombre": "Refresco de tamarindo con hierbabuena",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "tamarindo",
-    "cantidad": 0.75,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "hierbabuena",
-    "cantidad": 6.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de tamarindo: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el hierbabuena en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el hierbabuena y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2629",
-  "nombre": "Refresco de tamarindo con canela",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "tamarindo",
-    "cantidad": 0.75,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "canela",
-    "cantidad": 3.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de tamarindo: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el canela en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el canela y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2630",
-  "nombre": "Refresco de tamarindo con jengibre",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "tamarindo",
-    "cantidad": 0.75,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "jengibre",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de tamarindo: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el jengibre en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el jengibre y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2631",
-  "nombre": "Refresco de limón con chan",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "limon",
-    "cantidad": 10.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "chan",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de limón: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el chan en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el chan y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2632",
-  "nombre": "Refresco de limón con semilla de linaza",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "limon",
-    "cantidad": 10.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "linaza",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de limón: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el semilla de linaza en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el semilla de linaza y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2633",
-  "nombre": "Refresco de limón con hierbabuena",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "limon",
-    "cantidad": 10.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "hierbabuena",
-    "cantidad": 6.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de limón: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el hierbabuena en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el hierbabuena y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2634",
-  "nombre": "Refresco de limón con canela",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "limon",
-    "cantidad": 10.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "canela",
-    "cantidad": 3.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de limón: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el canela en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el canela y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2635",
-  "nombre": "Refresco de limón con jengibre",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "limon",
-    "cantidad": 10.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "jengibre",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de limón: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el jengibre en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el jengibre y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2636",
-  "nombre": "Refresco de piña con chan",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "pina",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "chan",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de piña: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el chan en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el chan y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2637",
-  "nombre": "Refresco de piña con semilla de linaza",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "pina",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "linaza",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de piña: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el semilla de linaza en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el semilla de linaza y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2638",
-  "nombre": "Refresco de piña con hierbabuena",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "pina",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "hierbabuena",
-    "cantidad": 6.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de piña: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el hierbabuena en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el hierbabuena y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2639",
-  "nombre": "Refresco de piña con canela",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "pina",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "canela",
-    "cantidad": 3.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de piña: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el canela en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el canela y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2640",
-  "nombre": "Refresco de piña con jengibre",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "pina",
-    "cantidad": 1.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "jengibre",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de piña: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el jengibre en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el jengibre y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2641",
-  "nombre": "Refresco de naranja con chan",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "naranja",
-    "cantidad": 8.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "chan",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de naranja: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el chan en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el chan y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2642",
-  "nombre": "Refresco de naranja con semilla de linaza",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "naranja",
-    "cantidad": 8.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "linaza",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de naranja: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el semilla de linaza en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el semilla de linaza y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2643",
-  "nombre": "Refresco de naranja con hierbabuena",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "naranja",
-    "cantidad": 8.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "hierbabuena",
-    "cantidad": 6.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de naranja: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el hierbabuena en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el hierbabuena y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2644",
-  "nombre": "Refresco de naranja con canela",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "naranja",
-    "cantidad": 8.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "canela",
-    "cantidad": 3.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de naranja: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el canela en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el canela y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2645",
-  "nombre": "Refresco de naranja con jengibre",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "naranja",
-    "cantidad": 8.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "jengibre",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de naranja: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el jengibre en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el jengibre y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2646",
-  "nombre": "Refresco de melón con chan",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "melon",
-    "cantidad": 3.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "chan",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de melón: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el chan en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el chan y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2647",
-  "nombre": "Refresco de melón con semilla de linaza",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "melon",
-    "cantidad": 3.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "linaza",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de melón: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el semilla de linaza en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el semilla de linaza y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2648",
-  "nombre": "Refresco de melón con hierbabuena",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "melon",
-    "cantidad": 3.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "hierbabuena",
-    "cantidad": 6.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de melón: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el hierbabuena en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el hierbabuena y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2649",
-  "nombre": "Refresco de melón con canela",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "melon",
-    "cantidad": 3.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "canela",
-    "cantidad": 3.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de melón: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el canela en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el canela y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2650",
-  "nombre": "Refresco de melón con jengibre",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "melon",
-    "cantidad": 3.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "jengibre",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de melón: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el jengibre en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el jengibre y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2651",
-  "nombre": "Refresco de sandía con chan",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "sandia",
-    "cantidad": 3.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "chan",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de sandía: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el chan en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el chan y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2652",
-  "nombre": "Refresco de sandía con semilla de linaza",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "sandia",
-    "cantidad": 3.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "linaza",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de sandía: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el semilla de linaza en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el semilla de linaza y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2653",
-  "nombre": "Refresco de sandía con hierbabuena",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "sandia",
-    "cantidad": 3.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "hierbabuena",
-    "cantidad": 6.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de sandía: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el hierbabuena en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el hierbabuena y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2654",
-  "nombre": "Refresco de sandía con canela",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "sandia",
-    "cantidad": 3.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "canela",
-    "cantidad": 3.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de sandía: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el canela en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el canela y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2655",
-  "nombre": "Refresco de sandía con jengibre",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "sandia",
-    "cantidad": 3.0,
-    "unidad": "libra",
-    "opcional": false
-   },
-   {
-    "clave": "jengibre",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de sandía: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el jengibre en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el jengibre y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2656",
-  "nombre": "Refresco de mango con chan",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "mango",
-    "cantidad": 4.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "chan",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de mango: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el chan en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el chan y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2657",
-  "nombre": "Refresco de mango con semilla de linaza",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "mango",
-    "cantidad": 4.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "linaza",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de mango: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el semilla de linaza en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el semilla de linaza y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2658",
-  "nombre": "Refresco de mango con hierbabuena",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "mango",
-    "cantidad": 4.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "hierbabuena",
-    "cantidad": 6.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de mango: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el hierbabuena en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el hierbabuena y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2659",
-  "nombre": "Refresco de mango con canela",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "mango",
-    "cantidad": 4.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "canela",
-    "cantidad": 3.0,
-    "unidad": "rama",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de mango: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el canela en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el canela y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
-  ]
- },
- {
-  "id": "gt-2660",
-  "nombre": "Refresco de mango con jengibre",
-  "categoria": "Bebidas y atoles",
-  "descripcion": "Refresco de fruta con semillas o hierbas, de los que se venden en bolsa en las ventas de mercado y en las esquinas.",
-  "dificultad": "fácil",
-  "tiempo_min": 20,
-  "porciones": 8,
-  "vegetariano": true,
-  "vegano": true,
-  "sin_gluten": true,
-  "ingredientes": [
-   {
-    "clave": "mango",
-    "cantidad": 4.0,
-    "unidad": "unidad",
-    "opcional": false
-   },
-   {
-    "clave": "jengibre",
-    "cantidad": 2.0,
-    "unidad": "onza",
-    "opcional": false
-   },
-   {
-    "clave": "azucar",
-    "cantidad": 0.75,
-    "unidad": "taza",
-    "opcional": false
-   },
-   {
-    "clave": "limon",
-    "cantidad": 3.0,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sal",
-    "cantidad": 0.1,
-    "unidad": "cucharadita",
-    "opcional": true
-   }
-  ],
-  "pasos": [
-   "Preparar la base de mango: licuar con agua o hervir y colar, según la fruta.",
-   "Remojar el jengibre en agua hasta que se hidrate, si corresponde.",
-   "Mezclar la base con agua fría y endulzar poco a poco, probando.",
-   "Agregar el jengibre y el jugo de limón.",
-   "Refrigerar y servir bien frío con hielo."
   ]
  },
  {
@@ -263301,9 +259695,9 @@
  },
  {
   "id": "gt-3424",
-  "nombre": "Fruta picada",
+  "nombre": "Papaya picada",
   "categoria": "Postres y dulces",
-  "descripcion": "Fruta de temporada con limón y sal.",
+  "descripcion": "Fruta fresca picada, con limón al gusto.",
   "dificultad": "fácil",
   "tiempo_min": 10,
   "porciones": 2,
@@ -263312,68 +259706,14 @@
   "sin_gluten": true,
   "ingredientes": [
    {
+    "clave": "papaya",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": false
+   },
+   {
     "clave": "limon",
     "cantidad": 1,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "papaya",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "pina",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "melon",
-    "cantidad": 0.5,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "sandia",
-    "cantidad": 0.25,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "mango",
-    "cantidad": 1,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "fresa",
-    "cantidad": 0.5,
-    "unidad": "libra",
-    "opcional": true
-   },
-   {
-    "clave": "manzana",
-    "cantidad": 1,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "naranja",
-    "cantidad": 2,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "banano",
-    "cantidad": 1,
-    "unidad": "unidad",
-    "opcional": true
-   },
-   {
-    "clave": "durazno",
-    "cantidad": 2,
     "unidad": "unidad",
     "opcional": true
    },
@@ -263385,12 +259725,300 @@
    }
   ],
   "pasos": [
-   "Pelar y picar la fruta que haya.",
-   "Echarle limón y una pizca de sal."
+   "Lavar, pelar y picar la fruta.",
+   "Echarle limón si hay y una pizca de sal o azúcar al gusto."
   ]
  },
  {
   "id": "gt-3425",
+  "nombre": "Piña picada",
+  "categoria": "Postres y dulces",
+  "descripcion": "Fruta fresca picada, con limón al gusto.",
+  "dificultad": "fácil",
+  "tiempo_min": 10,
+  "porciones": 2,
+  "vegetariano": true,
+  "vegano": true,
+  "sin_gluten": true,
+  "ingredientes": [
+   {
+    "clave": "pina",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": false
+   },
+   {
+    "clave": "limon",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": true
+   },
+   {
+    "clave": "sal",
+    "cantidad": 1,
+    "unidad": "cucharadita",
+    "opcional": false
+   }
+  ],
+  "pasos": [
+   "Lavar, pelar y picar la fruta.",
+   "Echarle limón si hay y una pizca de sal o azúcar al gusto."
+  ]
+ },
+ {
+  "id": "gt-3426",
+  "nombre": "Melón picado",
+  "categoria": "Postres y dulces",
+  "descripcion": "Fruta fresca picada, con limón al gusto.",
+  "dificultad": "fácil",
+  "tiempo_min": 10,
+  "porciones": 2,
+  "vegetariano": true,
+  "vegano": true,
+  "sin_gluten": true,
+  "ingredientes": [
+   {
+    "clave": "melon",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": false
+   },
+   {
+    "clave": "limon",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": true
+   },
+   {
+    "clave": "sal",
+    "cantidad": 1,
+    "unidad": "cucharadita",
+    "opcional": false
+   }
+  ],
+  "pasos": [
+   "Lavar, pelar y picar la fruta.",
+   "Echarle limón si hay y una pizca de sal o azúcar al gusto."
+  ]
+ },
+ {
+  "id": "gt-3427",
+  "nombre": "Sandía picada",
+  "categoria": "Postres y dulces",
+  "descripcion": "Fruta fresca picada, con limón al gusto.",
+  "dificultad": "fácil",
+  "tiempo_min": 10,
+  "porciones": 2,
+  "vegetariano": true,
+  "vegano": true,
+  "sin_gluten": true,
+  "ingredientes": [
+   {
+    "clave": "sandia",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": false
+   },
+   {
+    "clave": "limon",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": true
+   },
+   {
+    "clave": "sal",
+    "cantidad": 1,
+    "unidad": "cucharadita",
+    "opcional": false
+   }
+  ],
+  "pasos": [
+   "Lavar, pelar y picar la fruta.",
+   "Echarle limón si hay y una pizca de sal o azúcar al gusto."
+  ]
+ },
+ {
+  "id": "gt-3428",
+  "nombre": "Fresas picadas",
+  "categoria": "Postres y dulces",
+  "descripcion": "Fruta fresca picada, con limón al gusto.",
+  "dificultad": "fácil",
+  "tiempo_min": 10,
+  "porciones": 2,
+  "vegetariano": true,
+  "vegano": true,
+  "sin_gluten": true,
+  "ingredientes": [
+   {
+    "clave": "fresa",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": false
+   },
+   {
+    "clave": "limon",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": true
+   },
+   {
+    "clave": "sal",
+    "cantidad": 1,
+    "unidad": "cucharadita",
+    "opcional": false
+   }
+  ],
+  "pasos": [
+   "Lavar, pelar y picar la fruta.",
+   "Echarle limón si hay y una pizca de sal o azúcar al gusto."
+  ]
+ },
+ {
+  "id": "gt-3429",
+  "nombre": "Manzana picada",
+  "categoria": "Postres y dulces",
+  "descripcion": "Fruta fresca picada, con limón al gusto.",
+  "dificultad": "fácil",
+  "tiempo_min": 10,
+  "porciones": 2,
+  "vegetariano": true,
+  "vegano": true,
+  "sin_gluten": true,
+  "ingredientes": [
+   {
+    "clave": "manzana",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": false
+   },
+   {
+    "clave": "limon",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": true
+   },
+   {
+    "clave": "sal",
+    "cantidad": 1,
+    "unidad": "cucharadita",
+    "opcional": false
+   }
+  ],
+  "pasos": [
+   "Lavar, pelar y picar la fruta.",
+   "Echarle limón si hay y una pizca de sal o azúcar al gusto."
+  ]
+ },
+ {
+  "id": "gt-3430",
+  "nombre": "Naranja picada",
+  "categoria": "Postres y dulces",
+  "descripcion": "Fruta fresca picada, con limón al gusto.",
+  "dificultad": "fácil",
+  "tiempo_min": 10,
+  "porciones": 2,
+  "vegetariano": true,
+  "vegano": true,
+  "sin_gluten": true,
+  "ingredientes": [
+   {
+    "clave": "naranja",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": false
+   },
+   {
+    "clave": "limon",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": true
+   },
+   {
+    "clave": "sal",
+    "cantidad": 1,
+    "unidad": "cucharadita",
+    "opcional": false
+   }
+  ],
+  "pasos": [
+   "Lavar, pelar y picar la fruta.",
+   "Echarle limón si hay y una pizca de sal o azúcar al gusto."
+  ]
+ },
+ {
+  "id": "gt-3431",
+  "nombre": "Duraznos picados",
+  "categoria": "Postres y dulces",
+  "descripcion": "Fruta fresca picada, con limón al gusto.",
+  "dificultad": "fácil",
+  "tiempo_min": 10,
+  "porciones": 2,
+  "vegetariano": true,
+  "vegano": true,
+  "sin_gluten": true,
+  "ingredientes": [
+   {
+    "clave": "durazno",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": false
+   },
+   {
+    "clave": "limon",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": true
+   },
+   {
+    "clave": "sal",
+    "cantidad": 1,
+    "unidad": "cucharadita",
+    "opcional": false
+   }
+  ],
+  "pasos": [
+   "Lavar, pelar y picar la fruta.",
+   "Echarle limón si hay y una pizca de sal o azúcar al gusto."
+  ]
+ },
+ {
+  "id": "gt-3432",
+  "nombre": "Mango picado",
+  "categoria": "Postres y dulces",
+  "descripcion": "Fruta fresca picada, con limón al gusto.",
+  "dificultad": "fácil",
+  "tiempo_min": 10,
+  "porciones": 2,
+  "vegetariano": true,
+  "vegano": true,
+  "sin_gluten": true,
+  "ingredientes": [
+   {
+    "clave": "mango",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": false
+   },
+   {
+    "clave": "limon",
+    "cantidad": 1,
+    "unidad": "unidad",
+    "opcional": true
+   },
+   {
+    "clave": "sal",
+    "cantidad": 1,
+    "unidad": "cucharadita",
+    "opcional": false
+   }
+  ],
+  "pasos": [
+   "Lavar, pelar y picar la fruta.",
+   "Echarle limón si hay y una pizca de sal o azúcar al gusto."
+  ]
+ },
+ {
+  "id": "gt-3433",
   "nombre": "Banano con crema",
   "categoria": "Postres y dulces",
   "descripcion": "Postre rápido de banano con crema.",
@@ -263426,7 +260054,7 @@
   ]
  },
  {
-  "id": "gt-3426",
+  "id": "gt-3434",
   "nombre": "Café con leche",
   "categoria": "Bebidas y atoles",
   "descripcion": "Cafecito con leche caliente.",
@@ -263463,7 +260091,7 @@
   ]
  },
  {
-  "id": "gt-3427",
+  "id": "gt-3435",
   "nombre": "Chocolate caliente",
   "categoria": "Bebidas y atoles",
   "descripcion": "Chocolate de tablilla deshecho en leche.",
@@ -263500,7 +260128,7 @@
   ]
  },
  {
-  "id": "gt-3428",
+  "id": "gt-3436",
   "nombre": "Arroz blanco sencillo",
   "categoria": "Rápidas y fáciles",
   "descripcion": "Arroz blanco de todos los días.",
@@ -263556,7 +260184,7 @@
   ]
  },
  {
-  "id": "gt-3429",
+  "id": "gt-3437",
   "nombre": "Tortillas tostadas",
   "categoria": "Antojitos y comida de calle",
   "descripcion": "Tortillas del día anterior doraditas y con sal.",
@@ -263600,7 +260228,7 @@
   ]
  },
  {
-  "id": "gt-3430",
+  "id": "gt-3438",
   "nombre": "Pan tostado",
   "categoria": "Desayunos",
   "descripcion": "Pan francés tostado al comal.",
@@ -263649,7 +260277,7 @@
   ]
  },
  {
-  "id": "gt-3431",
+  "id": "gt-3439",
   "nombre": "Curtido sencillo",
   "categoria": "Antojitos y comida de calle",
   "descripcion": "Repollo picado con vinagre o limón, para acompañar.",
@@ -263717,7 +260345,7 @@
   ]
  },
  {
-  "id": "gt-3432",
+  "id": "gt-3440",
   "nombre": "Queso frito",
   "categoria": "Antojitos y comida de calle",
   "descripcion": "Queso fresco dorado al sartén.",
@@ -263760,7 +260388,7 @@
   ]
  },
  {
-  "id": "gt-3433",
+  "id": "gt-3441",
   "nombre": "Carne deshebrada sencilla",
   "categoria": "Rápidas y fáciles",
   "descripcion": "Carne de res cocida y deshebrada.",
@@ -263816,7 +260444,7 @@
   ]
  },
  {
-  "id": "gt-3434",
+  "id": "gt-3442",
   "nombre": "Costillas de cerdo fritas",
   "categoria": "Rápidas y fáciles",
   "descripcion": "Costillitas cocidas y doradas al sartén.",
@@ -263866,7 +260494,7 @@
   ]
  },
  {
-  "id": "gt-3435",
+  "id": "gt-3443",
   "nombre": "Guacamol sencillo",
   "categoria": "Antojitos y comida de calle",
   "descripcion": "Aguacate machacado con sal y lo que haya.",
@@ -263927,7 +260555,7 @@
   ]
  },
  {
-  "id": "gt-3436",
+  "id": "gt-3444",
   "nombre": "Leche caliente con canela",
   "categoria": "Bebidas y atoles",
   "descripcion": "Leche calientita con canela para la noche.",
@@ -263957,7 +260585,7 @@
   ]
  },
  {
-  "id": "gt-3437",
+  "id": "gt-3445",
   "nombre": "Tajadas de plátano verde",
   "categoria": "Antojitos y comida de calle",
   "descripcion": "Chips de plátano verde, bien crujientes.",
@@ -264001,7 +260629,7 @@
   ]
  },
  {
-  "id": "gt-3438",
+  "id": "gt-3446",
   "nombre": "Pasta sencilla",
   "categoria": "Rápidas y fáciles",
   "descripcion": "Pasta con aceite y lo que haya.",
@@ -264058,7 +260686,7 @@
   ]
  },
  {
-  "id": "gt-3439",
+  "id": "gt-3447",
   "nombre": "Mosh sencillo",
   "categoria": "Desayunos",
   "descripcion": "Mosh calientito para el desayuno.",
@@ -264108,7 +260736,7 @@
   ]
  },
  {
-  "id": "gt-3440",
+  "id": "gt-3448",
   "nombre": "Banano frito",
   "categoria": "Postres y dulces",
   "descripcion": "Banano dorado con azúcar y canela.",
@@ -264139,7 +260767,7 @@
   ]
  },
  {
-  "id": "gt-3441",
+  "id": "gt-3449",
   "nombre": "Camote en dulce",
   "categoria": "Postres y dulces",
   "descripcion": "Camote cocido en miel de azúcar y canela.",
@@ -264169,7 +260797,7 @@
   ]
  },
  {
-  "id": "gt-3442",
+  "id": "gt-3450",
   "nombre": "Ensalada de remolacha",
   "categoria": "Antojitos y comida de calle",
   "descripcion": "Remolacha cocida con limón y sal.",
@@ -264225,7 +260853,7 @@
   ]
  },
  {
-  "id": "gt-3443",
+  "id": "gt-3451",
   "nombre": "Pepino picado con sal",
   "categoria": "Antojitos y comida de calle",
   "descripcion": "Pepino fresquito con sal.",
@@ -264274,7 +260902,7 @@
   ]
  },
  {
-  "id": "gt-3444",
+  "id": "gt-3452",
   "nombre": "Ensalada de lechuga",
   "categoria": "Antojitos y comida de calle",
   "descripcion": "Ensalada verde con lo que haya.",
@@ -264348,7 +260976,7 @@
   ]
  },
  {
-  "id": "gt-3445",
+  "id": "gt-3453",
   "nombre": "Rábanos con sal",
   "categoria": "Antojitos y comida de calle",
   "descripcion": "Rábanos frescos con sal.",
@@ -264397,7 +261025,7 @@
   ]
  },
  {
-  "id": "gt-3446",
+  "id": "gt-3454",
   "nombre": "Café negro",
   "categoria": "Bebidas y atoles",
   "descripcion": "Cafecito de olla, negro.",
@@ -264427,7 +261055,7 @@
   ]
  },
  {
-  "id": "gt-3447",
+  "id": "gt-3455",
   "nombre": "Tortillas de harina",
   "categoria": "Antojitos y comida de calle",
   "descripcion": "Tortillas suaves de harina, hechas en casa.",
