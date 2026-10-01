@@ -44,7 +44,8 @@ for ingrediente in INGREDIENTES:
 EN_CHECKLIST = [
     # carnes y mariscos
     "pollo_granja", "res_lomo", "res_falda", "cerdo_lomo", "cerdo_costilla", "higado_res",
-    "chorizo", "longaniza", "salchicha", "camaron", "pescado_blanco",
+    "chorizo", "longaniza", "salchicha", "camaron", "pescado_blanco", "atun", "sardina",
+    "surimi", "pulpo", "concha_negra", "caracol_mar", "camaron_seco",
     # huevo y lácteos
     "huevo", "leche", "crema", "queso_fresco", "queso_seco", "mantequilla",
     # verduras
@@ -59,3 +60,10 @@ EN_CHECKLIST = [
     # otros
     "mayonesa", "consome", "cafe_molido", "chocolate_mesa",
 ]
+
+
+# Proteínas: las recetas que llevan alguna de estas salen primero.
+PROTEINAS = ["huevo", "frijol_negro", "frijol_blanco", "frijol_piloy"]
+for ingrediente in INGREDIENTES:
+    if ingrediente["categoria"] in ["carnes", "embutidos", "mariscos"]:
+        PROTEINAS.append(ingrediente["clave"])

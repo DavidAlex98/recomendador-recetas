@@ -1,547 +1,7 @@
 {
- "total": 197,
+ "total": 203,
  "moneda": "GTQ",
  "ingredientes": [
-  {
-   "clave": "aceite",
-   "nombre": "Aceite vegetal",
-   "nombre_local": "aceite",
-   "categoria": "grasas",
-   "unidad_compra": "taza",
-   "precio_referencia_gtq": 8.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1900,
-    "proteina_g": 0,
-    "grasa_g": 218,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "aceituna",
-   "nombre": "Aceitunas",
-   "nombre_local": "aceituna verde",
-   "categoria": "abarrotes",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 5.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 40,
-    "proteina_g": 0.3,
-    "grasa_g": 4,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "achiote",
-   "nombre": "Achiote",
-   "nombre_local": "achiote en pasta",
-   "categoria": "recados",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 2.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 35,
-    "proteina_g": 1,
-    "grasa_g": 2,
-    "carbohidratos_g": 4
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "achiote_polvo",
-   "nombre": "Achiote en polvo",
-   "nombre_local": "achiote molido",
-   "categoria": "especias",
-   "unidad_compra": "cucharadita",
-   "precio_referencia_gtq": 0.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 5,
-    "proteina_g": 0.2,
-    "grasa_g": 0.2,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "aguacate",
-   "nombre": "Aguacate",
-   "nombre_local": "aguacate criollo",
-   "categoria": "frutas",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 6.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 230,
-    "proteina_g": 3,
-    "grasa_g": 21,
-    "carbohidratos_g": 12
-   },
-   "temporada": "junio a diciembre",
-   "alergenos": []
-  },
-  {
-   "clave": "ajo",
-   "nombre": "Ajo",
-   "nombre_local": "ajo criollo",
-   "categoria": "verduras",
-   "unidad_compra": "diente",
-   "precio_referencia_gtq": 0.4,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 4,
-    "proteina_g": 0.2,
-    "grasa_g": 0,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "ajonjoli",
-   "nombre": "Ajonjolí",
-   "nombre_local": "ajonjolí tostado",
-   "categoria": "semillas",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 3.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 160,
-    "proteina_g": 5,
-    "grasa_g": 14,
-    "carbohidratos_g": 7
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "ajonjolí"
-   ]
-  },
-  {
-   "clave": "albahaca",
-   "nombre": "Albahaca",
-   "nombre_local": "albahaca",
-   "categoria": "hierbas",
-   "unidad_compra": "manojo",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 10,
-    "proteina_g": 1,
-    "grasa_g": 0.2,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "alcaparra",
-   "nombre": "Alcaparras",
-   "nombre_local": "alcaparra",
-   "categoria": "abarrotes",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 7.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 7,
-    "proteina_g": 0.7,
-    "grasa_g": 0.2,
-    "carbohidratos_g": 1.5
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "almendra",
-   "nombre": "Almendra",
-   "nombre_local": "almendra",
-   "categoria": "semillas",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 9.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 164,
-    "proteina_g": 6,
-    "grasa_g": 14,
-    "carbohidratos_g": 6
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "frutos secos"
-   ]
-  },
-  {
-   "clave": "anis",
-   "nombre": "Anís",
-   "nombre_local": "anís en grano",
-   "categoria": "especias",
-   "unidad_compra": "cucharadita",
-   "precio_referencia_gtq": 0.8,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 7,
-    "proteina_g": 0.3,
-    "grasa_g": 0.3,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "anis_estrellado",
-   "nombre": "Anís estrellado",
-   "nombre_local": "anís de estrella",
-   "categoria": "especias",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 0.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 3,
-    "proteina_g": 0.1,
-    "grasa_g": 0.1,
-    "carbohidratos_g": 0.7
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "apazote",
-   "nombre": "Apazote",
-   "nombre_local": "apazote",
-   "categoria": "hierbas",
-   "unidad_compra": "rama",
-   "precio_referencia_gtq": 0.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 2,
-    "proteina_g": 0.1,
-    "grasa_g": 0,
-    "carbohidratos_g": 0.4
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "arroz",
-   "nombre": "Arroz",
-   "nombre_local": "arroz de segunda",
-   "categoria": "granos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 4.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1640,
-    "proteina_g": 30,
-    "grasa_g": 3,
-    "carbohidratos_g": 360
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "arvejas",
-   "nombre": "Arvejas",
-   "nombre_local": "alverja china",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 8.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 370,
-    "proteina_g": 25,
-    "grasa_g": 2,
-    "carbohidratos_g": 66
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "avena",
-   "nombre": "Avena",
-   "nombre_local": "mosh",
-   "categoria": "granos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 8.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1700,
-    "proteina_g": 62,
-    "grasa_g": 30,
-    "carbohidratos_g": 290
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "gluten"
-   ]
-  },
-  {
-   "clave": "ayote",
-   "nombre": "Ayote",
-   "nombre_local": "ayote sazón",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 3.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 118,
-    "proteina_g": 4,
-    "grasa_g": 0.5,
-    "carbohidratos_g": 30
-   },
-   "temporada": "septiembre a diciembre",
-   "alergenos": []
-  },
-  {
-   "clave": "ayote_tierno",
-   "nombre": "Ayote tierno",
-   "nombre_local": "ayotito",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 73,
-    "proteina_g": 3,
-    "grasa_g": 0.3,
-    "carbohidratos_g": 16
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "azucar",
-   "nombre": "Azúcar",
-   "nombre_local": "azúcar blanca",
-   "categoria": "abarrotes",
-   "unidad_compra": "taza",
-   "precio_referencia_gtq": 5.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 770,
-    "proteina_g": 0,
-    "grasa_g": 0,
-    "carbohidratos_g": 200
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "banano",
-   "nombre": "Banano",
-   "nombre_local": "guineo",
-   "categoria": "frutas",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 1.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 105,
-    "proteina_g": 1.3,
-    "grasa_g": 0.4,
-    "carbohidratos_g": 27
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "bicarbonato",
-   "nombre": "Bicarbonato",
-   "nombre_local": "bicarbonato",
-   "categoria": "panaderia",
-   "unidad_compra": "cucharadita",
-   "precio_referencia_gtq": 0.3,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 0,
-    "proteina_g": 0,
-    "grasa_g": 0,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "bledo",
-   "nombre": "Bledo",
-   "nombre_local": "bledo",
-   "categoria": "hierbas",
-   "unidad_compra": "manojo",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 26,
-    "proteina_g": 3,
-    "grasa_g": 0.4,
-    "carbohidratos_g": 4
-   },
-   "temporada": "mayo a octubre",
-   "alergenos": []
-  },
-  {
-   "clave": "brocoli",
-   "nombre": "Brocoli",
-   "nombre_local": "brocoli",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 7.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 155,
-    "proteina_g": 13,
-    "grasa_g": 1.7,
-    "carbohidratos_g": 30
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "cacao",
-   "nombre": "Cacao en grano",
-   "nombre_local": "cacao",
-   "categoria": "abarrotes",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 8.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 140,
-    "proteina_g": 3,
-    "grasa_g": 12,
-    "carbohidratos_g": 8
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "cafe_molido",
-   "nombre": "Café molido",
-   "nombre_local": "café de altura",
-   "categoria": "abarrotes",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 6.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 5,
-    "proteina_g": 0.3,
-    "grasa_g": 0.1,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "camaron",
-   "nombre": "Camaron",
-   "nombre_local": "camaron de rio",
-   "categoria": "mariscos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 45.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 320,
-    "proteina_g": 68,
-    "grasa_g": 4,
-    "carbohidratos_g": 2
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "mariscos"
-   ]
-  },
-  {
-   "clave": "camote",
-   "nombre": "Camote",
-   "nombre_local": "camote morado",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 4.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 390,
-    "proteina_g": 7,
-    "grasa_g": 0.3,
-    "carbohidratos_g": 91
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "canela",
-   "nombre": "Canela en raja",
-   "nombre_local": "canela",
-   "categoria": "especias",
-   "unidad_compra": "rama",
-   "precio_referencia_gtq": 1.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 6,
-    "proteina_g": 0.1,
-    "grasa_g": 0,
-    "carbohidratos_g": 2
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "cangrejo",
-   "nombre": "Cangrejo azul",
-   "nombre_local": "cangrejo",
-   "categoria": "mariscos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 32.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 280,
-    "proteina_g": 58,
-    "grasa_g": 3,
-    "carbohidratos_g": 2
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "mariscos"
-   ]
-  },
-  {
-   "clave": "caracol_mar",
-   "nombre": "Caracol de mar",
-   "nombre_local": "caracol",
-   "categoria": "mariscos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 38.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 300,
-    "proteina_g": 62,
-    "grasa_g": 3,
-    "carbohidratos_g": 4
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "mariscos"
-   ]
-  },
-  {
-   "clave": "carambola",
-   "nombre": "Carambola",
-   "nombre_local": "carambola",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 8.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 140,
-    "proteina_g": 4,
-    "grasa_g": 1.5,
-    "carbohidratos_g": 30
-   },
-   "temporada": "julio a noviembre",
-   "alergenos": []
-  },
-  {
-   "clave": "cebolla",
-   "nombre": "Cebolla",
-   "nombre_local": "cebolla blanca",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 5.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 181,
-    "proteina_g": 5,
-    "grasa_g": 0.5,
-    "carbohidratos_g": 42
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "cebolla_morada",
-   "nombre": "Cebolla morada",
-   "nombre_local": "cebolla morada",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 7.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 181,
-    "proteina_g": 5,
-    "grasa_g": 0.5,
-    "carbohidratos_g": 42
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
   {
    "clave": "cerdo_costilla",
    "nombre": "Costilla de cerdo",
@@ -607,10 +67,802 @@
    "alergenos": []
   },
   {
+   "clave": "chompipe",
+   "nombre": "Chompipe",
+   "nombre_local": "pavo criollo",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 24.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 480,
+    "proteina_g": 92,
+    "grasa_g": 12,
+    "carbohidratos_g": 0
+   },
+   "temporada": "octubre a diciembre",
+   "alergenos": []
+  },
+  {
+   "clave": "conejo",
+   "nombre": "Conejo",
+   "nombre_local": "conejo de campo",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 30.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 500,
+    "proteina_g": 88,
+    "grasa_g": 14,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "gallina_india",
+   "nombre": "Gallina india",
+   "nombre_local": "gallina criolla",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 26.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 500,
+    "proteina_g": 90,
+    "grasa_g": 15,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "higado_res",
+   "nombre": "Hígado de res",
+   "nombre_local": "higado",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 18.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 600,
+    "proteina_g": 90,
+    "grasa_g": 18,
+    "carbohidratos_g": 12
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "menudos_pollo",
+   "nombre": "Menudos de pollo",
+   "nombre_local": "menudo",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 14.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 500,
+    "proteina_g": 76,
+    "grasa_g": 20,
+    "carbohidratos_g": 4
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "panza_res",
+   "nombre": "Panza de res",
+   "nombre_local": "mondongo",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 20.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 390,
+    "proteina_g": 68,
+    "grasa_g": 12,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "pato",
+   "nombre": "Pato",
+   "nombre_local": "pato criollo",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 28.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 620,
+    "proteina_g": 78,
+    "grasa_g": 34,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "pollo_criollo",
+   "nombre": "Pollo criollo",
+   "nombre_local": "pollo de patio",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 22.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 520,
+    "proteina_g": 88,
+    "grasa_g": 18,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "pollo_granja",
+   "nombre": "Pollo de granja",
+   "nombre_local": "pollo",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 14.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 540,
+    "proteina_g": 86,
+    "grasa_g": 21,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "res_costilla",
+   "nombre": "Costilla de res",
+   "nombre_local": "costilla",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 30.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 780,
+    "proteina_g": 74,
+    "grasa_g": 52,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "res_espinazo",
+   "nombre": "Espinazo de res",
+   "nombre_local": "espinazo",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 22.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 620,
+    "proteina_g": 68,
+    "grasa_g": 38,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "res_falda",
+   "nombre": "Falda de res",
+   "nombre_local": "falda",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 32.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 700,
+    "proteina_g": 82,
+    "grasa_g": 40,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "res_hueso",
+   "nombre": "Hueso de res con tuetano",
+   "nombre_local": "hueso de caracol",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 16.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 420,
+    "proteina_g": 40,
+    "grasa_g": 30,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "res_lomo",
+   "nombre": "Lomo de res",
+   "nombre_local": "lomito",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 45.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 600,
+    "proteina_g": 96,
+    "grasa_g": 22,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "res_pata",
+   "nombre": "Pata de res",
+   "nombre_local": "pata",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 18.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 560,
+    "proteina_g": 66,
+    "grasa_g": 32,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "chorizo",
+   "nombre": "Chorizo",
+   "nombre_local": "chorizo criollo",
+   "categoria": "embutidos",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 28.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1100,
+    "proteina_g": 60,
+    "grasa_g": 96,
+    "carbohidratos_g": 4
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "chorizo_zacapa",
+   "nombre": "Chorizo de Zacapa",
+   "nombre_local": "chorizo de Zacapa",
+   "categoria": "embutidos",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 34.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1150,
+    "proteina_g": 62,
+    "grasa_g": 100,
+    "carbohidratos_g": 4
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "longaniza",
+   "nombre": "Longaniza",
+   "nombre_local": "longaniza",
+   "categoria": "embutidos",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 26.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1050,
+    "proteina_g": 58,
+    "grasa_g": 90,
+    "carbohidratos_g": 4
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "salchicha",
+   "nombre": "Salchicha",
+   "nombre_local": "salchicha de coctel",
+   "categoria": "embutidos",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 20.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1000,
+    "proteina_g": 48,
+    "grasa_g": 88,
+    "carbohidratos_g": 8
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "camaron",
+   "nombre": "Camarón",
+   "nombre_local": "camaron de rio",
+   "categoria": "mariscos",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 45.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 320,
+    "proteina_g": 68,
+    "grasa_g": 4,
+    "carbohidratos_g": 2
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "mariscos"
+   ]
+  },
+  {
+   "clave": "cangrejo",
+   "nombre": "Cangrejo azul",
+   "nombre_local": "cangrejo",
+   "categoria": "mariscos",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 32.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 280,
+    "proteina_g": 58,
+    "grasa_g": 3,
+    "carbohidratos_g": 2
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "mariscos"
+   ]
+  },
+  {
+   "clave": "caracol_mar",
+   "nombre": "Caracol de mar",
+   "nombre_local": "caracol",
+   "categoria": "mariscos",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 38.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 300,
+    "proteina_g": 62,
+    "grasa_g": 3,
+    "carbohidratos_g": 4
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "mariscos"
+   ]
+  },
+  {
+   "clave": "jaiba",
+   "nombre": "Jaiba",
+   "nombre_local": "jaiba",
+   "categoria": "mariscos",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 30.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 280,
+    "proteina_g": 58,
+    "grasa_g": 3,
+    "carbohidratos_g": 2
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "mariscos"
+   ]
+  },
+  {
+   "clave": "pescado_blanco",
+   "nombre": "Pescado blanco",
+   "nombre_local": "mojarra o robalo",
+   "categoria": "mariscos",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 26.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 420,
+    "proteina_g": 88,
+    "grasa_g": 6,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "pescado"
+   ]
+  },
+  {
+   "clave": "pescado_seco",
+   "nombre": "Pescado seco",
+   "nombre_local": "bacalao seco",
+   "categoria": "mariscos",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 40.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 400,
+    "proteina_g": 90,
+    "grasa_g": 4,
+    "carbohidratos_g": 0
+   },
+   "temporada": "febrero a abril",
+   "alergenos": [
+    "pescado"
+   ]
+  },
+  {
+   "clave": "atun",
+   "nombre": "Atún en lata",
+   "nombre_local": "atún",
+   "categoria": "mariscos",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 190,
+    "proteina_g": 40,
+    "grasa_g": 2,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "pescado"
+   ]
+  },
+  {
+   "clave": "sardina",
+   "nombre": "Sardinas en lata",
+   "nombre_local": "sardinas",
+   "categoria": "mariscos",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 10.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 310,
+    "proteina_g": 36,
+    "grasa_g": 17,
+    "carbohidratos_g": 2
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "pescado"
+   ]
+  },
+  {
+   "clave": "surimi",
+   "nombre": "Surimi",
+   "nombre_local": "palitos de cangrejo",
+   "categoria": "mariscos",
+   "unidad_compra": "paquete",
+   "precio_referencia_gtq": 20.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 250,
+    "proteina_g": 30,
+    "grasa_g": 2,
+    "carbohidratos_g": 3
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "mariscos"
+   ]
+  },
+  {
+   "clave": "pulpo",
+   "nombre": "Pulpo",
+   "nombre_local": "pulpo",
+   "categoria": "mariscos",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 55.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 370,
+    "proteina_g": 67,
+    "grasa_g": 2,
+    "carbohidratos_g": 3
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "mariscos"
+   ]
+  },
+  {
+   "clave": "concha_negra",
+   "nombre": "Conchas negras",
+   "nombre_local": "conchas",
+   "categoria": "mariscos",
+   "unidad_compra": "docena",
+   "precio_referencia_gtq": 40.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 150,
+    "proteina_g": 25,
+    "grasa_g": 2,
+    "carbohidratos_g": 3
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "mariscos"
+   ]
+  },
+  {
+   "clave": "camaron_seco",
+   "nombre": "Camarón seco",
+   "nombre_local": "camaroncito seco",
+   "categoria": "mariscos",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 80,
+    "proteina_g": 17,
+    "grasa_g": 2,
+    "carbohidratos_g": 3
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "mariscos"
+   ]
+  },
+  {
+   "clave": "crema",
+   "nombre": "Crema",
+   "nombre_local": "crema guatemalteca",
+   "categoria": "lácteos y huevo",
+   "unidad_compra": "taza",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 400,
+    "proteina_g": 4,
+    "grasa_g": 40,
+    "carbohidratos_g": 8
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "lacteos"
+   ]
+  },
+  {
+   "clave": "huevo",
+   "nombre": "Huevo",
+   "nombre_local": "huevo criollo",
+   "categoria": "lácteos y huevo",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 1.6,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 72,
+    "proteina_g": 6,
+    "grasa_g": 5,
+    "carbohidratos_g": 0.4
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "huevo"
+   ]
+  },
+  {
+   "clave": "leche",
+   "nombre": "Leche",
+   "nombre_local": "leche fluida",
+   "categoria": "lácteos y huevo",
+   "unidad_compra": "taza",
+   "precio_referencia_gtq": 5.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 150,
+    "proteina_g": 8,
+    "grasa_g": 8,
+    "carbohidratos_g": 12
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "lacteos"
+   ]
+  },
+  {
+   "clave": "leche_condensada",
+   "nombre": "Leche condensada",
+   "nombre_local": "leche condensada",
+   "categoria": "lácteos y huevo",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 18.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1300,
+    "proteina_g": 32,
+    "grasa_g": 35,
+    "carbohidratos_g": 220
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "lacteos"
+   ]
+  },
+  {
+   "clave": "mantequilla",
+   "nombre": "Mantequilla",
+   "nombre_local": "mantequilla",
+   "categoria": "lácteos y huevo",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 200,
+    "proteina_g": 0.2,
+    "grasa_g": 23,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "lacteos"
+   ]
+  },
+  {
+   "clave": "queso_fresco",
+   "nombre": "Queso fresco",
+   "nombre_local": "queso de capas",
+   "categoria": "lácteos y huevo",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 30.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1200,
+    "proteina_g": 90,
+    "grasa_g": 88,
+    "carbohidratos_g": 12
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "lacteos"
+   ]
+  },
+  {
+   "clave": "queso_seco",
+   "nombre": "Queso seco",
+   "nombre_local": "queso duro de Zacapa",
+   "categoria": "lácteos y huevo",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 110,
+    "proteina_g": 8,
+    "grasa_g": 8,
+    "carbohidratos_g": 1
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "lacteos"
+   ]
+  },
+  {
+   "clave": "requeson",
+   "nombre": "Requesón",
+   "nombre_local": "requeson",
+   "categoria": "lácteos y huevo",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 22.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 740,
+    "proteina_g": 68,
+    "grasa_g": 44,
+    "carbohidratos_g": 16
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "lacteos"
+   ]
+  },
+  {
+   "clave": "ajo",
+   "nombre": "Ajo",
+   "nombre_local": "ajo criollo",
+   "categoria": "verduras",
+   "unidad_compra": "diente",
+   "precio_referencia_gtq": 0.4,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 4,
+    "proteina_g": 0.2,
+    "grasa_g": 0,
+    "carbohidratos_g": 1
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "arvejas",
+   "nombre": "Arvejas",
+   "nombre_local": "alverja china",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 370,
+    "proteina_g": 25,
+    "grasa_g": 2,
+    "carbohidratos_g": 66
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "ayote",
+   "nombre": "Ayote",
+   "nombre_local": "ayote sazón",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 3.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 118,
+    "proteina_g": 4,
+    "grasa_g": 0.5,
+    "carbohidratos_g": 30
+   },
+   "temporada": "septiembre a diciembre",
+   "alergenos": []
+  },
+  {
+   "clave": "ayote_tierno",
+   "nombre": "Ayote tierno",
+   "nombre_local": "ayotito",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 73,
+    "proteina_g": 3,
+    "grasa_g": 0.3,
+    "carbohidratos_g": 16
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "brocoli",
+   "nombre": "Brócoli",
+   "nombre_local": "brocoli",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 7.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 155,
+    "proteina_g": 13,
+    "grasa_g": 1.7,
+    "carbohidratos_g": 30
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "camote",
+   "nombre": "Camote",
+   "nombre_local": "camote morado",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 4.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 390,
+    "proteina_g": 7,
+    "grasa_g": 0.3,
+    "carbohidratos_g": 91
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "cebolla",
+   "nombre": "Cebolla",
+   "nombre_local": "cebolla blanca",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 5.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 181,
+    "proteina_g": 5,
+    "grasa_g": 0.5,
+    "carbohidratos_g": 42
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "cebolla_morada",
+   "nombre": "Cebolla morada",
+   "nombre_local": "cebolla morada",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 7.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 181,
+    "proteina_g": 5,
+    "grasa_g": 0.5,
+    "carbohidratos_g": 42
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
    "clave": "champinon",
    "nombre": "Champiñones",
    "nombre_local": "champiñón",
-   "categoria": "hongos",
+   "categoria": "verduras",
    "unidad_compra": "libra",
    "precio_referencia_gtq": 14.0,
    "nutricion_por_unidad": {
@@ -618,38 +870,6 @@
     "proteina_g": 14,
     "grasa_g": 1.5,
     "carbohidratos_g": 15
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "chan",
-   "nombre": "Chan",
-   "nombre_local": "semilla de chan",
-   "categoria": "semillas",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 6.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 135,
-    "proteina_g": 5,
-    "grasa_g": 8,
-    "carbohidratos_g": 12
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "chicha",
-   "nombre": "Chicha",
-   "nombre_local": "chicha de maíz fermentada",
-   "categoria": "bebidas",
-   "unidad_compra": "litro",
-   "precio_referencia_gtq": 18.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 400,
-    "proteina_g": 3,
-    "grasa_g": 0.5,
-    "carbohidratos_g": 90
    },
    "temporada": "todo el año",
    "alergenos": []
@@ -668,6 +888,1493 @@
     "carbohidratos_g": 18
    },
    "temporada": "septiembre a diciembre",
+   "alergenos": []
+  },
+  {
+   "clave": "chile_pimiento",
+   "nombre": "Chile pimiento",
+   "nombre_local": "chile pimiento",
+   "categoria": "verduras",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 30,
+    "proteina_g": 1,
+    "grasa_g": 0.3,
+    "carbohidratos_g": 7
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "coliflor",
+   "nombre": "Coliflor",
+   "nombre_local": "coliflor",
+   "categoria": "verduras",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 146,
+    "proteina_g": 11,
+    "grasa_g": 1.7,
+    "carbohidratos_g": 29
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "curtido_prep",
+   "nombre": "Curtido de repollo",
+   "nombre_local": "curtido",
+   "categoria": "verduras",
+   "unidad_compra": "taza",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 30,
+    "proteina_g": 1.5,
+    "grasa_g": 0.2,
+    "carbohidratos_g": 6
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "ejote",
+   "nombre": "Ejote",
+   "nombre_local": "ejote frances",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 7.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 141,
+    "proteina_g": 8,
+    "grasa_g": 0.5,
+    "carbohidratos_g": 32
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "espinaca",
+   "nombre": "Espinaca",
+   "nombre_local": "espinaca",
+   "categoria": "verduras",
+   "unidad_compra": "manojo",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 30,
+    "proteina_g": 4,
+    "grasa_g": 0.5,
+    "carbohidratos_g": 4
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "flor_izote",
+   "nombre": "Flor de izote",
+   "nombre_local": "izote",
+   "categoria": "verduras",
+   "unidad_compra": "manojo",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 30,
+    "proteina_g": 2,
+    "grasa_g": 0.3,
+    "carbohidratos_g": 6
+   },
+   "temporada": "febrero a abril",
+   "alergenos": []
+  },
+  {
+   "clave": "guisquil",
+   "nombre": "Güisquil",
+   "nombre_local": "guisquil",
+   "categoria": "verduras",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 39,
+    "proteina_g": 1.5,
+    "grasa_g": 0.3,
+    "carbohidratos_g": 9
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "hongos_san_juan",
+   "nombre": "Hongos de San Juan",
+   "nombre_local": "hongo de San Juan",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 18.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 100,
+    "proteina_g": 14,
+    "grasa_g": 1.5,
+    "carbohidratos_g": 15
+   },
+   "temporada": "junio a agosto",
+   "alergenos": []
+  },
+  {
+   "clave": "lechuga",
+   "nombre": "Lechuga",
+   "nombre_local": "lechuga romana",
+   "categoria": "verduras",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 6.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 30,
+    "proteina_g": 2,
+    "grasa_g": 0.3,
+    "carbohidratos_g": 6
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "malanga",
+   "nombre": "Malanga",
+   "nombre_local": "quiquisque",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 6.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 525,
+    "proteina_g": 7,
+    "grasa_g": 1,
+    "carbohidratos_g": 125
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "miltomate",
+   "nombre": "Miltomate",
+   "nombre_local": "miltomate",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 7.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 145,
+    "proteina_g": 4,
+    "grasa_g": 5,
+    "carbohidratos_g": 26
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "pacaya",
+   "nombre": "Pacaya",
+   "nombre_local": "pacaya",
+   "categoria": "verduras",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 28,
+    "proteina_g": 2,
+    "grasa_g": 0.3,
+    "carbohidratos_g": 5
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "papa",
+   "nombre": "Papa",
+   "nombre_local": "papa loca",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 350,
+    "proteina_g": 9,
+    "grasa_g": 0.5,
+    "carbohidratos_g": 80
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "pepino",
+   "nombre": "Pepino",
+   "nombre_local": "pepino",
+   "categoria": "verduras",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 25,
+    "proteina_g": 1,
+    "grasa_g": 0.2,
+    "carbohidratos_g": 6
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "platano_verde",
+   "nombre": "Plátano verde",
+   "nombre_local": "plátano verde",
+   "categoria": "verduras",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 220,
+    "proteina_g": 2,
+    "grasa_g": 0.6,
+    "carbohidratos_g": 57
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "poro",
+   "nombre": "Poro",
+   "nombre_local": "puerro",
+   "categoria": "verduras",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 54,
+    "proteina_g": 1.3,
+    "grasa_g": 0.3,
+    "carbohidratos_g": 13
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "rabano",
+   "nombre": "Rábano",
+   "nombre_local": "rabano",
+   "categoria": "verduras",
+   "unidad_compra": "manojo",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 16,
+    "proteina_g": 0.7,
+    "grasa_g": 0.1,
+    "carbohidratos_g": 3
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "remolacha",
+   "nombre": "Remolacha",
+   "nombre_local": "remolacha",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 195,
+    "proteina_g": 7,
+    "grasa_g": 0.7,
+    "carbohidratos_g": 44
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "repollo",
+   "nombre": "Repollo",
+   "nombre_local": "repollo blanco",
+   "categoria": "verduras",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 200,
+    "proteina_g": 10,
+    "grasa_g": 1,
+    "carbohidratos_g": 47
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "tomate",
+   "nombre": "Tomate",
+   "nombre_local": "tomate de cocina",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 5.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 82,
+    "proteina_g": 4,
+    "grasa_g": 1,
+    "carbohidratos_g": 18
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "yuca",
+   "nombre": "Yuca",
+   "nombre_local": "yuca",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 720,
+    "proteina_g": 6,
+    "grasa_g": 1.4,
+    "carbohidratos_g": 172
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "zanahoria",
+   "nombre": "Zanahoria",
+   "nombre_local": "zanahoria",
+   "categoria": "verduras",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 186,
+    "proteina_g": 4,
+    "grasa_g": 1,
+    "carbohidratos_g": 44
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "aguacate",
+   "nombre": "Aguacate",
+   "nombre_local": "aguacate criollo",
+   "categoria": "frutas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 6.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 230,
+    "proteina_g": 3,
+    "grasa_g": 21,
+    "carbohidratos_g": 12
+   },
+   "temporada": "junio a diciembre",
+   "alergenos": []
+  },
+  {
+   "clave": "banano",
+   "nombre": "Banano",
+   "nombre_local": "guineo",
+   "categoria": "frutas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 1.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 105,
+    "proteina_g": 1.3,
+    "grasa_g": 0.4,
+    "carbohidratos_g": 27
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "carambola",
+   "nombre": "Carambola",
+   "nombre_local": "carambola",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 140,
+    "proteina_g": 4,
+    "grasa_g": 1.5,
+    "carbohidratos_g": 30
+   },
+   "temporada": "julio a noviembre",
+   "alergenos": []
+  },
+  {
+   "clave": "coco",
+   "nombre": "Coco",
+   "nombre_local": "coco de agua",
+   "categoria": "frutas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1400,
+    "proteina_g": 13,
+    "grasa_g": 133,
+    "carbohidratos_g": 60
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "frutos secos"
+   ]
+  },
+  {
+   "clave": "durazno",
+   "nombre": "Durazno",
+   "nombre_local": "durazno criollo",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 9.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 175,
+    "proteina_g": 4,
+    "grasa_g": 1,
+    "carbohidratos_g": 43
+   },
+   "temporada": "mayo a septiembre",
+   "alergenos": []
+  },
+  {
+   "clave": "fresa",
+   "nombre": "Fresa",
+   "nombre_local": "fresa de Zunil",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 145,
+    "proteina_g": 3,
+    "grasa_g": 1.4,
+    "carbohidratos_g": 35
+   },
+   "temporada": "noviembre a mayo",
+   "alergenos": []
+  },
+  {
+   "clave": "guayaba",
+   "nombre": "Guayaba",
+   "nombre_local": "guayaba",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 6.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 310,
+    "proteina_g": 12,
+    "grasa_g": 4,
+    "carbohidratos_g": 65
+   },
+   "temporada": "agosto a diciembre",
+   "alergenos": []
+  },
+  {
+   "clave": "higo",
+   "nombre": "Higo verde",
+   "nombre_local": "higo de dulce",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 14.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 330,
+    "proteina_g": 4,
+    "grasa_g": 1,
+    "carbohidratos_g": 84
+   },
+   "temporada": "julio a octubre",
+   "alergenos": []
+  },
+  {
+   "clave": "jocote",
+   "nombre": "Jocote",
+   "nombre_local": "jocote de corona",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 330,
+    "proteina_g": 3,
+    "grasa_g": 1,
+    "carbohidratos_g": 82
+   },
+   "temporada": "agosto a noviembre",
+   "alergenos": []
+  },
+  {
+   "clave": "limon",
+   "nombre": "Limón",
+   "nombre_local": "limón criollo",
+   "categoria": "frutas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 0.8,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 10,
+    "proteina_g": 0.2,
+    "grasa_g": 0.1,
+    "carbohidratos_g": 3
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "mango",
+   "nombre": "Mango",
+   "nombre_local": "mango de mico",
+   "categoria": "frutas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 200,
+    "proteina_g": 3,
+    "grasa_g": 1,
+    "carbohidratos_g": 50
+   },
+   "temporada": "marzo a julio",
+   "alergenos": []
+  },
+  {
+   "clave": "manzana",
+   "nombre": "Manzana",
+   "nombre_local": "manzana criolla",
+   "categoria": "frutas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 95,
+    "proteina_g": 0.5,
+    "grasa_g": 0.3,
+    "carbohidratos_g": 25
+   },
+   "temporada": "septiembre a diciembre",
+   "alergenos": []
+  },
+  {
+   "clave": "manzana_rosa",
+   "nombre": "Manzanilla de agua",
+   "nombre_local": "manzana rosa",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 110,
+    "proteina_g": 2,
+    "grasa_g": 1,
+    "carbohidratos_g": 25
+   },
+   "temporada": "abril a julio",
+   "alergenos": []
+  },
+  {
+   "clave": "maracuya",
+   "nombre": "Maracuyá",
+   "nombre_local": "maracuyá",
+   "categoria": "frutas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 35,
+    "proteina_g": 0.8,
+    "grasa_g": 0.2,
+    "carbohidratos_g": 8
+   },
+   "temporada": "junio a octubre",
+   "alergenos": []
+  },
+  {
+   "clave": "maranon",
+   "nombre": "Marañón",
+   "nombre_local": "fruta de marañón",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 10.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 200,
+    "proteina_g": 3,
+    "grasa_g": 1,
+    "carbohidratos_g": 48
+   },
+   "temporada": "marzo a mayo",
+   "alergenos": []
+  },
+  {
+   "clave": "melocoton",
+   "nombre": "Melocotón",
+   "nombre_local": "melocotón",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 10.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 175,
+    "proteina_g": 4,
+    "grasa_g": 1,
+    "carbohidratos_g": 43
+   },
+   "temporada": "mayo a septiembre",
+   "alergenos": []
+  },
+  {
+   "clave": "melon",
+   "nombre": "Melón",
+   "nombre_local": "melón",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 154,
+    "proteina_g": 4,
+    "grasa_g": 0.9,
+    "carbohidratos_g": 37
+   },
+   "temporada": "marzo a agosto",
+   "alergenos": []
+  },
+  {
+   "clave": "membrillo",
+   "nombre": "Membrillo",
+   "nombre_local": "membrillo",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 260,
+    "proteina_g": 2,
+    "grasa_g": 0.5,
+    "carbohidratos_g": 68
+   },
+   "temporada": "septiembre a diciembre",
+   "alergenos": []
+  },
+  {
+   "clave": "mora",
+   "nombre": "Mora",
+   "nombre_local": "mora de Chimaltenango",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 14.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 195,
+    "proteina_g": 6,
+    "grasa_g": 2,
+    "carbohidratos_g": 44
+   },
+   "temporada": "mayo a septiembre",
+   "alergenos": []
+  },
+  {
+   "clave": "nance",
+   "nombre": "Nance",
+   "nombre_local": "nance",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 10.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 300,
+    "proteina_g": 3,
+    "grasa_g": 5,
+    "carbohidratos_g": 68
+   },
+   "temporada": "junio a septiembre",
+   "alergenos": []
+  },
+  {
+   "clave": "naranja",
+   "nombre": "Naranja",
+   "nombre_local": "naranja de Cuyotenango",
+   "categoria": "frutas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 2.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 62,
+    "proteina_g": 1,
+    "grasa_g": 0.2,
+    "carbohidratos_g": 15
+   },
+   "temporada": "noviembre a marzo",
+   "alergenos": []
+  },
+  {
+   "clave": "papaya",
+   "nombre": "Papaya",
+   "nombre_local": "papaya",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 5.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 195,
+    "proteina_g": 3,
+    "grasa_g": 0.6,
+    "carbohidratos_g": 49
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "pina",
+   "nombre": "Piña",
+   "nombre_local": "piña",
+   "categoria": "frutas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 450,
+    "proteina_g": 5,
+    "grasa_g": 1,
+    "carbohidratos_g": 118
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "platano_maduro",
+   "nombre": "Plátano maduro",
+   "nombre_local": "plátano maduro",
+   "categoria": "frutas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 3.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 218,
+    "proteina_g": 2,
+    "grasa_g": 0.7,
+    "carbohidratos_g": 57
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "rosa_jamaica",
+   "nombre": "Rosa de Jamaica",
+   "nombre_local": "jamaica",
+   "categoria": "frutas",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 5.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 14,
+    "proteina_g": 0.3,
+    "grasa_g": 0.1,
+    "carbohidratos_g": 3
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "sandia",
+   "nombre": "Sandía",
+   "nombre_local": "sandía",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 136,
+    "proteina_g": 3,
+    "grasa_g": 0.7,
+    "carbohidratos_g": 34
+   },
+   "temporada": "marzo a julio",
+   "alergenos": []
+  },
+  {
+   "clave": "tamarindo",
+   "nombre": "Tamarindo",
+   "nombre_local": "tamarindo",
+   "categoria": "frutas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1090,
+    "proteina_g": 13,
+    "grasa_g": 3,
+    "carbohidratos_g": 285
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "zapote",
+   "nombre": "Zapote",
+   "nombre_local": "zapote",
+   "categoria": "frutas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 10.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 330,
+    "proteina_g": 4,
+    "grasa_g": 2,
+    "carbohidratos_g": 84
+   },
+   "temporada": "febrero a junio",
+   "alergenos": []
+  },
+  {
+   "clave": "arroz",
+   "nombre": "Arroz",
+   "nombre_local": "arroz de segunda",
+   "categoria": "granos y pasta",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 4.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1640,
+    "proteina_g": 30,
+    "grasa_g": 3,
+    "carbohidratos_g": 360
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "avena",
+   "nombre": "Avena",
+   "nombre_local": "mosh",
+   "categoria": "granos y pasta",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1700,
+    "proteina_g": 62,
+    "grasa_g": 30,
+    "carbohidratos_g": 290
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "gluten"
+   ]
+  },
+  {
+   "clave": "frijol_blanco",
+   "nombre": "Frijol blanco",
+   "nombre_local": "frijol piloy blanco",
+   "categoria": "granos y pasta",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1520,
+    "proteina_g": 94,
+    "grasa_g": 6,
+    "carbohidratos_g": 276
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "frijol_negro",
+   "nombre": "Frijol negro",
+   "nombre_local": "frijol de la olla",
+   "categoria": "granos y pasta",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 7.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1540,
+    "proteina_g": 96,
+    "grasa_g": 6,
+    "carbohidratos_g": 280
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "frijol_piloy",
+   "nombre": "Frijol piloy",
+   "nombre_local": "piloy",
+   "categoria": "granos y pasta",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 10.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1500,
+    "proteina_g": 92,
+    "grasa_g": 6,
+    "carbohidratos_g": 272
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "garbanzo",
+   "nombre": "Garbanzo",
+   "nombre_local": "garbanzo",
+   "categoria": "granos y pasta",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1650,
+    "proteina_g": 88,
+    "grasa_g": 26,
+    "carbohidratos_g": 272
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "habas_secas",
+   "nombre": "Habas secas",
+   "nombre_local": "haba",
+   "categoria": "granos y pasta",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 9.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1500,
+    "proteina_g": 118,
+    "grasa_g": 8,
+    "carbohidratos_g": 250
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "pasta_fideo",
+   "nombre": "Pasta",
+   "nombre_local": "fideos",
+   "categoria": "granos y pasta",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 7.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1650,
+    "proteina_g": 58,
+    "grasa_g": 7,
+    "carbohidratos_g": 330
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "gluten"
+   ]
+  },
+  {
+   "clave": "elote_tierno",
+   "nombre": "Elote tierno",
+   "nombre_local": "elote",
+   "categoria": "maíz y tortillas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 120,
+    "proteina_g": 4,
+    "grasa_g": 1,
+    "carbohidratos_g": 27
+   },
+   "temporada": "mayo a septiembre",
+   "alergenos": []
+  },
+  {
+   "clave": "harina_maiz",
+   "nombre": "Harina de maíz",
+   "nombre_local": "maseca",
+   "categoria": "maíz y tortillas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 5.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1630,
+    "proteina_g": 38,
+    "grasa_g": 16,
+    "carbohidratos_g": 344
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "maiz_amarillo",
+   "nombre": "Maíz amarillo",
+   "nombre_local": "maíz de gallina",
+   "categoria": "maíz y tortillas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1650,
+    "proteina_g": 41,
+    "grasa_g": 22,
+    "carbohidratos_g": 338
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "maiz_blanco",
+   "nombre": "Maíz blanco",
+   "nombre_local": "maíz de nixtamal",
+   "categoria": "maíz y tortillas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 4.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1640,
+    "proteina_g": 42,
+    "grasa_g": 20,
+    "carbohidratos_g": 340
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "masa_maiz",
+   "nombre": "Masa de maíz",
+   "nombre_local": "masa de nixtamal",
+   "categoria": "maíz y tortillas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 750,
+    "proteina_g": 18,
+    "grasa_g": 8,
+    "carbohidratos_g": 155
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "pinol",
+   "nombre": "Pinol",
+   "nombre_local": "maíz tostado y molido",
+   "categoria": "maíz y tortillas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 9.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1620,
+    "proteina_g": 40,
+    "grasa_g": 18,
+    "carbohidratos_g": 340
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "tortilla_maiz",
+   "nombre": "Tortilla de maíz",
+   "nombre_local": "tortilla",
+   "categoria": "maíz y tortillas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 0.75,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 65,
+    "proteina_g": 1.5,
+    "grasa_g": 0.8,
+    "carbohidratos_g": 13
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "tostada",
+   "nombre": "Tostada de maíz",
+   "nombre_local": "tostada",
+   "categoria": "maíz y tortillas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 1.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 70,
+    "proteina_g": 1.5,
+    "grasa_g": 2.0,
+    "carbohidratos_g": 12
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "bicarbonato",
+   "nombre": "Bicarbonato",
+   "nombre_local": "bicarbonato",
+   "categoria": "pan y harinas",
+   "unidad_compra": "cucharadita",
+   "precio_referencia_gtq": 0.3,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 0,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "harina_arroz",
+   "nombre": "Harina de arroz",
+   "nombre_local": "harina de arroz",
+   "categoria": "pan y harinas",
+   "unidad_compra": "taza",
+   "precio_referencia_gtq": 7.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 600,
+    "proteina_g": 10,
+    "grasa_g": 2,
+    "carbohidratos_g": 130
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "harina_trigo",
+   "nombre": "Harina de trigo",
+   "nombre_local": "harina suave",
+   "categoria": "pan y harinas",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 5.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1650,
+    "proteina_g": 46,
+    "grasa_g": 5,
+    "carbohidratos_g": 345
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "gluten"
+   ]
+  },
+  {
+   "clave": "levadura",
+   "nombre": "Levadura",
+   "nombre_local": "levadura seca",
+   "categoria": "pan y harinas",
+   "unidad_compra": "cucharada",
+   "precio_referencia_gtq": 2.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 20,
+    "proteina_g": 3,
+    "grasa_g": 0.3,
+    "carbohidratos_g": 2
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "marquesote",
+   "nombre": "Marquesote",
+   "nombre_local": "marquesote",
+   "categoria": "pan y harinas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 900,
+    "proteina_g": 20,
+    "grasa_g": 22,
+    "carbohidratos_g": 160
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "gluten",
+    "huevo"
+   ]
+  },
+  {
+   "clave": "pan_frances",
+   "nombre": "Pan francés",
+   "nombre_local": "pan de manteca",
+   "categoria": "pan y harinas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 1.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 110,
+    "proteina_g": 3,
+    "grasa_g": 1.5,
+    "carbohidratos_g": 21
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "gluten"
+   ]
+  },
+  {
+   "clave": "pan_molido",
+   "nombre": "Pan molido",
+   "nombre_local": "pan rallado",
+   "categoria": "pan y harinas",
+   "unidad_compra": "taza",
+   "precio_referencia_gtq": 6.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 400,
+    "proteina_g": 13,
+    "grasa_g": 5,
+    "carbohidratos_g": 76
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "gluten"
+   ]
+  },
+  {
+   "clave": "polvo_hornear",
+   "nombre": "Polvo de hornear",
+   "nombre_local": "royal",
+   "categoria": "pan y harinas",
+   "unidad_compra": "cucharadita",
+   "precio_referencia_gtq": 0.4,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 2,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 1
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "vainilla",
+   "nombre": "Vainilla",
+   "nombre_local": "esencia de vainilla",
+   "categoria": "pan y harinas",
+   "unidad_compra": "cucharadita",
+   "precio_referencia_gtq": 1.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 12,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 0.5
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "albahaca",
+   "nombre": "Albahaca",
+   "nombre_local": "albahaca",
+   "categoria": "hierbas",
+   "unidad_compra": "manojo",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 10,
+    "proteina_g": 1,
+    "grasa_g": 0.2,
+    "carbohidratos_g": 1
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "apazote",
+   "nombre": "Apazote",
+   "nombre_local": "apazote",
+   "categoria": "hierbas",
+   "unidad_compra": "rama",
+   "precio_referencia_gtq": 0.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 2,
+    "proteina_g": 0.1,
+    "grasa_g": 0,
+    "carbohidratos_g": 0.4
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "bledo",
+   "nombre": "Bledo",
+   "nombre_local": "bledo",
+   "categoria": "hierbas",
+   "unidad_compra": "manojo",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 26,
+    "proteina_g": 3,
+    "grasa_g": 0.4,
+    "carbohidratos_g": 4
+   },
+   "temporada": "mayo a octubre",
+   "alergenos": []
+  },
+  {
+   "clave": "chipilin",
+   "nombre": "Chipilín",
+   "nombre_local": "chipilin",
+   "categoria": "hierbas",
+   "unidad_compra": "manojo",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 30,
+    "proteina_g": 4,
+    "grasa_g": 0.5,
+    "carbohidratos_g": 4
+   },
+   "temporada": "mayo a noviembre",
+   "alergenos": []
+  },
+  {
+   "clave": "cilantro",
+   "nombre": "Cilantro",
+   "nombre_local": "cilantro",
+   "categoria": "hierbas",
+   "unidad_compra": "manojo",
+   "precio_referencia_gtq": 2.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 12,
+    "proteina_g": 1,
+    "grasa_g": 0.3,
+    "carbohidratos_g": 2
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "eucalipto",
+   "nombre": "Eucalipto",
+   "nombre_local": "hoja de eucalipto",
+   "categoria": "hierbas",
+   "unidad_compra": "manojo",
+   "precio_referencia_gtq": 2.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 4,
+    "proteina_g": 0.2,
+    "grasa_g": 0.1,
+    "carbohidratos_g": 1
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "hierbabuena",
+   "nombre": "Hierbabuena",
+   "nombre_local": "hierbabuena",
+   "categoria": "hierbas",
+   "unidad_compra": "rama",
+   "precio_referencia_gtq": 0.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 2,
+    "proteina_g": 0.1,
+    "grasa_g": 0,
+    "carbohidratos_g": 0.4
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "hierbamora",
+   "nombre": "Hierbamora",
+   "nombre_local": "macuy",
+   "categoria": "hierbas",
+   "unidad_compra": "manojo",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 28,
+    "proteina_g": 4,
+    "grasa_g": 0.4,
+    "carbohidratos_g": 4
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "hoja_naranjo",
+   "nombre": "Hoja de naranjo",
+   "nombre_local": "hoja de naranja",
+   "categoria": "hierbas",
+   "unidad_compra": "hoja",
+   "precio_referencia_gtq": 0.2,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 0.2
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "loroco",
+   "nombre": "Loroco",
+   "nombre_local": "loroco",
+   "categoria": "hierbas",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 6.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 10,
+    "proteina_g": 0.7,
+    "grasa_g": 0.2,
+    "carbohidratos_g": 2
+   },
+   "temporada": "abril a octubre",
+   "alergenos": []
+  },
+  {
+   "clave": "loroco_ing",
+   "nombre": "Loroco",
+   "nombre_local": "flor de loroco",
+   "categoria": "hierbas",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 6.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 10,
+    "proteina_g": 0.7,
+    "grasa_g": 0.2,
+    "carbohidratos_g": 2
+   },
+   "temporada": "abril a octubre",
+   "alergenos": []
+  },
+  {
+   "clave": "manzanilla",
+   "nombre": "Manzanilla",
+   "nombre_local": "manzanilla",
+   "categoria": "hierbas",
+   "unidad_compra": "manojo",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 5,
+    "proteina_g": 0.3,
+    "grasa_g": 0.1,
+    "carbohidratos_g": 1
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "perejil",
+   "nombre": "Perejil",
+   "nombre_local": "perejil",
+   "categoria": "hierbas",
+   "unidad_compra": "manojo",
+   "precio_referencia_gtq": 2.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 12,
+    "proteina_g": 1,
+    "grasa_g": 0.3,
+    "carbohidratos_g": 2
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "ruda",
+   "nombre": "Ruda",
+   "nombre_local": "ruda",
+   "categoria": "hierbas",
+   "unidad_compra": "rama",
+   "precio_referencia_gtq": 1.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 2,
+    "proteina_g": 0.1,
+    "grasa_g": 0,
+    "carbohidratos_g": 0.4
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "samat",
+   "nombre": "Samat",
+   "nombre_local": "culantro de monte (q'eqchi')",
+   "categoria": "hierbas",
+   "unidad_compra": "rama",
+   "precio_referencia_gtq": 1.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 3,
+    "proteina_g": 0.2,
+    "grasa_g": 0,
+    "carbohidratos_g": 0.5
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "te_limon",
+   "nombre": "Té de limón",
+   "nombre_local": "zacate limón",
+   "categoria": "hierbas",
+   "unidad_compra": "manojo",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 6,
+    "proteina_g": 0.3,
+    "grasa_g": 0.1,
+    "carbohidratos_g": 1
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "tilo",
+   "nombre": "Flor de tilo",
+   "nombre_local": "tilo",
+   "categoria": "hierbas",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 5.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 5,
+    "proteina_g": 0.2,
+    "grasa_g": 0.1,
+    "carbohidratos_g": 1
+   },
+   "temporada": "todo el año",
    "alergenos": []
   },
   {
@@ -767,22 +2474,6 @@
    "alergenos": []
   },
   {
-   "clave": "chile_pimiento",
-   "nombre": "Chile pimiento",
-   "nombre_local": "chile pimiento",
-   "categoria": "verduras",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 30,
-    "proteina_g": 1,
-    "grasa_g": 0.3,
-    "carbohidratos_g": 7
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
    "clave": "chile_seco_coban",
    "nombre": "Chile seco de Cobán",
    "nombre_local": "chile de Cobán",
@@ -831,145 +2522,35 @@
    "alergenos": []
   },
   {
-   "clave": "chipilin",
-   "nombre": "Chipilin",
-   "nombre_local": "chipilin",
-   "categoria": "hierbas",
-   "unidad_compra": "manojo",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 30,
-    "proteina_g": 4,
-    "grasa_g": 0.5,
-    "carbohidratos_g": 4
-   },
-   "temporada": "mayo a noviembre",
-   "alergenos": []
-  },
-  {
-   "clave": "chocolate_mesa",
-   "nombre": "Chocolate de mesa",
-   "nombre_local": "chocolate de tablilla",
-   "categoria": "abarrotes",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 6.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 250,
-    "proteina_g": 3,
-    "grasa_g": 12,
-    "carbohidratos_g": 34
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "chompipe",
-   "nombre": "Chompipe",
-   "nombre_local": "pavo criollo",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 24.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 480,
-    "proteina_g": 92,
-    "grasa_g": 12,
-    "carbohidratos_g": 0
-   },
-   "temporada": "octubre a diciembre",
-   "alergenos": []
-  },
-  {
-   "clave": "chorizo",
-   "nombre": "Chorizo",
-   "nombre_local": "chorizo criollo",
-   "categoria": "embutidos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 28.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1100,
-    "proteina_g": 60,
-    "grasa_g": 96,
-    "carbohidratos_g": 4
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "chorizo_zacapa",
-   "nombre": "Chorizo de Zacapa",
-   "nombre_local": "chorizo de Zacapa",
-   "categoria": "embutidos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 34.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1150,
-    "proteina_g": 62,
-    "grasa_g": 100,
-    "carbohidratos_g": 4
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "cilantro",
-   "nombre": "Cilantro",
-   "nombre_local": "cilantro",
-   "categoria": "hierbas",
-   "unidad_compra": "manojo",
-   "precio_referencia_gtq": 2.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 12,
-    "proteina_g": 1,
-    "grasa_g": 0.3,
-    "carbohidratos_g": 2
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "ciruela_pasa",
-   "nombre": "Ciruela pasa",
-   "nombre_local": "ciruela",
-   "categoria": "abarrotes",
+   "clave": "ajonjoli",
+   "nombre": "Ajonjolí",
+   "nombre_local": "ajonjolí tostado",
+   "categoria": "semillas",
    "unidad_compra": "onza",
-   "precio_referencia_gtq": 5.0,
+   "precio_referencia_gtq": 3.5,
    "nutricion_por_unidad": {
-    "calorias_kcal": 67,
-    "proteina_g": 0.6,
-    "grasa_g": 0.1,
-    "carbohidratos_g": 18
+    "calorias_kcal": 160,
+    "proteina_g": 5,
+    "grasa_g": 14,
+    "carbohidratos_g": 7
    },
    "temporada": "todo el año",
-   "alergenos": []
+   "alergenos": [
+    "ajonjolí"
+   ]
   },
   {
-   "clave": "clavo",
-   "nombre": "Clavo de olor",
-   "nombre_local": "clavo",
-   "categoria": "especias",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 0.2,
+   "clave": "almendra",
+   "nombre": "Almendra",
+   "nombre_local": "almendra",
+   "categoria": "semillas",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 9.0,
    "nutricion_por_unidad": {
-    "calorias_kcal": 1,
-    "proteina_g": 0,
-    "grasa_g": 0,
-    "carbohidratos_g": 0.2
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "coco",
-   "nombre": "Coco",
-   "nombre_local": "coco de agua",
-   "categoria": "frutas",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 12.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1400,
-    "proteina_g": 13,
-    "grasa_g": 133,
-    "carbohidratos_g": 60
+    "calorias_kcal": 164,
+    "proteina_g": 6,
+    "grasa_g": 14,
+    "carbohidratos_g": 6
    },
    "temporada": "todo el año",
    "alergenos": [
@@ -977,721 +2558,17 @@
    ]
   },
   {
-   "clave": "coliflor",
-   "nombre": "Coliflor",
-   "nombre_local": "coliflor",
-   "categoria": "verduras",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 8.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 146,
-    "proteina_g": 11,
-    "grasa_g": 1.7,
-    "carbohidratos_g": 29
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "comino",
-   "nombre": "Comino",
-   "nombre_local": "comino",
-   "categoria": "especias",
-   "unidad_compra": "cucharadita",
-   "precio_referencia_gtq": 0.8,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 8,
-    "proteina_g": 0.4,
-    "grasa_g": 0.5,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "conejo",
-   "nombre": "Conejo",
-   "nombre_local": "conejo de campo",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 30.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 500,
-    "proteina_g": 88,
-    "grasa_g": 14,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "consome",
-   "nombre": "Consome de pollo",
-   "nombre_local": "consome",
-   "categoria": "abarrotes",
-   "unidad_compra": "cucharada",
-   "precio_referencia_gtq": 1.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 10,
-    "proteina_g": 0.5,
-    "grasa_g": 0.3,
-    "carbohidratos_g": 1.5
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "crema",
-   "nombre": "Crema",
-   "nombre_local": "crema guatemalteca",
-   "categoria": "lacteos",
-   "unidad_compra": "taza",
-   "precio_referencia_gtq": 12.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 400,
-    "proteina_g": 4,
-    "grasa_g": 40,
-    "carbohidratos_g": 8
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "lacteos"
-   ]
-  },
-  {
-   "clave": "curtido_prep",
-   "nombre": "Curtido de repollo",
-   "nombre_local": "curtido",
-   "categoria": "verduras",
-   "unidad_compra": "taza",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 30,
-    "proteina_g": 1.5,
-    "grasa_g": 0.2,
-    "carbohidratos_g": 6
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "durazno",
-   "nombre": "Durazno",
-   "nombre_local": "durazno criollo",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 9.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 175,
-    "proteina_g": 4,
-    "grasa_g": 1,
-    "carbohidratos_g": 43
-   },
-   "temporada": "mayo a septiembre",
-   "alergenos": []
-  },
-  {
-   "clave": "ejote",
-   "nombre": "Ejote",
-   "nombre_local": "ejote frances",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 7.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 141,
-    "proteina_g": 8,
-    "grasa_g": 0.5,
-    "carbohidratos_g": 32
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "elote_tierno",
-   "nombre": "Elote tierno",
-   "nombre_local": "elote",
-   "categoria": "maíz",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 120,
-    "proteina_g": 4,
-    "grasa_g": 1,
-    "carbohidratos_g": 27
-   },
-   "temporada": "mayo a septiembre",
-   "alergenos": []
-  },
-  {
-   "clave": "espinaca",
-   "nombre": "Espinaca",
-   "nombre_local": "espinaca",
-   "categoria": "verduras",
-   "unidad_compra": "manojo",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 30,
-    "proteina_g": 4,
-    "grasa_g": 0.5,
-    "carbohidratos_g": 4
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "eucalipto",
-   "nombre": "Eucalipto",
-   "nombre_local": "hoja de eucalipto",
-   "categoria": "hierbas",
-   "unidad_compra": "manojo",
-   "precio_referencia_gtq": 2.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 4,
-    "proteina_g": 0.2,
-    "grasa_g": 0.1,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "flor_izote",
-   "nombre": "Flor de izote",
-   "nombre_local": "izote",
-   "categoria": "verduras",
-   "unidad_compra": "manojo",
-   "precio_referencia_gtq": 8.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 30,
-    "proteina_g": 2,
-    "grasa_g": 0.3,
-    "carbohidratos_g": 6
-   },
-   "temporada": "febrero a abril",
-   "alergenos": []
-  },
-  {
-   "clave": "fresa",
-   "nombre": "Fresa",
-   "nombre_local": "fresa de Zunil",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 12.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 145,
-    "proteina_g": 3,
-    "grasa_g": 1.4,
-    "carbohidratos_g": 35
-   },
-   "temporada": "noviembre a mayo",
-   "alergenos": []
-  },
-  {
-   "clave": "frijol_blanco",
-   "nombre": "Frijol blanco",
-   "nombre_local": "frijol piloy blanco",
-   "categoria": "granos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 8.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1520,
-    "proteina_g": 94,
-    "grasa_g": 6,
-    "carbohidratos_g": 276
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "frijol_negro",
-   "nombre": "Frijol negro",
-   "nombre_local": "frijol de la olla",
-   "categoria": "granos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 7.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1540,
-    "proteina_g": 96,
-    "grasa_g": 6,
-    "carbohidratos_g": 280
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "frijol_piloy",
-   "nombre": "Frijol piloy",
-   "nombre_local": "piloy",
-   "categoria": "granos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 10.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1500,
-    "proteina_g": 92,
-    "grasa_g": 6,
-    "carbohidratos_g": 272
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "galleta_salada",
-   "nombre": "Galletas saladas",
-   "nombre_local": "galleta de soda",
-   "categoria": "abarrotes",
+   "clave": "chan",
+   "nombre": "Chan",
+   "nombre_local": "semilla de chan",
+   "categoria": "semillas",
    "unidad_compra": "onza",
-   "precio_referencia_gtq": 2.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 120,
-    "proteina_g": 2.5,
-    "grasa_g": 4,
-    "carbohidratos_g": 19
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "gluten"
-   ]
-  },
-  {
-   "clave": "gallina_india",
-   "nombre": "Gallina india",
-   "nombre_local": "gallina criolla",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 26.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 500,
-    "proteina_g": 90,
-    "grasa_g": 15,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "garbanzo",
-   "nombre": "Garbanzo",
-   "nombre_local": "garbanzo",
-   "categoria": "granos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 12.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1650,
-    "proteina_g": 88,
-    "grasa_g": 26,
-    "carbohidratos_g": 272
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "guayaba",
-   "nombre": "Guayaba",
-   "nombre_local": "guayaba",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
    "precio_referencia_gtq": 6.0,
    "nutricion_por_unidad": {
-    "calorias_kcal": 310,
-    "proteina_g": 12,
-    "grasa_g": 4,
-    "carbohidratos_g": 65
-   },
-   "temporada": "agosto a diciembre",
-   "alergenos": []
-  },
-  {
-   "clave": "guisquil",
-   "nombre": "Guisquil",
-   "nombre_local": "guisquil",
-   "categoria": "verduras",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 39,
-    "proteina_g": 1.5,
-    "grasa_g": 0.3,
-    "carbohidratos_g": 9
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "habas_secas",
-   "nombre": "Habas secas",
-   "nombre_local": "haba",
-   "categoria": "granos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 9.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1500,
-    "proteina_g": 118,
-    "grasa_g": 8,
-    "carbohidratos_g": 250
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "harina_arroz",
-   "nombre": "Harina de arroz",
-   "nombre_local": "harina de arroz",
-   "categoria": "panaderia",
-   "unidad_compra": "taza",
-   "precio_referencia_gtq": 7.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 600,
-    "proteina_g": 10,
-    "grasa_g": 2,
-    "carbohidratos_g": 130
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "harina_maiz",
-   "nombre": "Harina de maíz",
-   "nombre_local": "maseca",
-   "categoria": "maíz",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 5.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1630,
-    "proteina_g": 38,
-    "grasa_g": 16,
-    "carbohidratos_g": 344
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "harina_trigo",
-   "nombre": "Harina de trigo",
-   "nombre_local": "harina suave",
-   "categoria": "panaderia",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 5.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1650,
-    "proteina_g": 46,
-    "grasa_g": 5,
-    "carbohidratos_g": 345
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "gluten"
-   ]
-  },
-  {
-   "clave": "hierbabuena",
-   "nombre": "Hierbabuena",
-   "nombre_local": "hierbabuena",
-   "categoria": "hierbas",
-   "unidad_compra": "rama",
-   "precio_referencia_gtq": 0.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 2,
-    "proteina_g": 0.1,
-    "grasa_g": 0,
-    "carbohidratos_g": 0.4
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "hierbamora",
-   "nombre": "Hierbamora",
-   "nombre_local": "macuy",
-   "categoria": "hierbas",
-   "unidad_compra": "manojo",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 28,
-    "proteina_g": 4,
-    "grasa_g": 0.4,
-    "carbohidratos_g": 4
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "higado_res",
-   "nombre": "Higado de res",
-   "nombre_local": "higado",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 18.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 600,
-    "proteina_g": 90,
-    "grasa_g": 18,
-    "carbohidratos_g": 12
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "higo",
-   "nombre": "Higo verde",
-   "nombre_local": "higo de dulce",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 14.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 330,
-    "proteina_g": 4,
-    "grasa_g": 1,
-    "carbohidratos_g": 84
-   },
-   "temporada": "julio a octubre",
-   "alergenos": []
-  },
-  {
-   "clave": "hoja_maxan",
-   "nombre": "Hoja de maxan",
-   "nombre_local": "maxan",
-   "categoria": "envolturas",
-   "unidad_compra": "hoja",
-   "precio_referencia_gtq": 1.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 0,
-    "proteina_g": 0,
-    "grasa_g": 0,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "hoja_naranjo",
-   "nombre": "Hoja de naranjo",
-   "nombre_local": "hoja de naranja",
-   "categoria": "hierbas",
-   "unidad_compra": "hoja",
-   "precio_referencia_gtq": 0.2,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1,
-    "proteina_g": 0,
-    "grasa_g": 0,
-    "carbohidratos_g": 0.2
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "hoja_platano",
-   "nombre": "Hoja de plátano",
-   "nombre_local": "hoja de guineo",
-   "categoria": "envolturas",
-   "unidad_compra": "hoja",
-   "precio_referencia_gtq": 1.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 0,
-    "proteina_g": 0,
-    "grasa_g": 0,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "hongos_san_juan",
-   "nombre": "Hongos de San Juan",
-   "nombre_local": "hongo de San Juan",
-   "categoria": "hongos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 18.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 100,
-    "proteina_g": 14,
-    "grasa_g": 1.5,
-    "carbohidratos_g": 15
-   },
-   "temporada": "junio a agosto",
-   "alergenos": []
-  },
-  {
-   "clave": "huevo",
-   "nombre": "Huevo de gallina",
-   "nombre_local": "huevo criollo",
-   "categoria": "lacteos",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 1.6,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 72,
-    "proteina_g": 6,
-    "grasa_g": 5,
-    "carbohidratos_g": 0.4
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "huevo"
-   ]
-  },
-  {
-   "clave": "incaparina",
-   "nombre": "Incaparina",
-   "nombre_local": "incaparina",
-   "categoria": "abarrotes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 12.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1650,
-    "proteina_g": 80,
-    "grasa_g": 18,
-    "carbohidratos_g": 300
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "soya"
-   ]
-  },
-  {
-   "clave": "jaiba",
-   "nombre": "Jaiba",
-   "nombre_local": "jaiba",
-   "categoria": "mariscos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 30.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 280,
-    "proteina_g": 58,
-    "grasa_g": 3,
-    "carbohidratos_g": 2
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "mariscos"
-   ]
-  },
-  {
-   "clave": "jengibre",
-   "nombre": "Jengibre",
-   "nombre_local": "jengibre",
-   "categoria": "especias",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 2.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 22,
-    "proteina_g": 0.5,
-    "grasa_g": 0.2,
-    "carbohidratos_g": 5
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "jocote",
-   "nombre": "Jocote",
-   "nombre_local": "jocote de corona",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 8.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 330,
-    "proteina_g": 3,
-    "grasa_g": 1,
-    "carbohidratos_g": 82
-   },
-   "temporada": "agosto a noviembre",
-   "alergenos": []
-  },
-  {
-   "clave": "laurel",
-   "nombre": "Hoja de laurel",
-   "nombre_local": "laurel",
-   "categoria": "especias",
-   "unidad_compra": "hoja",
-   "precio_referencia_gtq": 0.3,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 2,
-    "proteina_g": 0,
-    "grasa_g": 0.1,
-    "carbohidratos_g": 0.5
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "leche",
-   "nombre": "Leche",
-   "nombre_local": "leche fluida",
-   "categoria": "lacteos",
-   "unidad_compra": "taza",
-   "precio_referencia_gtq": 5.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 150,
-    "proteina_g": 8,
+    "calorias_kcal": 135,
+    "proteina_g": 5,
     "grasa_g": 8,
     "carbohidratos_g": 12
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "lacteos"
-   ]
-  },
-  {
-   "clave": "leche_condensada",
-   "nombre": "Leche condensada",
-   "nombre_local": "leche condensada",
-   "categoria": "lacteos",
-   "unidad_compra": "lata",
-   "precio_referencia_gtq": 18.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1300,
-    "proteina_g": 32,
-    "grasa_g": 35,
-    "carbohidratos_g": 220
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "lacteos"
-   ]
-  },
-  {
-   "clave": "lechuga",
-   "nombre": "Lechuga",
-   "nombre_local": "lechuga romana",
-   "categoria": "verduras",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 6.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 30,
-    "proteina_g": 2,
-    "grasa_g": 0.3,
-    "carbohidratos_g": 6
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "levadura",
-   "nombre": "Levadura",
-   "nombre_local": "levadura seca",
-   "categoria": "panaderia",
-   "unidad_compra": "cucharada",
-   "precio_referencia_gtq": 2.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 20,
-    "proteina_g": 3,
-    "grasa_g": 0.3,
-    "carbohidratos_g": 2
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "limon",
-   "nombre": "Limón",
-   "nombre_local": "limón criollo",
-   "categoria": "frutas",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 0.8,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 10,
-    "proteina_g": 0.2,
-    "grasa_g": 0.1,
-    "carbohidratos_g": 3
    },
    "temporada": "todo el año",
    "alergenos": []
@@ -1713,134 +2590,6 @@
    "alergenos": []
   },
   {
-   "clave": "longaniza",
-   "nombre": "Longaniza",
-   "nombre_local": "longaniza",
-   "categoria": "embutidos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 26.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1050,
-    "proteina_g": 58,
-    "grasa_g": 90,
-    "carbohidratos_g": 4
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "loroco",
-   "nombre": "Loroco",
-   "nombre_local": "loroco",
-   "categoria": "hierbas",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 6.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 10,
-    "proteina_g": 0.7,
-    "grasa_g": 0.2,
-    "carbohidratos_g": 2
-   },
-   "temporada": "abril a octubre",
-   "alergenos": []
-  },
-  {
-   "clave": "loroco_ing",
-   "nombre": "Loroco",
-   "nombre_local": "flor de loroco",
-   "categoria": "hierbas",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 6.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 10,
-    "proteina_g": 0.7,
-    "grasa_g": 0.2,
-    "carbohidratos_g": 2
-   },
-   "temporada": "abril a octubre",
-   "alergenos": []
-  },
-  {
-   "clave": "maicena",
-   "nombre": "Maicena",
-   "nombre_local": "maicena",
-   "categoria": "abarrotes",
-   "unidad_compra": "cucharada",
-   "precio_referencia_gtq": 0.8,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 30,
-    "proteina_g": 0,
-    "grasa_g": 0,
-    "carbohidratos_g": 7
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "maiz_amarillo",
-   "nombre": "Maíz amarillo",
-   "nombre_local": "maíz de gallina",
-   "categoria": "maíz",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1650,
-    "proteina_g": 41,
-    "grasa_g": 22,
-    "carbohidratos_g": 338
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "maiz_blanco",
-   "nombre": "Maíz blanco",
-   "nombre_local": "maíz de nixtamal",
-   "categoria": "maíz",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 4.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1640,
-    "proteina_g": 42,
-    "grasa_g": 20,
-    "carbohidratos_g": 340
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "malanga",
-   "nombre": "Malanga",
-   "nombre_local": "quiquisque",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 6.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 525,
-    "proteina_g": 7,
-    "grasa_g": 1,
-    "carbohidratos_g": 125
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "mango",
-   "nombre": "Mango",
-   "nombre_local": "mango de mico",
-   "categoria": "frutas",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 200,
-    "proteina_g": 3,
-    "grasa_g": 1,
-    "carbohidratos_g": 50
-   },
-   "temporada": "marzo a julio",
-   "alergenos": []
-  },
-  {
    "clave": "mani",
    "nombre": "Maní",
    "nombre_local": "maní tostado",
@@ -1857,333 +2606,6 @@
    "alergenos": [
     "maní"
    ]
-  },
-  {
-   "clave": "manteca_cerdo",
-   "nombre": "Manteca de cerdo",
-   "nombre_local": "manteca",
-   "categoria": "grasas",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 2.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 250,
-    "proteina_g": 0,
-    "grasa_g": 28,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "mantequilla",
-   "nombre": "Mantequilla",
-   "nombre_local": "mantequilla",
-   "categoria": "lacteos",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 200,
-    "proteina_g": 0.2,
-    "grasa_g": 23,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "lacteos"
-   ]
-  },
-  {
-   "clave": "manzana",
-   "nombre": "Manzana",
-   "nombre_local": "manzana criolla",
-   "categoria": "frutas",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 95,
-    "proteina_g": 0.5,
-    "grasa_g": 0.3,
-    "carbohidratos_g": 25
-   },
-   "temporada": "septiembre a diciembre",
-   "alergenos": []
-  },
-  {
-   "clave": "manzana_rosa",
-   "nombre": "Manzanilla de agua",
-   "nombre_local": "manzana rosa",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 8.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 110,
-    "proteina_g": 2,
-    "grasa_g": 1,
-    "carbohidratos_g": 25
-   },
-   "temporada": "abril a julio",
-   "alergenos": []
-  },
-  {
-   "clave": "manzanilla",
-   "nombre": "Manzanilla",
-   "nombre_local": "manzanilla",
-   "categoria": "hierbas",
-   "unidad_compra": "manojo",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 5,
-    "proteina_g": 0.3,
-    "grasa_g": 0.1,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "maracuya",
-   "nombre": "Maracuyá",
-   "nombre_local": "maracuyá",
-   "categoria": "frutas",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 35,
-    "proteina_g": 0.8,
-    "grasa_g": 0.2,
-    "carbohidratos_g": 8
-   },
-   "temporada": "junio a octubre",
-   "alergenos": []
-  },
-  {
-   "clave": "maranon",
-   "nombre": "Marañón",
-   "nombre_local": "fruta de marañón",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 10.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 200,
-    "proteina_g": 3,
-    "grasa_g": 1,
-    "carbohidratos_g": 48
-   },
-   "temporada": "marzo a mayo",
-   "alergenos": []
-  },
-  {
-   "clave": "marquesote",
-   "nombre": "Marquesote",
-   "nombre_local": "marquesote",
-   "categoria": "panaderia",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 8.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 900,
-    "proteina_g": 20,
-    "grasa_g": 22,
-    "carbohidratos_g": 160
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "gluten",
-    "huevo"
-   ]
-  },
-  {
-   "clave": "masa_maiz",
-   "nombre": "Masa de maíz",
-   "nombre_local": "masa de nixtamal",
-   "categoria": "maíz",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 750,
-    "proteina_g": 18,
-    "grasa_g": 8,
-    "carbohidratos_g": 155
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "mayonesa",
-   "nombre": "Mayonesa",
-   "nombre_local": "mayonesa",
-   "categoria": "abarrotes",
-   "unidad_compra": "taza",
-   "precio_referencia_gtq": 14.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1440,
-    "proteina_g": 3,
-    "grasa_g": 160,
-    "carbohidratos_g": 6
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "huevo"
-   ]
-  },
-  {
-   "clave": "melocoton",
-   "nombre": "Melocotón",
-   "nombre_local": "melocotón",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 10.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 175,
-    "proteina_g": 4,
-    "grasa_g": 1,
-    "carbohidratos_g": 43
-   },
-   "temporada": "mayo a septiembre",
-   "alergenos": []
-  },
-  {
-   "clave": "melon",
-   "nombre": "Melón",
-   "nombre_local": "melón",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 154,
-    "proteina_g": 4,
-    "grasa_g": 0.9,
-    "carbohidratos_g": 37
-   },
-   "temporada": "marzo a agosto",
-   "alergenos": []
-  },
-  {
-   "clave": "membrillo",
-   "nombre": "Membrillo",
-   "nombre_local": "membrillo",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 12.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 260,
-    "proteina_g": 2,
-    "grasa_g": 0.5,
-    "carbohidratos_g": 68
-   },
-   "temporada": "septiembre a diciembre",
-   "alergenos": []
-  },
-  {
-   "clave": "menudos_pollo",
-   "nombre": "Menudos de pollo",
-   "nombre_local": "menudo",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 14.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 500,
-    "proteina_g": 76,
-    "grasa_g": 20,
-    "carbohidratos_g": 4
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "miel",
-   "nombre": "Miel de abeja",
-   "nombre_local": "miel",
-   "categoria": "abarrotes",
-   "unidad_compra": "taza",
-   "precio_referencia_gtq": 25.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1030,
-    "proteina_g": 1,
-    "grasa_g": 0,
-    "carbohidratos_g": 280
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "miltomate",
-   "nombre": "Miltomate",
-   "nombre_local": "miltomate",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 7.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 145,
-    "proteina_g": 4,
-    "grasa_g": 5,
-    "carbohidratos_g": 26
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "mora",
-   "nombre": "Mora",
-   "nombre_local": "mora de Chimaltenango",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 14.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 195,
-    "proteina_g": 6,
-    "grasa_g": 2,
-    "carbohidratos_g": 44
-   },
-   "temporada": "mayo a septiembre",
-   "alergenos": []
-  },
-  {
-   "clave": "mostaza",
-   "nombre": "Mostaza",
-   "nombre_local": "mostaza",
-   "categoria": "abarrotes",
-   "unidad_compra": "cucharada",
-   "precio_referencia_gtq": 0.8,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 10,
-    "proteina_g": 0.6,
-    "grasa_g": 0.6,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "nance",
-   "nombre": "Nance",
-   "nombre_local": "nance",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 10.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 300,
-    "proteina_g": 3,
-    "grasa_g": 5,
-    "carbohidratos_g": 68
-   },
-   "temporada": "junio a septiembre",
-   "alergenos": []
-  },
-  {
-   "clave": "naranja",
-   "nombre": "Naranja",
-   "nombre_local": "naranja de Cuyotenango",
-   "categoria": "frutas",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 2.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 62,
-    "proteina_g": 1,
-    "grasa_g": 0.2,
-    "carbohidratos_g": 15
-   },
-   "temporada": "noviembre a marzo",
-   "alergenos": []
   },
   {
    "clave": "nuez",
@@ -2204,220 +2626,6 @@
    ]
   },
   {
-   "clave": "oregano",
-   "nombre": "Orégano",
-   "nombre_local": "orégano de monte",
-   "categoria": "especias",
-   "unidad_compra": "cucharadita",
-   "precio_referencia_gtq": 0.6,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 3,
-    "proteina_g": 0.1,
-    "grasa_g": 0.1,
-    "carbohidratos_g": 0.7
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "pacaya",
-   "nombre": "Pacaya",
-   "nombre_local": "pacaya",
-   "categoria": "verduras",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 28,
-    "proteina_g": 2,
-    "grasa_g": 0.3,
-    "carbohidratos_g": 5
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "pan_frances",
-   "nombre": "Pan frances",
-   "nombre_local": "pan de manteca",
-   "categoria": "panaderia",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 1.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 110,
-    "proteina_g": 3,
-    "grasa_g": 1.5,
-    "carbohidratos_g": 21
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "gluten"
-   ]
-  },
-  {
-   "clave": "pan_molido",
-   "nombre": "Pan molido",
-   "nombre_local": "pan rallado",
-   "categoria": "panaderia",
-   "unidad_compra": "taza",
-   "precio_referencia_gtq": 6.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 400,
-    "proteina_g": 13,
-    "grasa_g": 5,
-    "carbohidratos_g": 76
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "gluten"
-   ]
-  },
-  {
-   "clave": "panela",
-   "nombre": "Panela",
-   "nombre_local": "rapadura o dulce de panela",
-   "categoria": "abarrotes",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 6.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 600,
-    "proteina_g": 0,
-    "grasa_g": 0,
-    "carbohidratos_g": 155
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "panza_res",
-   "nombre": "Panza de res",
-   "nombre_local": "mondongo",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 20.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 390,
-    "proteina_g": 68,
-    "grasa_g": 12,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "papa",
-   "nombre": "Papa",
-   "nombre_local": "papa loca",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 350,
-    "proteina_g": 9,
-    "grasa_g": 0.5,
-    "carbohidratos_g": 80
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "papaya",
-   "nombre": "Papaya",
-   "nombre_local": "papaya",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 5.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 195,
-    "proteina_g": 3,
-    "grasa_g": 0.6,
-    "carbohidratos_g": 49
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "pasas",
-   "nombre": "Pasas",
-   "nombre_local": "pasas",
-   "categoria": "abarrotes",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 85,
-    "proteina_g": 0.9,
-    "grasa_g": 0.1,
-    "carbohidratos_g": 22
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "pasta_fideo",
-   "nombre": "Pasta",
-   "nombre_local": "fideos",
-   "categoria": "abarrotes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 7.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1650,
-    "proteina_g": 58,
-    "grasa_g": 7,
-    "carbohidratos_g": 330
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "gluten"
-   ]
-  },
-  {
-   "clave": "pasta_tomate",
-   "nombre": "Pasta de tomate",
-   "nombre_local": "pasta de tomate",
-   "categoria": "abarrotes",
-   "unidad_compra": "lata",
-   "precio_referencia_gtq": 8.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 200,
-    "proteina_g": 10,
-    "grasa_g": 1,
-    "carbohidratos_g": 46
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "pato",
-   "nombre": "Pato",
-   "nombre_local": "pato criollo",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 28.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 620,
-    "proteina_g": 78,
-    "grasa_g": 34,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "pepino",
-   "nombre": "Pepino",
-   "nombre_local": "pepino",
-   "categoria": "verduras",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 25,
-    "proteina_g": 1,
-    "grasa_g": 0.2,
-    "carbohidratos_g": 6
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
    "clave": "pepitoria",
    "nombre": "Pepitoria",
    "nombre_local": "pepita de ayote tostada",
@@ -2434,56 +2642,588 @@
    "alergenos": []
   },
   {
-   "clave": "perejil",
-   "nombre": "Perejil",
-   "nombre_local": "perejil",
-   "categoria": "hierbas",
-   "unidad_compra": "manojo",
+   "clave": "semilla_ayote",
+   "nombre": "Semilla de ayote",
+   "nombre_local": "pepita cruda",
+   "categoria": "semillas",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 158,
+    "proteina_g": 8,
+    "grasa_g": 13,
+    "carbohidratos_g": 4
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "achiote",
+   "nombre": "Achiote",
+   "nombre_local": "achiote en pasta",
+   "categoria": "recados",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 2.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 35,
+    "proteina_g": 1,
+    "grasa_g": 2,
+    "carbohidratos_g": 4
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "hoja_maxan",
+   "nombre": "Hoja de maxan",
+   "nombre_local": "maxan",
+   "categoria": "envolturas",
+   "unidad_compra": "hoja",
+   "precio_referencia_gtq": 1.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 0,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "hoja_platano",
+   "nombre": "Hoja de plátano",
+   "nombre_local": "hoja de guineo",
+   "categoria": "envolturas",
+   "unidad_compra": "hoja",
+   "precio_referencia_gtq": 1.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 0,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "tusa_maiz",
+   "nombre": "Tusa de maíz",
+   "nombre_local": "doblador",
+   "categoria": "envolturas",
+   "unidad_compra": "hoja",
+   "precio_referencia_gtq": 0.3,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 0,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "chicha",
+   "nombre": "Chicha",
+   "nombre_local": "chicha de maíz fermentada",
+   "categoria": "bebidas",
+   "unidad_compra": "litro",
+   "precio_referencia_gtq": 18.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 400,
+    "proteina_g": 3,
+    "grasa_g": 0.5,
+    "carbohidratos_g": 90
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "ron",
+   "nombre": "Ron",
+   "nombre_local": "ron",
+   "categoria": "bebidas",
+   "unidad_compra": "taza",
+   "precio_referencia_gtq": 25.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 500,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "aceituna",
+   "nombre": "Aceitunas",
+   "nombre_local": "aceituna verde",
+   "categoria": "de la tienda",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 5.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 40,
+    "proteina_g": 0.3,
+    "grasa_g": 4,
+    "carbohidratos_g": 1
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "alcaparra",
+   "nombre": "Alcaparras",
+   "nombre_local": "alcaparra",
+   "categoria": "de la tienda",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 7.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 7,
+    "proteina_g": 0.7,
+    "grasa_g": 0.2,
+    "carbohidratos_g": 1.5
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "azucar",
+   "nombre": "Azúcar",
+   "nombre_local": "azúcar blanca",
+   "categoria": "de la tienda",
+   "unidad_compra": "taza",
+   "precio_referencia_gtq": 5.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 770,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 200
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "cacao",
+   "nombre": "Cacao en grano",
+   "nombre_local": "cacao",
+   "categoria": "de la tienda",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 140,
+    "proteina_g": 3,
+    "grasa_g": 12,
+    "carbohidratos_g": 8
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "cafe_molido",
+   "nombre": "Café molido",
+   "nombre_local": "café de altura",
+   "categoria": "de la tienda",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 6.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 5,
+    "proteina_g": 0.3,
+    "grasa_g": 0.1,
+    "carbohidratos_g": 1
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "chocolate_mesa",
+   "nombre": "Chocolate de mesa",
+   "nombre_local": "chocolate de tablilla",
+   "categoria": "de la tienda",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 6.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 250,
+    "proteina_g": 3,
+    "grasa_g": 12,
+    "carbohidratos_g": 34
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "ciruela_pasa",
+   "nombre": "Ciruela pasa",
+   "nombre_local": "ciruela",
+   "categoria": "de la tienda",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 5.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 67,
+    "proteina_g": 0.6,
+    "grasa_g": 0.1,
+    "carbohidratos_g": 18
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "consome",
+   "nombre": "Consomé de pollo",
+   "nombre_local": "consome",
+   "categoria": "de la tienda",
+   "unidad_compra": "cucharada",
+   "precio_referencia_gtq": 1.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 10,
+    "proteina_g": 0.5,
+    "grasa_g": 0.3,
+    "carbohidratos_g": 1.5
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "galleta_salada",
+   "nombre": "Galletas saladas",
+   "nombre_local": "galleta de soda",
+   "categoria": "de la tienda",
+   "unidad_compra": "onza",
    "precio_referencia_gtq": 2.0,
    "nutricion_por_unidad": {
-    "calorias_kcal": 12,
+    "calorias_kcal": 120,
+    "proteina_g": 2.5,
+    "grasa_g": 4,
+    "carbohidratos_g": 19
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "gluten"
+   ]
+  },
+  {
+   "clave": "incaparina",
+   "nombre": "Incaparina",
+   "nombre_local": "incaparina",
+   "categoria": "de la tienda",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1650,
+    "proteina_g": 80,
+    "grasa_g": 18,
+    "carbohidratos_g": 300
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "soya"
+   ]
+  },
+  {
+   "clave": "maicena",
+   "nombre": "Maicena",
+   "nombre_local": "maicena",
+   "categoria": "de la tienda",
+   "unidad_compra": "cucharada",
+   "precio_referencia_gtq": 0.8,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 30,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 7
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "mayonesa",
+   "nombre": "Mayonesa",
+   "nombre_local": "mayonesa",
+   "categoria": "de la tienda",
+   "unidad_compra": "taza",
+   "precio_referencia_gtq": 14.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1440,
+    "proteina_g": 3,
+    "grasa_g": 160,
+    "carbohidratos_g": 6
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "huevo"
+   ]
+  },
+  {
+   "clave": "miel",
+   "nombre": "Miel de abeja",
+   "nombre_local": "miel",
+   "categoria": "de la tienda",
+   "unidad_compra": "taza",
+   "precio_referencia_gtq": 25.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1030,
     "proteina_g": 1,
+    "grasa_g": 0,
+    "carbohidratos_g": 280
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "mostaza",
+   "nombre": "Mostaza",
+   "nombre_local": "mostaza",
+   "categoria": "de la tienda",
+   "unidad_compra": "cucharada",
+   "precio_referencia_gtq": 0.8,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 10,
+    "proteina_g": 0.6,
+    "grasa_g": 0.6,
+    "carbohidratos_g": 1
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "panela",
+   "nombre": "Panela",
+   "nombre_local": "rapadura o dulce de panela",
+   "categoria": "de la tienda",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 6.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 600,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 155
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "pasas",
+   "nombre": "Pasas",
+   "nombre_local": "pasas",
+   "categoria": "de la tienda",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 85,
+    "proteina_g": 0.9,
+    "grasa_g": 0.1,
+    "carbohidratos_g": 22
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "pasta_tomate",
+   "nombre": "Pasta de tomate",
+   "nombre_local": "pasta de tomate",
+   "categoria": "de la tienda",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 200,
+    "proteina_g": 10,
+    "grasa_g": 1,
+    "carbohidratos_g": 46
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "salsa_inglesa",
+   "nombre": "Salsa inglesa",
+   "nombre_local": "salsa inglesa",
+   "categoria": "de la tienda",
+   "unidad_compra": "cucharada",
+   "precio_referencia_gtq": 1.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 13,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 3
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "pescado"
+   ]
+  },
+  {
+   "clave": "salsa_tomate",
+   "nombre": "Salsa de tomate",
+   "nombre_local": "salsa de tomate de bote",
+   "categoria": "de la tienda",
+   "unidad_compra": "taza",
+   "precio_referencia_gtq": 9.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 180,
+    "proteina_g": 4,
+    "grasa_g": 1,
+    "carbohidratos_g": 42
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "vinagre",
+   "nombre": "Vinagre",
+   "nombre_local": "vinagre blanco",
+   "categoria": "de la tienda",
+   "unidad_compra": "taza",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 10,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 0.4
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "achiote_polvo",
+   "nombre": "Achiote en polvo",
+   "nombre_local": "achiote molido",
+   "categoria": "especias",
+   "unidad_compra": "cucharadita",
+   "precio_referencia_gtq": 0.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 5,
+    "proteina_g": 0.2,
+    "grasa_g": 0.2,
+    "carbohidratos_g": 1
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "anis",
+   "nombre": "Anís",
+   "nombre_local": "anís en grano",
+   "categoria": "especias",
+   "unidad_compra": "cucharadita",
+   "precio_referencia_gtq": 0.8,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 7,
+    "proteina_g": 0.3,
     "grasa_g": 0.3,
+    "carbohidratos_g": 1
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "anis_estrellado",
+   "nombre": "Anís estrellado",
+   "nombre_local": "anís de estrella",
+   "categoria": "especias",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 0.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 3,
+    "proteina_g": 0.1,
+    "grasa_g": 0.1,
+    "carbohidratos_g": 0.7
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "canela",
+   "nombre": "Canela en raja",
+   "nombre_local": "canela",
+   "categoria": "especias",
+   "unidad_compra": "rama",
+   "precio_referencia_gtq": 1.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 6,
+    "proteina_g": 0.1,
+    "grasa_g": 0,
     "carbohidratos_g": 2
    },
    "temporada": "todo el año",
    "alergenos": []
   },
   {
-   "clave": "pescado_blanco",
-   "nombre": "Pescado blanco",
-   "nombre_local": "mojarra o robalo",
-   "categoria": "mariscos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 26.0,
+   "clave": "clavo",
+   "nombre": "Clavo de olor",
+   "nombre_local": "clavo",
+   "categoria": "especias",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 0.2,
    "nutricion_por_unidad": {
-    "calorias_kcal": 420,
-    "proteina_g": 88,
-    "grasa_g": 6,
-    "carbohidratos_g": 0
+    "calorias_kcal": 1,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 0.2
    },
    "temporada": "todo el año",
-   "alergenos": [
-    "pescado"
-   ]
+   "alergenos": []
   },
   {
-   "clave": "pescado_seco",
-   "nombre": "Pescado seco",
-   "nombre_local": "bacalao seco",
-   "categoria": "mariscos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 40.0,
+   "clave": "comino",
+   "nombre": "Comino",
+   "nombre_local": "comino",
+   "categoria": "especias",
+   "unidad_compra": "cucharadita",
+   "precio_referencia_gtq": 0.8,
    "nutricion_por_unidad": {
-    "calorias_kcal": 400,
-    "proteina_g": 90,
-    "grasa_g": 4,
-    "carbohidratos_g": 0
+    "calorias_kcal": 8,
+    "proteina_g": 0.4,
+    "grasa_g": 0.5,
+    "carbohidratos_g": 1
    },
-   "temporada": "febrero a abril",
-   "alergenos": [
-    "pescado"
-   ]
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "jengibre",
+   "nombre": "Jengibre",
+   "nombre_local": "jengibre",
+   "categoria": "especias",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 2.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 22,
+    "proteina_g": 0.5,
+    "grasa_g": 0.2,
+    "carbohidratos_g": 5
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "laurel",
+   "nombre": "Hoja de laurel",
+   "nombre_local": "laurel",
+   "categoria": "especias",
+   "unidad_compra": "hoja",
+   "precio_referencia_gtq": 0.3,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 2,
+    "proteina_g": 0,
+    "grasa_g": 0.1,
+    "carbohidratos_g": 0.5
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "oregano",
+   "nombre": "Orégano",
+   "nombre_local": "orégano de monte",
+   "categoria": "especias",
+   "unidad_compra": "cucharadita",
+   "precio_referencia_gtq": 0.6,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 3,
+    "proteina_g": 0.1,
+    "grasa_g": 0.1,
+    "carbohidratos_g": 0.7
+   },
+   "temporada": "todo el año",
+   "alergenos": []
   },
   {
    "clave": "pimienta_gorda",
@@ -2518,380 +3258,6 @@
    "alergenos": []
   },
   {
-   "clave": "pina",
-   "nombre": "Piña",
-   "nombre_local": "piña",
-   "categoria": "frutas",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 12.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 450,
-    "proteina_g": 5,
-    "grasa_g": 1,
-    "carbohidratos_g": 118
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "pinol",
-   "nombre": "Pinol",
-   "nombre_local": "maíz tostado y molido",
-   "categoria": "maíz",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 9.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1620,
-    "proteina_g": 40,
-    "grasa_g": 18,
-    "carbohidratos_g": 340
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "platano_maduro",
-   "nombre": "Plátano maduro",
-   "nombre_local": "plátano maduro",
-   "categoria": "frutas",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 3.5,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 218,
-    "proteina_g": 2,
-    "grasa_g": 0.7,
-    "carbohidratos_g": 57
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "platano_verde",
-   "nombre": "Plátano verde",
-   "nombre_local": "plátano verde",
-   "categoria": "verduras",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 220,
-    "proteina_g": 2,
-    "grasa_g": 0.6,
-    "carbohidratos_g": 57
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "pollo_criollo",
-   "nombre": "Pollo criollo",
-   "nombre_local": "pollo de patio",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 22.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 520,
-    "proteina_g": 88,
-    "grasa_g": 18,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "pollo_granja",
-   "nombre": "Pollo de granja",
-   "nombre_local": "pollo",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 14.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 540,
-    "proteina_g": 86,
-    "grasa_g": 21,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "polvo_hornear",
-   "nombre": "Polvo de hornear",
-   "nombre_local": "royal",
-   "categoria": "panaderia",
-   "unidad_compra": "cucharadita",
-   "precio_referencia_gtq": 0.4,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 2,
-    "proteina_g": 0,
-    "grasa_g": 0,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "poro",
-   "nombre": "Poro",
-   "nombre_local": "puerro",
-   "categoria": "verduras",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 54,
-    "proteina_g": 1.3,
-    "grasa_g": 0.3,
-    "carbohidratos_g": 13
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "queso_fresco",
-   "nombre": "Queso fresco",
-   "nombre_local": "queso de capas",
-   "categoria": "lacteos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 30.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1200,
-    "proteina_g": 90,
-    "grasa_g": 88,
-    "carbohidratos_g": 12
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "lacteos"
-   ]
-  },
-  {
-   "clave": "queso_seco",
-   "nombre": "Queso seco",
-   "nombre_local": "queso duro de Zacapa",
-   "categoria": "lacteos",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 110,
-    "proteina_g": 8,
-    "grasa_g": 8,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "lacteos"
-   ]
-  },
-  {
-   "clave": "rabano",
-   "nombre": "Rabano",
-   "nombre_local": "rabano",
-   "categoria": "manojo",
-   "unidad_compra": "manojo",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 16,
-    "proteina_g": 0.7,
-    "grasa_g": 0.1,
-    "carbohidratos_g": 3
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "remolacha",
-   "nombre": "Remolacha",
-   "nombre_local": "remolacha",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 195,
-    "proteina_g": 7,
-    "grasa_g": 0.7,
-    "carbohidratos_g": 44
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "repollo",
-   "nombre": "Repollo",
-   "nombre_local": "repollo blanco",
-   "categoria": "verduras",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 8.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 200,
-    "proteina_g": 10,
-    "grasa_g": 1,
-    "carbohidratos_g": 47
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "requeson",
-   "nombre": "Requeson",
-   "nombre_local": "requeson",
-   "categoria": "lacteos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 22.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 740,
-    "proteina_g": 68,
-    "grasa_g": 44,
-    "carbohidratos_g": 16
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "lacteos"
-   ]
-  },
-  {
-   "clave": "res_costilla",
-   "nombre": "Costilla de res",
-   "nombre_local": "costilla",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 30.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 780,
-    "proteina_g": 74,
-    "grasa_g": 52,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "res_espinazo",
-   "nombre": "Espinazo de res",
-   "nombre_local": "espinazo",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 22.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 620,
-    "proteina_g": 68,
-    "grasa_g": 38,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "res_falda",
-   "nombre": "Falda de res",
-   "nombre_local": "falda",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 32.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 700,
-    "proteina_g": 82,
-    "grasa_g": 40,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "res_hueso",
-   "nombre": "Hueso de res con tuetano",
-   "nombre_local": "hueso de caracol",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 16.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 420,
-    "proteina_g": 40,
-    "grasa_g": 30,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "res_lomo",
-   "nombre": "Lomo de res",
-   "nombre_local": "lomito",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 45.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 600,
-    "proteina_g": 96,
-    "grasa_g": 22,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "res_pata",
-   "nombre": "Pata de res",
-   "nombre_local": "pata",
-   "categoria": "carnes",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 18.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 560,
-    "proteina_g": 66,
-    "grasa_g": 32,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "ron",
-   "nombre": "Ron",
-   "nombre_local": "ron",
-   "categoria": "bebidas",
-   "unidad_compra": "taza",
-   "precio_referencia_gtq": 25.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 500,
-    "proteina_g": 0,
-    "grasa_g": 0,
-    "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "rosa_jamaica",
-   "nombre": "Rosa de Jamaica",
-   "nombre_local": "jamaica",
-   "categoria": "frutas",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 5.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 14,
-    "proteina_g": 0.3,
-    "grasa_g": 0.1,
-    "carbohidratos_g": 3
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "ruda",
-   "nombre": "Ruda",
-   "nombre_local": "ruda",
-   "categoria": "hierbas",
-   "unidad_compra": "rama",
-   "precio_referencia_gtq": 1.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 2,
-    "proteina_g": 0.1,
-    "grasa_g": 0,
-    "carbohidratos_g": 0.4
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
    "clave": "sal",
    "nombre": "Sal",
    "nombre_local": "sal fortificada",
@@ -2903,168 +3269,6 @@
     "proteina_g": 0,
     "grasa_g": 0,
     "carbohidratos_g": 0
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "salchicha",
-   "nombre": "Salchicha",
-   "nombre_local": "salchicha de coctel",
-   "categoria": "embutidos",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 20.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1000,
-    "proteina_g": 48,
-    "grasa_g": 88,
-    "carbohidratos_g": 8
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "salsa_inglesa",
-   "nombre": "Salsa inglesa",
-   "nombre_local": "salsa inglesa",
-   "categoria": "abarrotes",
-   "unidad_compra": "cucharada",
-   "precio_referencia_gtq": 1.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 13,
-    "proteina_g": 0,
-    "grasa_g": 0,
-    "carbohidratos_g": 3
-   },
-   "temporada": "todo el año",
-   "alergenos": [
-    "pescado"
-   ]
-  },
-  {
-   "clave": "salsa_tomate",
-   "nombre": "Salsa de tomate",
-   "nombre_local": "salsa de tomate de bote",
-   "categoria": "abarrotes",
-   "unidad_compra": "taza",
-   "precio_referencia_gtq": 9.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 180,
-    "proteina_g": 4,
-    "grasa_g": 1,
-    "carbohidratos_g": 42
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "samat",
-   "nombre": "Samat",
-   "nombre_local": "culantro de monte (q'eqchi')",
-   "categoria": "hierbas",
-   "unidad_compra": "rama",
-   "precio_referencia_gtq": 1.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 3,
-    "proteina_g": 0.2,
-    "grasa_g": 0,
-    "carbohidratos_g": 0.5
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "sandia",
-   "nombre": "Sandía",
-   "nombre_local": "sandía",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 136,
-    "proteina_g": 3,
-    "grasa_g": 0.7,
-    "carbohidratos_g": 34
-   },
-   "temporada": "marzo a julio",
-   "alergenos": []
-  },
-  {
-   "clave": "semilla_ayote",
-   "nombre": "Semilla de ayote",
-   "nombre_local": "pepita cruda",
-   "categoria": "semillas",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 158,
-    "proteina_g": 8,
-    "grasa_g": 13,
-    "carbohidratos_g": 4
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "tamarindo",
-   "nombre": "Tamarindo",
-   "nombre_local": "tamarindo",
-   "categoria": "frutas",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 12.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 1090,
-    "proteina_g": 13,
-    "grasa_g": 3,
-    "carbohidratos_g": 285
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "te_limon",
-   "nombre": "Té de limón",
-   "nombre_local": "zacate limón",
-   "categoria": "hierbas",
-   "unidad_compra": "manojo",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 6,
-    "proteina_g": 0.3,
-    "grasa_g": 0.1,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "tilo",
-   "nombre": "Flor de tilo",
-   "nombre_local": "tilo",
-   "categoria": "hierbas",
-   "unidad_compra": "onza",
-   "precio_referencia_gtq": 5.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 5,
-    "proteina_g": 0.2,
-    "grasa_g": 0.1,
-    "carbohidratos_g": 1
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "tomate",
-   "nombre": "Tomate",
-   "nombre_local": "tomate de cocina",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 5.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 82,
-    "proteina_g": 4,
-    "grasa_g": 1,
-    "carbohidratos_g": 18
    },
    "temporada": "todo el año",
    "alergenos": []
@@ -3086,131 +3290,35 @@
    "alergenos": []
   },
   {
-   "clave": "tortilla_maiz",
-   "nombre": "Tortilla de maíz",
-   "nombre_local": "tortilla",
-   "categoria": "maíz",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 0.75,
+   "clave": "aceite",
+   "nombre": "Aceite vegetal",
+   "nombre_local": "aceite",
+   "categoria": "grasas",
+   "unidad_compra": "taza",
+   "precio_referencia_gtq": 8.0,
    "nutricion_por_unidad": {
-    "calorias_kcal": 65,
-    "proteina_g": 1.5,
-    "grasa_g": 0.8,
-    "carbohidratos_g": 13
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "tostada",
-   "nombre": "Tostada de maíz",
-   "nombre_local": "tostada",
-   "categoria": "maíz",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 1.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 70,
-    "proteina_g": 1.5,
-    "grasa_g": 2.0,
-    "carbohidratos_g": 12
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "tusa_maiz",
-   "nombre": "Tusa de maíz",
-   "nombre_local": "doblador",
-   "categoria": "envolturas",
-   "unidad_compra": "hoja",
-   "precio_referencia_gtq": 0.3,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 0,
+    "calorias_kcal": 1900,
     "proteina_g": 0,
-    "grasa_g": 0,
+    "grasa_g": 218,
     "carbohidratos_g": 0
    },
    "temporada": "todo el año",
    "alergenos": []
   },
   {
-   "clave": "vainilla",
-   "nombre": "Vainilla",
-   "nombre_local": "esencia de vainilla",
-   "categoria": "panaderia",
-   "unidad_compra": "cucharadita",
-   "precio_referencia_gtq": 1.0,
+   "clave": "manteca_cerdo",
+   "nombre": "Manteca de cerdo",
+   "nombre_local": "manteca",
+   "categoria": "grasas",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 2.0,
    "nutricion_por_unidad": {
-    "calorias_kcal": 12,
+    "calorias_kcal": 250,
     "proteina_g": 0,
-    "grasa_g": 0,
-    "carbohidratos_g": 0.5
+    "grasa_g": 28,
+    "carbohidratos_g": 0
    },
    "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "vinagre",
-   "nombre": "Vinagre",
-   "nombre_local": "vinagre blanco",
-   "categoria": "abarrotes",
-   "unidad_compra": "taza",
-   "precio_referencia_gtq": 3.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 10,
-    "proteina_g": 0,
-    "grasa_g": 0,
-    "carbohidratos_g": 0.4
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "yuca",
-   "nombre": "Yuca",
-   "nombre_local": "yuca",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 720,
-    "proteina_g": 6,
-    "grasa_g": 1.4,
-    "carbohidratos_g": 172
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "zanahoria",
-   "nombre": "Zanahoria",
-   "nombre_local": "zanahoria",
-   "categoria": "verduras",
-   "unidad_compra": "libra",
-   "precio_referencia_gtq": 4.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 186,
-    "proteina_g": 4,
-    "grasa_g": 1,
-    "carbohidratos_g": 44
-   },
-   "temporada": "todo el año",
-   "alergenos": []
-  },
-  {
-   "clave": "zapote",
-   "nombre": "Zapote",
-   "nombre_local": "zapote",
-   "categoria": "frutas",
-   "unidad_compra": "unidad",
-   "precio_referencia_gtq": 10.0,
-   "nutricion_por_unidad": {
-    "calorias_kcal": 330,
-    "proteina_g": 4,
-    "grasa_g": 2,
-    "carbohidratos_g": 84
-   },
-   "temporada": "febrero a junio",
    "alergenos": []
   }
  ]
