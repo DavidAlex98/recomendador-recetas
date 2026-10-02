@@ -1,32 +1,21 @@
 # Responsable: Cristian
 #
-# Por hacer:
-#   GET, POST y DELETE /api/favoritos
-#   GET /api/historial
-#   Lista de compras con estados: generada, comprada, cerrada
-#
-# Guíate con rutas/ejemplo.py y prueba en http://localhost:8000/docs
+# Endpoints:
+#   - GET, POST, DELETE /api/favoritos
+#   - POST, GET, PUT /api/plan
 
-from fastapi import APIRouter
-
-import catalogo
-from db import consultar, ejecutar
-
-router = APIRouter(prefix="/api")
-
-
-# Escribe tus endpoints aquí abajo
-# Responsable: Cristian
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from db import consultar, ejecutar
 
 router = APIRouter(prefix="/api")
 
+
 # Esquemas Pydantic
 class ItemPlan(BaseModel):
     receta_id: str
     dia: str  # Ej: 'lunes', 'martes', etc.
+
 
 class EstadoPlan(BaseModel):
     estado: str  # 'cocinado' u 'omitido'
@@ -52,7 +41,7 @@ def agregar_favorito(usuario_id: int, receta_id: str):
         ejecutar(sql, (usuario_id, receta_id))
         return {"mensaje": "Receta agregada a favoritos"}
     except Exception as e:
-        # Mostramos el error real que lanza PostgreSQL
+        # Muestra el detalle del error de PostgreSQL para depuración
         raise HTTPException(status_code=400, detail=str(e))
 
 
@@ -74,8 +63,8 @@ def agregar_al_plan(usuario_id: int, item: ItemPlan):
     try:
         ejecutar(sql, (usuario_id, item.receta_id, item.dia))
         return {"mensaje": "Receta agregada al plan semanal"}
-    except Exception:
-        raise HTTPException(status_code=400, detail="Error al agregar al plan")
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
 
 @router.get("/plan/{usuario_id}")
@@ -93,14 +82,21 @@ def obtener_plan(usuario_id: int):
 def actualizar_estado_plan(id: int, datos: EstadoPlan):
     nuevo_estado = datos.estado.lower()
     if nuevo_estado not in ["cocinado", "omitido"]:
-        raise HTTPException(status_code=400, detail="El estado debe ser 'cocinado' u 'omitido'")
+        raise HTTPException(
+            status_code=400, detail="El estado debe ser 'cocinado' u 'omitido'"
+        )
 
     plan = consultar("SELECT estado FROM plan_semanal WHERE id = %s", (id,))
     if not plan:
-        raise HTTPException(status_code=404, detail="Registro del plan no encontrado")
+        raise HTTPException(
+            status_code=404, detail="Registro del plan no encontrado"
+        )
 
     if plan[0]["estado"] != "planificado":
-        raise HTTPException(status_code=400, detail="Solo se pueden modificar items en estado 'planificado'")
+        raise HTTPException(
+            status_code=400,
+            detail="Solo se pueden modificar items en estado 'planificado'",
+        )
 
     sql = "UPDATE plan_semanal SET estado = %s WHERE id = %s"
     ejecutar(sql, (nuevo_estado, id))
