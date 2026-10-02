@@ -1,20 +1,16 @@
--- RecetApp: tablas de la base de datos (PostgreSQL)
--- Responsables: Cristian, Manrique y Rubí
---
--- Cómo correrlo: en pgAdmin, clic derecho en la base recetapp > Query Tool >
--- abrir este archivo > botón Play.
---
--- Los ingredientes NO tienen tabla: están en datos/ingredientes-guatemala.json.
--- Aquí solo se guarda su clave, por ejemplo 'cebolla'.
+CREATE TABLE usuarios (
+    id               SERIAL PRIMARY KEY,
+    nombre           VARCHAR(100) NOT NULL,
+    correo           VARCHAR(150) NOT NULL UNIQUE,
+    contrasena_hash  VARCHAR(255) NOT NULL,
+    rol              VARCHAR(20) NOT NULL DEFAULT 'usuario',   
+    activo           BOOLEAN NOT NULL DEFAULT TRUE,
+    creado_en        TIMESTAMP DEFAULT NOW()
+);
 
--- Borrar las tablas si ya existen
-DROP TABLE IF EXISTS pasos;
-DROP TABLE IF EXISTS receta_ingredientes;
-DROP TABLE IF EXISTS recetas;
 
--- Recetas
 CREATE TABLE recetas (
-    id           VARCHAR(10) PRIMARY KEY,
+    id           VARCHAR(10) PRIMARY KEY,                   
     nombre       VARCHAR(150) NOT NULL,
     categoria    VARCHAR(60) NOT NULL,
     descripcion  TEXT,
@@ -26,7 +22,8 @@ CREATE TABLE recetas (
     sin_gluten   BOOLEAN NOT NULL
 );
 
--- Ingredientes de cada receta (clave del archivo JSON)
+
+
 CREATE TABLE receta_ingredientes (
     id         SERIAL PRIMARY KEY,
     receta_id  VARCHAR(10) NOT NULL REFERENCES recetas(id),
@@ -44,7 +41,54 @@ CREATE TABLE pasos (
     instruccion  TEXT NOT NULL
 );
 
--- POR HACER (equipo de base de datos):
--- agregar aquí las tablas usuarios, despensa, favoritos, historial,
--- lista_compras, recetas_propuestas y bitacora, según el diagrama.
--- Recuerden agregar también su DROP TABLE arriba.
+
+
+CREATE TABLE despensa (
+    id          SERIAL PRIMARY KEY,
+    usuario_id  INTEGER NOT NULL REFERENCES usuarios(id),
+    clave       VARCHAR(60) NOT NULL
+);
+
+
+CREATE TABLE favoritos (
+    id          SERIAL PRIMARY KEY,
+    usuario_id  INTEGER NOT NULL REFERENCES usuarios(id),
+    receta_id   VARCHAR(10) NOT NULL REFERENCES recetas(id),
+    creado_en   TIMESTAMP DEFAULT NOW()
+);
+
+
+CREATE TABLE historial (
+    id          SERIAL PRIMARY KEY,
+    usuario_id  INTEGER NOT NULL REFERENCES usuarios(id),
+    receta_id   VARCHAR(10) NOT NULL REFERENCES recetas(id),
+    visto_en    TIMESTAMP DEFAULT NOW()
+);
+
+
+CREATE TABLE plan_semanal (
+    id          SERIAL PRIMARY KEY,
+    usuario_id  INTEGER NOT NULL REFERENCES usuarios(id),
+    receta_id   VARCHAR(10) NOT NULL REFERENCES recetas(id),
+    dia         VARCHAR(10) NOT NULL,                        -- lunes a domingo
+    estado      VARCHAR(20) NOT NULL DEFAULT 'planificado'   -- planificado, cocinado u omitido
+);
+
+
+CREATE TABLE recetas_propuestas (
+    id              SERIAL PRIMARY KEY,
+    usuario_id      INTEGER NOT NULL REFERENCES usuarios(id),
+    nombre          VARCHAR(150) NOT NULL,
+    descripcion     TEXT,
+    estado          VARCHAR(20) NOT NULL DEFAULT 'pendiente',  
+    motivo_rechazo  TEXT,
+    creado_en       TIMESTAMP DEFAULT NOW()
+);
+
+
+CREATE TABLE bitacora (
+    id          SERIAL PRIMARY KEY,
+    usuario_id  INTEGER REFERENCES usuarios(id),
+    accion      VARCHAR(200) NOT NULL,
+    fecha       TIMESTAMP DEFAULT NOW()
+);
