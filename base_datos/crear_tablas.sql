@@ -1,3 +1,4 @@
+
 CREATE TABLE usuarios (
     id               SERIAL PRIMARY KEY,
     nombre           VARCHAR(100) NOT NULL,
@@ -8,7 +9,7 @@ CREATE TABLE usuarios (
     creado_en        TIMESTAMP DEFAULT NOW()
 );
 
-
+-- Recetas (se llenan con importar_recetas.py)
 CREATE TABLE recetas (
     id           VARCHAR(10) PRIMARY KEY,                   
     nombre       VARCHAR(150) NOT NULL,
@@ -23,7 +24,9 @@ CREATE TABLE recetas (
 );
 
 
+-- 3. Tablas de cada receta
 
+-- Ingredientes de cada receta (clave del archivo JSON)
 CREATE TABLE receta_ingredientes (
     id         SERIAL PRIMARY KEY,
     receta_id  VARCHAR(10) NOT NULL REFERENCES recetas(id),
@@ -42,14 +45,16 @@ CREATE TABLE pasos (
 );
 
 
+-- 4. Tablas de cada usuario
 
+-- Ingredientes que tiene guardados cada usuario (clave del archivo JSON)
 CREATE TABLE despensa (
     id          SERIAL PRIMARY KEY,
     usuario_id  INTEGER NOT NULL REFERENCES usuarios(id),
     clave       VARCHAR(60) NOT NULL
 );
 
-
+-- Recetas favoritas de cada usuario
 CREATE TABLE favoritos (
     id          SERIAL PRIMARY KEY,
     usuario_id  INTEGER NOT NULL REFERENCES usuarios(id),
@@ -57,7 +62,7 @@ CREATE TABLE favoritos (
     creado_en   TIMESTAMP DEFAULT NOW()
 );
 
-
+-- Recetas que vio cada usuario
 CREATE TABLE historial (
     id          SERIAL PRIMARY KEY,
     usuario_id  INTEGER NOT NULL REFERENCES usuarios(id),
@@ -65,7 +70,7 @@ CREATE TABLE historial (
     visto_en    TIMESTAMP DEFAULT NOW()
 );
 
-
+-- Proceso 1: plan de comidas de la semana
 CREATE TABLE plan_semanal (
     id          SERIAL PRIMARY KEY,
     usuario_id  INTEGER NOT NULL REFERENCES usuarios(id),
