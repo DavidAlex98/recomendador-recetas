@@ -1,10 +1,4 @@
 # Responsable: Brandon
-#
-# Por hacer:
-#   Crear, editar y borrar recetas
-#   Aprobar o rechazar recetas propuestas
-#
-# Guíate con rutas/ejemplo.py y prueba en http://localhost:8000/docs
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
@@ -36,6 +30,9 @@ def proponer_receta(usuario_id: int, datos: Propuesta):
     if not usuario:
         raise HTTPException(status_code=404, detail="Usuario no encontrado")
 
+    if datos.nombre.strip() == "":
+        raise HTTPException(status_code=400, detail="La receta necesita un nombre")
+
     ejecutar(
         """
         INSERT INTO recetas_propuestas
@@ -54,17 +51,19 @@ def proponer_receta(usuario_id: int, datos: Propuesta):
 def listar_propuestas_pendientes():
     return consultar(
         """
-        SELECT p.id, p.usuario_id, u.nombre AS usuario, p.nombre, p.descripcion, p.creado_en
-        FROM recetas_propuestas p
-        JOIN usuarios u ON u.id = p.usuario_id
-        WHERE p.estado = 'pendiente'
-        ORDER BY p.creado_en
+        SELECT recetas_propuestas.id, recetas_propuestas.usuario_id,
+               usuarios.nombre AS usuario, recetas_propuestas.nombre,
+               recetas_propuestas.descripcion, recetas_propuestas.creado_en
+        FROM recetas_propuestas
+        JOIN usuarios ON usuarios.id = recetas_propuestas.usuario_id
+        WHERE recetas_propuestas.estado = 'pendiente'
+        ORDER BY recetas_propuestas.creado_en
         """
     )
 
 
 # Busca una propuesta y avisa si no existe o si ya fue revisada
-def _buscar_propuesta_pendiente(propuesta_id):
+def buscar_propuesta_pendiente(propuesta_id):
     filas = consultar("SELECT * FROM recetas_propuestas WHERE id = %s", (propuesta_id,))
     if not filas:
         raise HTTPException(status_code=404, detail="Propuesta no encontrada")
@@ -79,7 +78,7 @@ def _buscar_propuesta_pendiente(propuesta_id):
 # PUT /api/admin/propuestas/{id}/aprobar
 @router.put("/admin/propuestas/{propuesta_id}/aprobar")
 def aprobar_propuesta(propuesta_id: int):
-    _buscar_propuesta_pendiente(propuesta_id)
+    buscar_propuesta_pendiente(propuesta_id)
 
     ejecutar(
         "UPDATE recetas_propuestas SET estado = 'aprobada' WHERE id = %s",
@@ -92,7 +91,10 @@ def aprobar_propuesta(propuesta_id: int):
 # PUT /api/admin/propuestas/{id}/rechazar
 @router.put("/admin/propuestas/{propuesta_id}/rechazar")
 def rechazar_propuesta(propuesta_id: int, datos: Rechazo):
-    _buscar_propuesta_pendiente(propuesta_id)
+    buscar_propuesta_pendiente(propuesta_id)
+
+    if datos.motivo.strip() == "":
+        raise HTTPException(status_code=400, detail="Escribí el motivo del rechazo")
 
     ejecutar(
         "UPDATE recetas_propuestas SET estado = 'rechazada', motivo_rechazo = %s WHERE id = %s",
