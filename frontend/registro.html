@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrarse · RecetApp</title>
+    <link rel="stylesheet" href="css/estilos.css?v=7">
+</head>
+<body>
+    <!-- Responsable: Rubí -->
+
+    <!-- api.js llena la barra según si hay sesión -->
+    <nav class="barra"></nav>
+
+    <main>
+        <h1>Crear cuenta</h1>
+
+        <form id="formulario" class="tarjeta formulario">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" class="buscador" type="text" required>
+
+            <label for="correo">Correo</label>
+            <input id="correo" class="buscador" type="email" required>
+
+            <label for="contrasena">Contraseña</label>
+            <input id="contrasena" class="buscador" type="password" required>
+
+            <label for="confirmar">Repite la contraseña</label>
+            <input id="confirmar" class="buscador" type="password" required>
+
+            <button class="boton" type="submit">Crear cuenta</button>
+            <p id="mensaje" class="mensaje-error"></p>
+        </form>
+
+        <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+    </main>
+
+    <script src="js/api.js?v=7"></script>
+    <script src="js/registro.js?v=7"></script>
+</body>
+</html>

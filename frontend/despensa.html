@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi despensa · RecetApp</title>
+    <link rel="stylesheet" href="css/estilos.css?v=7">
+</head>
+<body>
+    <!-- Responsable: Shanda -->
+
+    <nav class="barra"></nav>
+
+    <main>
+        <h1>Mi despensa</h1>
+        <p>Marca lo que tienes en casa. Se guarda solo, así la próxima vez ya está listo.</p>
+
+        <section class="tarjeta">
+            <h3>Lo que tengo guardado</h3>
+            <!-- despensa.js llena este div con los ingredientes guardados -->
+            <div id="guardados">Cargando...</div>
+            <p><button id="boton-cocinar" class="boton">Ver qué puedo cocinar</button></p>
+        </section>
+
+        <div id="resultados"></div>
+
+        <h2>Agregar ingredientes</h2>
+        <input id="buscador" class="buscador" type="text" placeholder="Buscar ingrediente...">
+        <!-- despensa.js llena este div con las casillas -->
+        <div id="ingredientes">Cargando ingredientes...</div>
+        <p id="mensaje" class="mensaje-error"></p>
+    </main>
+
+    <script src="js/api.js?v=7"></script>
+    <script src="js/despensa.js?v=7"></script>
+</body>
+</html>

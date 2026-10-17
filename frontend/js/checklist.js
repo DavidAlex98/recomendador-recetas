@@ -5,6 +5,7 @@
 // 2. El buscador esconde los que no coinciden
 // 3. El botón manda los marcados a /api/recomendaciones y muestra las recetas
 // 4. Si no marcaste cosas que casi toda casa tiene, te pregunta por ellas
+// 5. Con sesión, un botón marca lo que tienes guardado en tu despensa
 
 // Cosas que casi siempre hay en casa (se le recuerdan al usuario si no las marcó)
 const COMUNES = ["ajo", "cebolla", "tomate", "limon", "huevo", "tortilla_maiz", "frijol_negro", "arroz"];
@@ -111,7 +112,27 @@ function agregar(clave) {
     buscarRecetas();
 }
 
+// Si hay sesión: marca las casillas de lo que el usuario tiene en su despensa
+async function marcarDespensa() {
+    const usuario = usuarioActual();
+    try {
+        const despensa = await pedirGET("/api/despensa/" + usuario.id);
+        for (const ingrediente of despensa) {
+            const casilla = document.querySelector('.casilla input[value="' + ingrediente.clave + '"]');
+            if (casilla) {
+                casilla.checked = true;
+            }
+        }
+    } catch (error) {
+        // si falla, se queda como estaba
+    }
+}
+
 // Cuando la página termina de cargar
 mostrarIngredientes();
+if (usuarioActual()) {
+    document.getElementById("caja-despensa").classList.remove("oculto");
+    document.getElementById("boton-despensa").addEventListener("click", marcarDespensa);
+}
 document.getElementById("buscador").addEventListener("input", filtrar);
 document.getElementById("boton-buscar").addEventListener("click", buscarRecetas);

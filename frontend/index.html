@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RecetApp</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css?v=7">
 </head>
 <body>
     <!-- PÁGINA DE EJEMPLO (David): úsala como modelo para las demás páginas -->
@@ -20,6 +20,12 @@
         <p>Marca los ingredientes que tienes en casa y te decimos qué recetas guatemaltecas puedes preparar.</p>
         <p><a class="boton" href="checklist.html">Empezar</a></p>
 
+        <!-- inicio.js lo muestra solo si hay sesión y el usuario ya vio recetas -->
+        <section id="caja-historial" class="tarjeta oculto">
+            <h3>Lo último que viste</h3>
+            <div id="historial"></div>
+        </section>
+
         <section class="tarjeta">
             <h3>Estado del sistema</h3>
             <!-- inicio.js llena este párrafo con lo que responda /api/estado -->
@@ -33,7 +39,7 @@
         </section>
     </main>
 
-    <script src="js/api.js"></script>
-    <script src="js/inicio.js"></script>
+    <script src="js/api.js?v=7"></script>
+    <script src="js/inicio.js?v=7"></script>
 </body>
 </html>

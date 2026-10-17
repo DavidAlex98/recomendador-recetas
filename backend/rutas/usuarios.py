@@ -8,7 +8,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 import bcrypt
 
-from db import consultar, ejecutar
+from db import anotar, consultar, ejecutar
 
 router = APIRouter(prefix="/api")
 
@@ -62,7 +62,7 @@ def registro(datos: Registro):
         """
         SELECT id
         FROM usuarios
-        WHERE correo = %s
+        WHERE LOWER(correo) = LOWER(%s)
         """,
         (correo,)
     )
@@ -92,6 +92,8 @@ def registro(datos: Registro):
         )
     )
 
+    anotar(None, "Se registró " + correo)
+
     return {
         "mensaje": "Usuario registrado correctamente"
     }
@@ -106,7 +108,7 @@ def login(datos: Login):
         """
         SELECT id, nombre, rol, contrasena_hash
         FROM usuarios
-        WHERE correo = %s
+        WHERE LOWER(correo) = LOWER(%s)
           AND activo = TRUE
         """,
         (datos.correo.strip(),)
@@ -137,6 +139,8 @@ def login(datos: Login):
             status_code=401,
             detail="Correo o contraseña incorrectos"
         )
+
+    anotar(usuario["id"], "Inició sesión")
 
     return {
         "id": usuario["id"],

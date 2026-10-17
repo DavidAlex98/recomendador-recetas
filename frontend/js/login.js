@@ -14,6 +14,10 @@ document.getElementById("formulario").addEventListener("submit", async function 
         localStorage.setItem("usuario", JSON.stringify(usuario));
         window.location.href = "index.html";
     } catch (error) {
-        mensaje.textContent = "Correo o contraseña incorrectos.";
+        if (error.status === 401) {
+            mensaje.textContent = "Correo o contraseña incorrectos.";
+        } else {
+            mensaje.textContent = "No se pudo conectar con el servidor.";
+        }
     }
 });

@@ -1,11 +1,9 @@
 # Responsable: Shanda
 #
-# Por hacer:
+# Endpoints:
 #   GET /api/despensa/{usuario_id}  ->  ingredientes guardados del usuario
 #   POST /api/despensa/{usuario_id}  ->  agregar un ingrediente
 #   DELETE /api/despensa/{usuario_id}/{clave}  ->  quitar un ingrediente
-#
-# Guíate con rutas/ejemplo.py y prueba en http://localhost:8000/docs
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
@@ -15,8 +13,6 @@ from db import consultar, ejecutar
 
 router = APIRouter(prefix="/api")
 
-
-# Escribe tus endpoints aquí abajo
 
 class IngredienteDespensa(BaseModel):
 	clave: str

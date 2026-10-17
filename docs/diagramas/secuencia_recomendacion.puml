@@ -1,0 +1,31 @@
+@startuml secuencia_recomendacion
+' Cómo se recomiendan recetas
+' Responsable: David
+title RecetApp - Recomendar recetas
+
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam sequence {
+  ParticipantBorderColor #7366FE
+  ParticipantBackgroundColor #F3F1FF
+  LifeLineBorderColor #999999
+}
+
+actor Usuario
+participant "checklist.html\n+ checklist.js" as front
+participant "FastAPI\nrecomendacion.py" as api
+participant "catalogo.py\n(JSON)" as cat
+database PostgreSQL as db
+
+Usuario -> front : marca ingredientes\ny pulsa "Ver qué puedo cocinar"
+front -> api : POST /api/recomendaciones\n{"ingredientes": ["huevo", "tomate", ...]}
+api -> cat : BASICOS y PROTEINAS
+cat --> api : sal, aceite, azúcar... / carnes, huevo, frijol...
+api -> db : SELECT recetas
+api -> db : SELECT receta_ingredientes
+db --> api : filas
+api -> api : descarta recetas a las que les falta\nun ingrediente no opcional
+api -> api : puntos = ingredientes usados\n(+10 si lleva proteína)
+api --> front : lista ordenada por puntos
+front --> Usuario : tarjetas de recetas
+@enduml
