@@ -1,13 +1,7 @@
 // ¿Qué tengo en casa?
 // Responsable: Manrique
-//
-// 1. Muestra los ingredientes con casillas, agrupados por categoría
-// 2. El buscador esconde los que no coinciden
-// 3. El botón manda los marcados a /api/recomendaciones y muestra las recetas
-// 4. Si no marcaste cosas que casi toda casa tiene, te pregunta por ellas
-// 5. Con sesión, un botón marca lo que tienes guardado en tu despensa
 
-// Cosas que casi siempre hay en casa (se le recuerdan al usuario si no las marcó)
+// Si no se marcaron, se le pregunta al usuario por ellos
 const COMUNES = ["ajo", "cebolla", "tomate", "limon", "huevo", "tortilla_maiz", "frijol_negro", "arroz"];
 
 async function mostrarIngredientes() {
@@ -48,7 +42,6 @@ function filtrar() {
 async function buscarRecetas() {
     const resultados = document.getElementById("resultados");
 
-    // Juntar las claves de las casillas marcadas
     const marcados = [];
     const casillas = document.querySelectorAll(".casilla input:checked");
     for (const casilla of casillas) {
@@ -86,7 +79,7 @@ async function buscarRecetas() {
     }
 }
 
-// Cuadro de "¿Te falta marcar algo?" con las cosas comunes que no marcó
+// Cuadro de "¿Te falta marcar algo?"
 function mostrarSugerencias(marcados) {
     const cuadro = document.getElementById("sugerencias");
     let botones = "";
@@ -106,13 +99,12 @@ function mostrarSugerencias(marcados) {
     }
 }
 
-// Marca la casilla del ingrediente y vuelve a buscar
 function agregar(clave) {
     document.querySelector('.casilla input[value="' + clave + '"]').checked = true;
     buscarRecetas();
 }
 
-// Si hay sesión: marca las casillas de lo que el usuario tiene en su despensa
+// Con sesión, marca lo que el usuario tiene en su despensa
 async function marcarDespensa() {
     const usuario = usuarioActual();
     try {
@@ -124,11 +116,9 @@ async function marcarDespensa() {
             }
         }
     } catch (error) {
-        // si falla, se queda como estaba
     }
 }
 
-// Cuando la página termina de cargar
 mostrarIngredientes();
 if (usuarioActual()) {
     document.getElementById("caja-despensa").classList.remove("oculto");

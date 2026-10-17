@@ -1,9 +1,5 @@
 // Crear cuenta
 // Responsable: Rubí
-//
-// 1. Revisa que las dos contraseñas sean iguales
-// 2. Manda los datos a /api/registro
-// 3. Si sale bien, inicia sesión de una vez y manda al inicio
 
 document.getElementById("formulario").addEventListener("submit", async function (evento) {
     evento.preventDefault();
@@ -25,7 +21,6 @@ document.getElementById("formulario").addEventListener("submit", async function 
         localStorage.setItem("usuario", JSON.stringify(usuario));
         window.location.href = "index.html";
     } catch (error) {
-        // El servidor dice qué pasó, por ejemplo "El correo ya está registrado"
         mensaje.textContent = error.message;
     }
 });

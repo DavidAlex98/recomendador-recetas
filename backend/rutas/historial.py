@@ -1,8 +1,5 @@
 # Historial de recetas vistas
 # Responsable: David
-#
-#   POST /api/historial/{usuario_id}/{receta_id}  ->  anotar que el usuario vio una receta
-#   GET  /api/historial/{usuario_id}              ->  las últimas recetas que vio
 
 from fastapi import APIRouter, HTTPException
 
@@ -24,7 +21,7 @@ def anotar_vista(usuario_id: int, receta_id: str):
 
 @router.get("/historial/{usuario_id}")
 def ver_historial(usuario_id: int):
-    # Cada receta una sola vez, con la fecha de la última vez que se vio
+    # Las últimas 10 recetas, cada una una sola vez
     return consultar(
         """
         SELECT recetas.id, recetas.nombre, recetas.categoria, MAX(historial.visto_en) AS visto_en

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/estilos.css?v=7">
 </head>
 <body>
-    <!-- PÁGINA DE EJEMPLO (David): úsala como modelo para las demás páginas -->
+    <!-- Responsable: David -->
 
     <nav class="barra">
         <a class="marca" href="index.html">RecetApp</a>
@@ -20,7 +20,6 @@
         <p>Marca los ingredientes que tienes en casa y te decimos qué recetas guatemaltecas puedes preparar.</p>
         <p><a class="boton" href="checklist.html">Empezar</a></p>
 
-        <!-- inicio.js lo muestra solo si hay sesión y el usuario ya vio recetas -->
         <section id="caja-historial" class="tarjeta oculto">
             <h3>Lo último que viste</h3>
             <div id="historial"></div>
@@ -28,13 +27,11 @@
 
         <section class="tarjeta">
             <h3>Estado del sistema</h3>
-            <!-- inicio.js llena este párrafo con lo que responda /api/estado -->
             <p id="estado">Consultando...</p>
         </section>
 
         <section class="tarjeta">
             <h3>Categorías de ingredientes</h3>
-            <!-- inicio.js llena este div con lo que responda /api/categorias -->
             <div id="categorias">Cargando...</div>
         </section>
     </main>

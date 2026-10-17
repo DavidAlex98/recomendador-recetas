@@ -1,9 +1,7 @@
-# Rutas de ingredientes
+# Ingredientes del catálogo
 # Responsable: Shanda
 #
-#   GET /api/ingredientes  ->  ingredientes del JSON agrupados por categoría
-#   (solo los comunes de catalogo.EN_CHECKLIST, para no saturar la página)
-#   GET /api/ingredientes?todos=true  ->  el catálogo completo (lo usa el admin)
+# Sin parámetros da solo los comunes; con ?todos=true da el catálogo completo.
 
 from fastapi import APIRouter
 

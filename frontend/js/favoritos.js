@@ -1,8 +1,5 @@
 // Mis recetas favoritas
 // Responsable: Cristian
-//
-// 1. Pide los favoritos a /api/favoritos/{usuario_id}
-// 2. Cada uno se puede quitar o mandar al plan de la semana
 
 const usuario = requerirSesion();
 
@@ -66,7 +63,6 @@ async function alPlan(recetaId) {
     }
 }
 
-// Cuando la página termina de cargar
 if (usuario) {
     mostrarFavoritos();
 }

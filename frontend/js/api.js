@@ -1,16 +1,9 @@
-// Funciones que usan todas las páginas.
+// Funciones que usan todas las páginas
 // Responsable: David
-//
-// En tu página ponlo antes de tu propio .js:
-//     <script src="js/api.js"></script>
-//     <script src="js/mi-pagina.js"></script>
-//
-// Además, este archivo arma la barra de arriba según si hay sesión o no.
 
-// ---------- Hablar con la API ----------
+// Hablar con la API
 
-// Hace la petición y, si sale mal, lanza un error con el mensaje del servidor
-// (por ejemplo "El correo ya está registrado") y su número en error.status.
+// Si la petición sale mal, lanza un error con el mensaje del servidor
 async function pedir(url, opciones) {
     const respuesta = await fetch(url, opciones);
     if (!respuesta.ok) {
@@ -21,7 +14,7 @@ async function pedir(url, opciones) {
                 mensaje = datos.detail;
             }
         } catch (e) {
-            // la respuesta no traía JSON; se queda "Error 500", etc.
+            // la respuesta no traía mensaje
         }
         const error = new Error(mensaje);
         error.status = respuesta.status;
@@ -30,13 +23,11 @@ async function pedir(url, opciones) {
     return await respuesta.json();
 }
 
-// Pedir datos a la API
 // Ejemplo:  const categorias = await pedirGET("/api/categorias");
 async function pedirGET(url) {
     return await pedir(url);
 }
 
-// Mandar datos a la API
 // Ejemplo:  await enviarPOST("/api/login", { correo: "a@b.com", contrasena: "123" });
 async function enviarPOST(url, datos) {
     return await pedir(url, {
@@ -46,7 +37,6 @@ async function enviarPOST(url, datos) {
     });
 }
 
-// Cambiar datos en la API
 // Ejemplo:  await enviarPUT("/api/plan/3/estado", { estado: "cocinado" });
 async function enviarPUT(url, datos) {
     return await pedir(url, {
@@ -56,24 +46,21 @@ async function enviarPUT(url, datos) {
     });
 }
 
-// Borrar datos en la API
 // Ejemplo:  await enviarDELETE("/api/favoritos/1/gt-0001");
 async function enviarDELETE(url) {
     return await pedir(url, { method: "DELETE" });
 }
 
-// Protege el texto antes de ponerlo en la página con innerHTML,
-// para que nadie pueda meter código. Úsalo con datos que vengan de la API.
+// Protege el texto antes de ponerlo con innerHTML (evita que metan código)
 function escapar(texto) {
     const div = document.createElement("div");
     div.textContent = texto;
     return div.innerHTML;
 }
 
-// ---------- Sesión ----------
+// Sesión
 
-// El usuario que inició sesión ({id, nombre, rol}) o null si no hay sesión.
-// Lo guarda login.js en el navegador al entrar.
+// Usuario con sesión {id, nombre, rol}, o null
 function usuarioActual() {
     try {
         return JSON.parse(localStorage.getItem("usuario"));
@@ -82,8 +69,7 @@ function usuarioActual() {
     }
 }
 
-// Para páginas que necesitan sesión: si no hay, manda al login.
-// Devuelve el usuario.
+// Si la página necesita sesión y no hay, manda al login
 function requerirSesion() {
     const usuario = usuarioActual();
     if (!usuario) {
@@ -97,10 +83,9 @@ function cerrarSesion() {
     window.location.href = "index.html";
 }
 
-// ---------- Barra de arriba ----------
+// Barra de arriba
 
-// Arma los enlaces de la barra: con sesión muestra las páginas del usuario
-// (y Admin si es administrador); sin sesión, Iniciar sesión y Registrarse.
+// Arma la barra de arriba según si hay sesión
 function armarBarra() {
     const barra = document.querySelector(".barra");
     if (!barra) {
@@ -136,7 +121,6 @@ function armarBarra() {
         });
     }
 
-    // Marcar la página en la que estamos
     const pagina = window.location.pathname.split("/").pop() || "index.html";
     for (const enlace of barra.querySelectorAll("a")) {
         if (enlace.getAttribute("href") === pagina && !enlace.classList.contains("marca")) {

@@ -1,10 +1,5 @@
 // Página de una receta
 // Responsable: David
-//
-// 1. Lee el id de la dirección, por ejemplo receta.html?id=gt-0001
-// 2. Pide la receta a /api/recetas/{id}
-// 3. Muestra los datos, los ingredientes y los pasos
-// 4. Si hay sesión: botones de favorito y plan, y se anota en el historial
 
 const DIAS = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
 const NOMBRES_DIAS = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
@@ -12,7 +7,6 @@ const NOMBRES_DIAS = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sá
 async function mostrarReceta() {
     const contenedor = document.getElementById("receta");
 
-    // Leer el id que viene en la dirección
     const id = new URLSearchParams(window.location.search).get("id");
     if (!id) {
         contenedor.innerHTML = '<p class="mensaje-error">No se indicó qué receta mostrar.</p>';
@@ -22,7 +16,6 @@ async function mostrarReceta() {
     try {
         const receta = await pedirGET("/api/recetas/" + id);
 
-        // Título y datos
         let html = "<h1>" + escapar(receta.nombre) + "</h1>";
         html += "<p>" + escapar(receta.descripcion) + "</p>";
         html += '<p>';
@@ -35,10 +28,8 @@ async function mostrarReceta() {
         }
         html += "</p>";
 
-        // Acciones del usuario (solo con sesión)
         html += '<div id="acciones-usuario"></div>';
 
-        // Ingredientes
         html += '<section class="tarjeta"><h3>Ingredientes</h3><ul>';
         for (const ingrediente of receta.ingredientes) {
             html += "<li>";
@@ -53,7 +44,6 @@ async function mostrarReceta() {
         }
         html += "</ul></section>";
 
-        // Pasos
         html += '<section class="tarjeta"><h3>Preparación</h3><ol>';
         for (const paso of receta.pasos) {
             html += "<li>" + escapar(paso.instruccion) + "</li>";
@@ -68,7 +58,7 @@ async function mostrarReceta() {
     }
 }
 
-// Botones de favorito y de plan, y anotar la visita en el historial
+// Con sesión: favorito, plan y historial
 async function mostrarAcciones(recetaId) {
     const usuario = usuarioActual();
     const caja = document.getElementById("acciones-usuario");
@@ -77,7 +67,7 @@ async function mostrarAcciones(recetaId) {
         return;
     }
 
-    // Anotar que la vio (si falla, no pasa nada)
+    // Anotar en el historial
     enviarPOST("/api/historial/" + usuario.id + "/" + recetaId).catch(function () {});
 
     let esFavorita = false;
@@ -89,7 +79,6 @@ async function mostrarAcciones(recetaId) {
             }
         }
     } catch (error) {
-        // si no se pudo saber, se muestra como no favorita
     }
 
     let opciones = "";
@@ -139,5 +128,4 @@ function avisar(html, esError) {
     mensaje.innerHTML = html;
 }
 
-// Cuando la página termina de cargar
 mostrarReceta();

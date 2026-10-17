@@ -1,12 +1,8 @@
-# Conexión a la base de datos PostgreSQL.
+# Conexión a PostgreSQL
 # Responsable: David
 #
-# Todos usan estas dos funciones:
-#   consultar(...)  para SELECT  -> devuelve una lista de filas
-#   ejecutar(...)   para INSERT, UPDATE y DELETE -> guarda los cambios
-#
-# IMPORTANTE: los valores siempre van con %s, nunca pegados en el texto del SQL.
-# Ejemplo:  consultar("SELECT * FROM recetas WHERE id = %s", ("gt-0001",))
+# consultar() para SELECT y ejecutar() para INSERT, UPDATE y DELETE.
+# Los valores siempre van con %s, nunca pegados en el SQL.
 
 import os
 from pathlib import Path
@@ -15,8 +11,7 @@ import psycopg
 from psycopg.rows import dict_row
 from dotenv import load_dotenv
 
-# Leer los datos de conexión del archivo .env (está en la carpeta principal).
-# La ruta se arma desde este archivo, así funciona desde cualquier carpeta.
+# Datos de conexión del archivo .env
 CARPETA_PROYECTO = Path(__file__).resolve().parent.parent
 load_dotenv(CARPETA_PROYECTO / ".env")
 
@@ -28,8 +23,8 @@ def conectar():
         user=os.getenv("DB_USER"),
         password=os.getenv("DB_PASSWORD"),
         dbname=os.getenv("DB_NAME"),
-        connect_timeout=5,  # si no conecta en 5 segundos, muestra el error
-        row_factory=dict_row,  # para que cada fila sea un diccionario
+        connect_timeout=5,
+        row_factory=dict_row,
     )
 
 
@@ -50,8 +45,7 @@ def ejecutar(sql, datos=()):
     conexion.close()
 
 
-# Guarda una acción en la bitácora, por ejemplo: anotar(5, "Inició sesión").
-# Si falla, no detiene lo demás: la bitácora es solo un registro.
+# Guarda una acción en la bitácora. Si falla, no detiene lo demás.
 def anotar(usuario_id, accion):
     try:
         ejecutar("INSERT INTO bitacora (usuario_id, accion) VALUES (%s, %s)", (usuario_id, accion))

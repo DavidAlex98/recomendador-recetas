@@ -1,8 +1,5 @@
+# Favoritos y plan semanal
 # Responsable: Cristian
-#
-# Endpoints:
-#   - GET, POST, DELETE /api/favoritos
-#   - POST, GET, PUT, DELETE /api/plan
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
@@ -11,14 +8,13 @@ from db import consultar, ejecutar
 router = APIRouter(prefix="/api")
 
 
-# Esquemas Pydantic
 class ItemPlan(BaseModel):
     receta_id: str
-    dia: str  # Ej: 'lunes', 'martes', etc.
+    dia: str
 
 
 class EstadoPlan(BaseModel):
-    estado: str  # 'cocinado' u 'omitido'
+    estado: str
 
 
 # Favoritos
@@ -26,7 +22,7 @@ class EstadoPlan(BaseModel):
 @router.get("/favoritos/{usuario_id}")
 def obtener_favoritos(usuario_id: int):
     sql = """
-        SELECT recetas.* 
+        SELECT recetas.*
         FROM favoritos
         JOIN recetas ON favoritos.receta_id = recetas.id
         WHERE favoritos.usuario_id = %s
@@ -37,17 +33,14 @@ def obtener_favoritos(usuario_id: int):
 
 @router.post("/favoritos/{usuario_id}/{receta_id}")
 def agregar_favorito(usuario_id: int, receta_id: str):
-    # Validar que el usuario exista
     usuario = consultar("SELECT id FROM usuarios WHERE id = %s", (usuario_id,))
     if len(usuario) == 0:
         raise HTTPException(status_code=404, detail="Usuario no encontrado")
 
-    # Validar que la receta exista
     receta = consultar("SELECT id FROM recetas WHERE id = %s", (receta_id,))
     if len(receta) == 0:
         raise HTTPException(status_code=404, detail="Receta no encontrada")
 
-    # Validar que no esté repetido
     existe = consultar("SELECT id FROM favoritos WHERE usuario_id = %s AND receta_id = %s", (usuario_id, receta_id))
     if len(existe) > 0:
         raise HTTPException(status_code=400, detail="Esa receta ya está en favoritos")
@@ -64,21 +57,18 @@ def eliminar_favorito(usuario_id: int, receta_id: str):
     return {"mensaje": "Receta eliminada de favoritos"}
 
 
-# Plan semanal
+# Plan semanal: planificado -> cocinado u omitido
 
 @router.post("/plan/{usuario_id}")
 def agregar_al_plan(usuario_id: int, item: ItemPlan):
-    # Validar que el usuario exista
     usuario = consultar("SELECT id FROM usuarios WHERE id = %s", (usuario_id,))
     if len(usuario) == 0:
         raise HTTPException(status_code=404, detail="Usuario no encontrado")
 
-    # Validar que la receta exista
     receta = consultar("SELECT id FROM recetas WHERE id = %s", (item.receta_id,))
     if len(receta) == 0:
         raise HTTPException(status_code=404, detail="Receta no encontrada")
 
-    # Validar día válido
     dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
     if item.dia.lower() not in dias:
         raise HTTPException(status_code=400, detail="El día debe ser de lunes a domingo")

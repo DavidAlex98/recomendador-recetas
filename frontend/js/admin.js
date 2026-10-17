@@ -1,19 +1,11 @@
 // Panel de administración
 // Responsable: Brandon
-//
-// Solo entra un usuario con rol "admin". Todas las llamadas mandan ?admin_id=
-// para que el servidor revise que de verdad sea admin.
-//
-// 1. Reporte: usuarios, propuestas, recetas populares y por categoría
-// 2. Propuestas pendientes: aprobar (y completarla como receta) o rechazar
-// 3. Recetas: buscar, crear, editar y borrar
-// 4. Bitácora: últimas acciones
 
 const usuario = requerirSesion();
 const CLAVE = usuario ? "?admin_id=" + usuario.id : "";
 let editando = null;           // id de la receta que se edita, o null si es nueva
 
-// ---------- Reporte ----------
+// Reporte
 
 async function mostrarReporte() {
     const caja = document.getElementById("reporte");
@@ -65,7 +57,7 @@ async function mostrarReporte() {
     }
 }
 
-// ---------- Propuestas ----------
+// Propuestas
 
 async function mostrarPropuestas() {
     const caja = document.getElementById("propuestas");
@@ -94,8 +86,7 @@ async function mostrarPropuestas() {
     }
 }
 
-// Al aprobar, se abre el formulario con el nombre y la descripción
-// para que el admin la complete y la guarde como receta.
+// Al aprobar, se abre el formulario para completarla como receta
 async function aprobar(id) {
     try {
         const respuesta = await enviarPUT("/api/admin/propuestas/" + id + "/aprobar" + CLAVE);
@@ -123,7 +114,7 @@ async function rechazar(id) {
     }
 }
 
-// ---------- Recetas: buscar, borrar ----------
+// Recetas: buscar, borrar
 
 async function buscarRecetas() {
     const texto = document.getElementById("buscar-receta").value.trim();
@@ -169,7 +160,7 @@ async function borrar(id) {
     }
 }
 
-// ---------- Recetas: formulario ----------
+// Recetas: formulario
 
 function filaIngrediente(ingrediente) {
     const fila = document.createElement("div");
@@ -285,7 +276,7 @@ async function guardarReceta(evento) {
     }
 }
 
-// ---------- Bitácora ----------
+// Bitácora
 
 async function mostrarBitacora() {
     const caja = document.getElementById("bitacora");
@@ -307,10 +298,9 @@ async function mostrarBitacora() {
     }
 }
 
-// ---------- Inicio ----------
+// Inicio
 
 async function cargarListas() {
-    // Categorías para el selector
     const categorias = await pedirGET("/api/admin/categorias" + CLAVE);
     let opciones = "";
     for (const categoria of categorias) {
@@ -318,7 +308,6 @@ async function cargarListas() {
     }
     document.getElementById("r-categoria").innerHTML = opciones;
 
-    // Catálogo completo para sugerir claves de ingredientes
     const grupos = await pedirGET("/api/ingredientes?todos=true");
     let lista = "";
     for (const grupo in grupos) {

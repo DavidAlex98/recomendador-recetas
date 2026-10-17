@@ -9,12 +9,12 @@ Tecnologías: Python (FastAPI), PostgreSQL, HTML, CSS y JavaScript.
 
 | Integrante | Parte del proyecto |
 |---|---|
-| David Montenegro | Servidor, base de datos, recetas, recomendación, historial, diagramas |
-| Brandon Stiven Contreras López | Administración (propuestas, recetas, reporte), login, estilos |
-| Rubí Simon | Registro e inicio de sesión (usuarios) |
-| Shanda López | Ingredientes y despensa |
-| Cristian | Favoritos y plan semanal |
-| Manrique | Página "¿Qué tengo en casa?" |
+| David Alexander Montenegro Pérez | Líder técnico. Servidor, recetas, recomendación, historial, Docker y diagramas |
+| Andrea Rubí Simón Gómez | Registro e inicio de sesión |
+| Shanda Betzaida López Lucero | Ingredientes y despensa |
+| Dorian Manrique López Sicajan | Página "¿Qué tengo en casa?" |
+| Cristian Emanuel Meléndez Hernández | Favoritos, plan semanal y seguridad |
+| Brandon Stiven Contreras López | Administración (propuestas, recetas, reporte), estilos y diagrama MER |
 
 ## Páginas
 
@@ -42,6 +42,8 @@ frontend/       las páginas (HTML, CSS y JavaScript)
 base_datos/     crear_tablas.sql, vistas_y_procedimientos.sql e importar_recetas.py
 datos/          ingredientes-guatemala.json y recetas.json
 docs/diagramas/ diagramas PlantUML (.puml) y sus imágenes (.png)
+docker/         Dockerfile de la app y configuración de NGINX
+docker-compose.yml  los 3 contenedores: web, app y db
 ```
 
 Cada archivo dice arriba quién es el responsable. Trabaja solo en tus archivos.
@@ -104,6 +106,25 @@ python -m uvicorn main:app --reload
 - http://localhost:8000/docs : para probar los endpoints
 
 Para apagarla: `Ctrl + C`.
+
+## Encender con Docker (opcional)
+
+Arquitectura: **NGINX (web) → FastAPI (app) → PostgreSQL (db) + volumen**, con una red
+`frontend` (NGINX y app) y una red `backend` (app y base). Solo necesitas Docker Desktop
+y el archivo `.env` con `DB_PASSWORD` lleno.
+
+```bash
+docker compose up -d --build
+docker compose exec app python ../base_datos/importar_recetas.py
+```
+
+- http://localhost:8080 : la aplicación
+- `docker compose down` : apagar (los datos quedan en el volumen)
+- `docker compose logs app` : ver errores de la app
+
+La primera vez, la base crea sola las tablas, vistas y procedimientos. El segundo
+comando (cargar recetas) solo se corre la primera vez o si cambian las recetas.
+Nunca uses `docker compose down -v`: borra el volumen con todos los datos.
 
 ## Crear un administrador
 

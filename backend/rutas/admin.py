@@ -1,21 +1,7 @@
+# Panel de administración: propuestas, recetas y reportes
 # Responsable: Brandon
 #
-# Endpoints:
-#   POST   /api/propuestas/{usuario_id}               ->  un usuario propone una receta
-#   GET    /api/propuestas/{usuario_id}               ->  las propuestas de ese usuario
-#
-#   Solo para admin (mandan ?admin_id=... con el id del usuario admin):
-#   GET    /api/admin/propuestas                      ->  propuestas pendientes
-#   PUT    /api/admin/propuestas/{id}/aprobar         ->  aprobar una propuesta
-#   PUT    /api/admin/propuestas/{id}/rechazar        ->  rechazar con motivo
-#   GET    /api/admin/reporte                         ->  números generales
-#   GET    /api/admin/bitacora                        ->  últimas acciones
-#   GET    /api/admin/categorias                      ->  categorías de recetas
-#   POST   /api/admin/recetas                         ->  crear receta
-#   PUT    /api/admin/recetas/{receta_id}             ->  editar receta
-#   DELETE /api/admin/recetas/{receta_id}             ->  borrar receta
-#
-# Usa las vistas y procedimientos de base_datos/vistas_y_procedimientos.sql
+# Las rutas /api/admin reciben ?admin_id= y revisan que sea un administrador.
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
@@ -28,18 +14,15 @@ router = APIRouter(prefix="/api")
 DIFICULTADES = ["fácil", "media", "alta"]
 
 
-# Datos que manda el usuario al proponer una receta
 class Propuesta(BaseModel):
     nombre: str
     descripcion: str = ""
 
 
-# Datos que manda el admin al rechazar una propuesta
 class Rechazo(BaseModel):
     motivo: str
 
 
-# Un ingrediente de una receta nueva
 class IngredienteReceta(BaseModel):
     clave: str
     cantidad: float | None = None
@@ -47,7 +30,6 @@ class IngredienteReceta(BaseModel):
     opcional: bool = False
 
 
-# Datos que manda el admin al crear o editar una receta
 class Receta(BaseModel):
     nombre: str
     categoria: str
@@ -62,21 +44,17 @@ class Receta(BaseModel):
     pasos: list[str]
 
 
-# Revisa que quien llama sea admin. Si no, error 403.
 def verificar_admin(admin_id):
     filas = consultar("SELECT rol FROM usuarios WHERE id = %s AND activo = TRUE", (admin_id,))
     if not filas or filas[0]["rol"] != "admin":
         raise HTTPException(status_code=403, detail="Solo un administrador puede hacer esto")
 
 
-# ---------- Propuestas (cualquier usuario) ----------
+# Propuestas: pendiente -> aprobada o rechazada
 
-# POST /api/propuestas/{usuario_id}
-# Un usuario propone una receta nueva. Queda guardada como pendiente.
 @router.post("/propuestas/{usuario_id}")
 def proponer_receta(usuario_id: int, datos: Propuesta):
 
-    # Revisar que el usuario exista
     usuario = consultar("SELECT id FROM usuarios WHERE id = %s", (usuario_id,))
     if not usuario:
         raise HTTPException(status_code=404, detail="Usuario no encontrado")
@@ -97,8 +75,6 @@ def proponer_receta(usuario_id: int, datos: Propuesta):
     return {"mensaje": "Propuesta enviada, queda pendiente de revisión"}
 
 
-# GET /api/propuestas/{usuario_id}
-# Las propuestas que hizo un usuario y en qué estado van.
 @router.get("/propuestas/{usuario_id}")
 def mis_propuestas(usuario_id: int):
     return consultar(
@@ -112,17 +88,12 @@ def mis_propuestas(usuario_id: int):
     )
 
 
-# ---------- Revisión de propuestas (admin) ----------
-
-# GET /api/admin/propuestas
-# Lista las propuestas que todavía no se revisan (usa una vista).
 @router.get("/admin/propuestas")
 def listar_propuestas_pendientes(admin_id: int):
     verificar_admin(admin_id)
     return consultar("SELECT * FROM vista_propuestas_pendientes ORDER BY creado_en")
 
 
-# Busca una propuesta y avisa si no existe o si ya fue revisada
 def buscar_propuesta_pendiente(propuesta_id):
     filas = consultar("SELECT * FROM recetas_propuestas WHERE id = %s", (propuesta_id,))
     if not filas:
@@ -135,14 +106,12 @@ def buscar_propuesta_pendiente(propuesta_id):
     return propuesta
 
 
-# PUT /api/admin/propuestas/{id}/aprobar
-# Devuelve la propuesta para que el admin la complete como receta nueva.
 @router.put("/admin/propuestas/{propuesta_id}/aprobar")
 def aprobar_propuesta(propuesta_id: int, admin_id: int):
     verificar_admin(admin_id)
     propuesta = buscar_propuesta_pendiente(propuesta_id)
 
-    # Procedimiento almacenado: cambia el estado y lo anota en la bitácora
+    # Procedimiento almacenado: cambia el estado y anota en la bitácora
     ejecutar("CALL revisar_propuesta(%s, 'aprobada', NULL, %s)", (propuesta_id, admin_id))
 
     return {
@@ -152,7 +121,6 @@ def aprobar_propuesta(propuesta_id: int, admin_id: int):
     }
 
 
-# PUT /api/admin/propuestas/{id}/rechazar
 @router.put("/admin/propuestas/{propuesta_id}/rechazar")
 def rechazar_propuesta(propuesta_id: int, datos: Rechazo, admin_id: int):
     verificar_admin(admin_id)
@@ -169,10 +137,8 @@ def rechazar_propuesta(propuesta_id: int, datos: Rechazo, admin_id: int):
     return {"mensaje": "Propuesta rechazada"}
 
 
-# ---------- Reportes (admin) ----------
+# Reportes
 
-# GET /api/admin/reporte
-# Recetas por categoría, usuarios, propuestas por estado y recetas más populares.
 @router.get("/admin/reporte")
 def reporte(admin_id: int):
     verificar_admin(admin_id)
@@ -187,7 +153,6 @@ def reporte(admin_id: int):
         "SELECT estado, COUNT(*) AS total FROM recetas_propuestas GROUP BY estado ORDER BY estado"
     )
 
-    # Vista: recetas con más favoritos y vistas
     recetas_populares = consultar(
         """
         SELECT * FROM vista_recetas_populares
@@ -197,7 +162,6 @@ def reporte(admin_id: int):
         """
     )
 
-    # Vista: resumen de cada usuario
     usuarios = consultar("SELECT * FROM vista_resumen_usuarios ORDER BY id")
 
     return {
@@ -209,8 +173,6 @@ def reporte(admin_id: int):
     }
 
 
-# GET /api/admin/bitacora
-# Las últimas 50 acciones guardadas en la bitácora.
 @router.get("/admin/bitacora")
 def ver_bitacora(admin_id: int):
     verificar_admin(admin_id)
@@ -225,8 +187,6 @@ def ver_bitacora(admin_id: int):
     )
 
 
-# GET /api/admin/categorias
-# Las categorías que ya usan las recetas (para el formulario).
 @router.get("/admin/categorias")
 def categorias_de_recetas(admin_id: int):
     verificar_admin(admin_id)
@@ -237,9 +197,8 @@ def categorias_de_recetas(admin_id: int):
     return lista
 
 
-# ---------- Recetas (admin) ----------
+# Recetas: crear, editar y borrar
 
-# Revisa que los datos de una receta estén completos y sean válidos
 def validar_receta(datos):
     if datos.nombre.strip() == "" or datos.categoria.strip() == "":
         raise HTTPException(status_code=400, detail="La receta necesita nombre y categoría")
@@ -267,8 +226,7 @@ def validar_receta(datos):
     return pasos
 
 
-# Guarda los ingredientes y pasos de una receta.
-# Todo va en una sola conexión: si algo falla, no se guarda nada a medias.
+# Todo en una sola conexión: si algo falla, no se guarda nada a medias
 def guardar_receta(receta_id, datos, pasos, es_nueva):
     conexion = conectar()
     cursor = conexion.cursor()
@@ -318,13 +276,12 @@ def guardar_receta(receta_id, datos, pasos, es_nueva):
     conexion.close()
 
 
-# POST /api/admin/recetas
 @router.post("/admin/recetas", status_code=201)
 def crear_receta(datos: Receta, admin_id: int):
     verificar_admin(admin_id)
     pasos = validar_receta(datos)
 
-    # Función de la base: siguiente id libre, por ejemplo 'nu-0001'
+    # Función de la base: siguiente id libre, por ejemplo nu-0001
     receta_id = consultar("SELECT siguiente_id_receta() AS id")[0]["id"]
 
     guardar_receta(receta_id, datos, pasos, es_nueva=True)
@@ -333,7 +290,6 @@ def crear_receta(datos: Receta, admin_id: int):
     return {"mensaje": "Receta creada", "id": receta_id}
 
 
-# PUT /api/admin/recetas/{receta_id}
 @router.put("/admin/recetas/{receta_id}")
 def editar_receta(receta_id: str, datos: Receta, admin_id: int):
     verificar_admin(admin_id)
@@ -348,7 +304,6 @@ def editar_receta(receta_id: str, datos: Receta, admin_id: int):
     return {"mensaje": "Receta actualizada", "id": receta_id}
 
 
-# DELETE /api/admin/recetas/{receta_id}
 @router.delete("/admin/recetas/{receta_id}")
 def borrar_receta(receta_id: str, admin_id: int):
     verificar_admin(admin_id)
@@ -356,7 +311,7 @@ def borrar_receta(receta_id: str, admin_id: int):
     if not consultar("SELECT id FROM recetas WHERE id = %s", (receta_id,)):
         raise HTTPException(status_code=404, detail="Receta no encontrada")
 
-    # Procedimiento almacenado: borra la receta y todo lo que depende de ella
+    # Procedimiento almacenado: borra la receta y lo que depende de ella
     ejecutar("CALL borrar_receta(%s)", (receta_id,))
     anotar(admin_id, "Borró la receta " + receta_id)
 

@@ -1,10 +1,5 @@
 // Mi despensa
 // Responsable: Shanda
-//
-// 1. Muestra lo que el usuario tiene guardado (/api/despensa/{id})
-// 2. Muestra todos los ingredientes con casillas; marcar o desmarcar
-//    guarda o quita el ingrediente al momento
-// 3. El botón busca recetas con lo que hay en la despensa
 
 const usuario = requerirSesion();
 let guardados = [];   // claves que el usuario tiene en su despensa
@@ -125,7 +120,6 @@ async function iniciar() {
     }
 }
 
-// Cuando la página termina de cargar
 iniciar();
 document.getElementById("buscador").addEventListener("input", filtrar);
 document.getElementById("boton-cocinar").addEventListener("click", verRecetas);
