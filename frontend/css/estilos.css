@@ -153,6 +153,20 @@ h1 {
     line-height: 1.5;
 }
 
+/* ----- Inicio de sesión ----- */
+.formulario {
+    max-width: 380px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario .buscador {
+    margin-bottom: 15px;
+}
+
 /* ----- Celulares ----- */
 @media (max-width: 600px) {
     .barra {

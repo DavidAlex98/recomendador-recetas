@@ -17,7 +17,17 @@
 
     <main>
         <h1>Iniciar sesión</h1>
-        <p class="pendiente">Página en construcción.</p>
+
+        <form id="formulario" class="tarjeta formulario">
+            <label for="correo">Correo</label>
+            <input id="correo" class="buscador" type="email" required>
+
+            <label for="contrasena">Contraseña</label>
+            <input id="contrasena" class="buscador" type="password" required>
+
+            <button class="boton" type="submit">Entrar</button>
+            <p id="mensaje" class="mensaje-error"></p>
+        </form>
     </main>
 
     <script src="js/api.js"></script>
