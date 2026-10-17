@@ -1,29 +1,26 @@
 # Responsable: Rubí
 #
-# Por hacer:
-#   POST /api/registro  ->  crear usuario (contraseña cifrada)
-#   POST /api/login  ->  iniciar sesión
-#
-# Guíate con rutas/ejemplo.py y prueba en http://localhost:8000/docs
-
+# Endpoints:
+#   POST /api/registro  ->  crear usuario (contraseña cifrada con bcrypt)
+#   POST /api/login     ->  iniciar sesión
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-import hashlib
+import bcrypt
 
 from db import consultar, ejecutar
 
 router = APIRouter(prefix="/api")
 
 
-# registrar un usuario
+# Registrar un usuario
 class Registro(BaseModel):
     nombre: str
     correo: str
     contrasena: str
 
 
-# iniciar sesión
+# Iniciar sesión
 class Login(BaseModel):
     correo: str
     contrasena: str
@@ -33,6 +30,33 @@ class Login(BaseModel):
 @router.post("/registro")
 def registro(datos: Registro):
 
+    # Validacion que los campos no estén vacíos
+    if (
+        datos.nombre.strip() == ""
+        or datos.correo.strip() == ""
+        or datos.contrasena.strip() == ""
+    ):
+        raise HTTPException(
+            status_code=400,
+            detail="Todos los campos son obligatorios"
+        )
+
+    # Validar el formato  del correo
+    correo = datos.correo.strip()
+
+    partes = correo.split("@")
+    if (
+        len(partes) != 2
+        or partes[0] == ""
+        or "." not in partes[1]
+        or partes[1].startswith(".")
+        or partes[1].endswith(".")
+    ):
+        raise HTTPException(
+            status_code=400,
+            detail="El correo no es válido"
+        )
+
     # Revisar si el correo ya existe
     existente = consultar(
         """
@@ -40,16 +64,20 @@ def registro(datos: Registro):
         FROM usuarios
         WHERE correo = %s
         """,
-        (datos.correo,)
+        (correo,)
     )
 
     if existente:
-       raise HTTPException(status_code=400, detail="El correo ya está registrado")
-    
-    # Cifrar la contraseña
-    contrasena_hash = hashlib.sha256(
-        datos.contrasena.encode()
-    ).hexdigest()
+        raise HTTPException(
+            status_code=400,
+            detail="El correo ya está registrado"
+        )
+
+    # Cifrar la contraseña con bcrypt
+    contrasena_hash = bcrypt.hashpw(
+        datos.contrasena.encode(),
+        bcrypt.gensalt()
+    ).decode()
 
     ejecutar(
         """
@@ -58,8 +86,8 @@ def registro(datos: Registro):
         VALUES (%s, %s, %s, 'usuario', TRUE)
         """,
         (
-            datos.nombre,
-            datos.correo,
+            datos.nombre.strip(),
+            correo,
             contrasena_hash
         )
     )
@@ -73,33 +101,45 @@ def registro(datos: Registro):
 @router.post("/login")
 def login(datos: Login):
 
-    # Cifrar la contraseña recibida
-    contrasena_hash = hashlib.sha256(
-        datos.contrasena.encode()
-    ).hexdigest()
-
+    # Buscar al usuario por correo y verificar que esté activo
     filas = consultar(
         """
-        SELECT id, nombre, rol
+        SELECT id, nombre, rol, contrasena_hash
         FROM usuarios
         WHERE correo = %s
-          AND contrasena_hash = %s
           AND activo = TRUE
         """,
-        (
-            datos.correo,
-            contrasena_hash
-        )
+        (datos.correo.strip(),)
     )
 
+    # Si el usuario no existe
     if not filas:
-       raise HTTPException(status_code=401, detail="Correo o contraseña incorrectos")
+        raise HTTPException(
+            status_code=401,
+            detail="Correo o contraseña incorrectos"
+        )
 
     usuario = filas[0]
+
+    # Comparar la contraseña con bcrypt.
+    # Si la contraseña se guardó con el cifrado viejo (SHA-256),
+    # bcrypt da error; en ese caso la tomamos como incorrecta.
+    try:
+        correcta = bcrypt.checkpw(
+            datos.contrasena.encode(),
+            usuario["contrasena_hash"].encode()
+        )
+    except ValueError:
+        correcta = False
+
+    if not correcta:
+        raise HTTPException(
+            status_code=401,
+            detail="Correo o contraseña incorrectos"
+        )
 
     return {
         "id": usuario["id"],
         "nombre": usuario["nombre"],
         "rol": usuario["rol"]
     }
-
