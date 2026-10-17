@@ -1,8 +1,5 @@
 // Proponer una receta
 // Responsable: Brandon
-//
-// 1. Manda la propuesta a /api/propuestas/{usuario_id}
-// 2. Muestra las propuestas del usuario y en qué estado van
 
 const usuario = requerirSesion();
 
@@ -51,7 +48,6 @@ document.getElementById("formulario").addEventListener("submit", async function 
     }
 });
 
-// Cuando la página termina de cargar
 if (usuario) {
     mostrarPropuestas();
 }

@@ -1,16 +1,9 @@
-# Catálogo de ingredientes (archivo JSON).
+# Catálogo de ingredientes (archivo JSON)
 # Responsable: David
-#
-# Los ingredientes no están en la base de datos, están en un archivo JSON.
-# Este archivo lo lee una vez y lo deja en la lista INGREDIENTES.
-# Cada ingrediente es un diccionario, por ejemplo:
-#   {"clave": "cebolla", "nombre": "Cebolla", "categoria": "verduras", ...}
 
 import json
 from pathlib import Path
 
-# La carpeta principal del proyecto (la que tiene backend, datos, frontend...).
-# Así funciona sin importar desde qué carpeta se encienda el servidor.
 CARPETA_PROYECTO = Path(__file__).resolve().parent.parent
 
 with open(CARPETA_PROYECTO / "datos" / "ingredientes-guatemala.json", encoding="utf-8") as archivo:
@@ -20,7 +13,6 @@ INGREDIENTES = datos["ingredientes"]
 
 
 def existe(clave):
-    """Devuelve True si la clave está en el catálogo."""
     for ingrediente in INGREDIENTES:
         if ingrediente["clave"] == clave:
             return True
@@ -28,24 +20,20 @@ def existe(clave):
 
 
 def nombre(clave):
-    """Devuelve el nombre bonito de un ingrediente, por ejemplo 'Frijol negro'."""
     for ingrediente in INGREDIENTES:
         if ingrediente["clave"] == clave:
             return ingrediente["nombre"]
     return clave
 
 
-# Lo que se da por hecho que hay en toda casa: el azúcar, las especias
-# (sal, pimienta, orégano... van "al gusto") y las grasas (aceite, manteca).
-# Estos no salen en el checklist y nunca hacen que una receta se quede fuera.
+# Lo que toda casa tiene: azúcar, especias y grasas. No se marcan en el checklist.
 BASICOS = ["azucar"]
 for ingrediente in INGREDIENTES:
     if ingrediente["categoria"] == "especias" or ingrediente["categoria"] == "grasas":
         BASICOS.append(ingrediente["clave"])
 
 
-# Los ingredientes que salen en el checklist: solo lo que suele haber en una casa.
-# El catálogo tiene más (para las recetas), pero esos no se muestran para no saturar.
+# Ingredientes comunes que salen en el checklist
 EN_CHECKLIST = [
     # carnes y mariscos
     "pollo_granja", "res_lomo", "res_falda", "cerdo_lomo", "cerdo_costilla", "higado_res",
@@ -67,7 +55,7 @@ EN_CHECKLIST = [
 ]
 
 
-# Proteínas: las recetas que llevan alguna de estas salen primero.
+# Las recetas con proteína salen primero en la recomendación
 PROTEINAS = ["huevo", "frijol_negro", "frijol_blanco", "frijol_piloy"]
 for ingrediente in INGREDIENTES:
     if ingrediente["categoria"] in ["carnes", "embutidos", "mariscos"]:

@@ -1,11 +1,7 @@
 # Pruebas de recetas y recomendación
 # Responsable: David
 #
-# Cómo correrlas (desde la carpeta backend, con PostgreSQL encendido):
-#     python -m pytest
-#
-# Cada función que empieza con test_ es una prueba.
-# assert revisa que algo sea cierto; si no lo es, la prueba falla.
+# Correr desde la carpeta backend:  python -m pytest
 
 from fastapi.testclient import TestClient
 
@@ -14,7 +10,6 @@ from main import app
 cliente = TestClient(app)
 
 
-# Ayuda: manda ingredientes a la recomendación y devuelve solo los nombres
 def recomendar(ingredientes):
     respuesta = cliente.post("/api/recomendaciones", json={"ingredientes": ingredientes})
     nombres = []

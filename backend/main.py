@@ -1,14 +1,7 @@
-# Servidor de RecetApp.
+# Servidor de RecetApp
 # Responsable: David
 #
-# Cómo encenderlo (desde la carpeta backend):
-#     python -m uvicorn main:app --reload
-# O desde la carpeta principal:
-#     python -m uvicorn main:app --reload --app-dir backend
-#
-# Luego abrir:
-#     http://localhost:8000        la aplicación
-#     http://localhost:8000/docs   para probar los endpoints
+# Encender (desde la carpeta backend):  python -m uvicorn main:app --reload
 
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles

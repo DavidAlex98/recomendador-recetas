@@ -1,7 +1,5 @@
-// Página de inicio. EJEMPLO para las demás páginas.
+// Página de inicio
 // Responsable: David
-//
-// Siempre es lo mismo: pedir datos a la API y mostrarlos en la página.
 
 async function mostrarEstado() {
     const parrafo = document.getElementById("estado");
@@ -34,7 +32,7 @@ async function mostrarCategorias() {
     }
 }
 
-// Si hay sesión: las últimas recetas que vio el usuario
+// Con sesión: las últimas recetas que vio
 async function mostrarHistorial() {
     const usuario = usuarioActual();
     if (!usuario) {
@@ -52,11 +50,9 @@ async function mostrarHistorial() {
         document.getElementById("historial").innerHTML = html;
         document.getElementById("caja-historial").classList.remove("oculto");
     } catch (error) {
-        // si falla, simplemente no se muestra
     }
 }
 
-// Cuando la página termina de cargar
 mostrarEstado();
 mostrarCategorias();
 mostrarHistorial();

@@ -1,9 +1,5 @@
 // Plan semanal
 // Responsable: Cristian
-//
-// 1. Pide el plan a /api/plan/{usuario_id}
-// 2. Lo muestra por día, de lunes a domingo
-// 3. Cada receta se puede marcar como cocinada u omitida, o quitar
 
 const usuario = requerirSesion();
 
@@ -66,7 +62,6 @@ async function quitar(id) {
     }
 }
 
-// Cuando la página termina de cargar
 if (usuario) {
     mostrarPlan();
 }

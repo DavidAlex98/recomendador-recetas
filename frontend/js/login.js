@@ -1,5 +1,5 @@
 // Iniciar sesión
-// Responsable: Brandon
+// Responsable: Rubí
 
 document.getElementById("formulario").addEventListener("submit", async function (evento) {
     evento.preventDefault();

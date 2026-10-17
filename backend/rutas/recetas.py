@@ -1,8 +1,5 @@
-# Rutas de recetas
+# Búsqueda y detalle de recetas
 # Responsable: David
-#
-#   GET /api/recetas?buscar=pepian&categoria=Sopas  ->  buscar recetas
-#   GET /api/recetas/gt-0001  ->  una receta con sus ingredientes y pasos
 
 from fastapi import APIRouter, HTTPException
 
@@ -12,7 +9,6 @@ from db import consultar
 router = APIRouter(prefix="/api")
 
 
-# Lista de recetas, con búsqueda por nombre y filtro por categoría
 @router.get("/recetas")
 def listar_recetas(buscar: str = "", categoria: str = ""):
     sql = "SELECT id, nombre, categoria, dificultad, tiempo_min FROM recetas WHERE nombre ILIKE %s"
@@ -26,7 +22,6 @@ def listar_recetas(buscar: str = "", categoria: str = ""):
     return consultar(sql, datos)
 
 
-# Una receta completa, con sus ingredientes y pasos
 @router.get("/recetas/{receta_id}")
 def ver_receta(receta_id: str):
     recetas = consultar("SELECT * FROM recetas WHERE id = %s", (receta_id,))
@@ -39,7 +34,6 @@ def ver_receta(receta_id: str):
         "SELECT clave, cantidad, unidad, opcional FROM receta_ingredientes WHERE receta_id = %s",
         (receta_id,),
     )
-    # Agregar el nombre bonito de cada ingrediente (frijol_negro -> Frijol negro)
     for ingrediente in receta["ingredientes"]:
         ingrediente["nombre"] = catalogo.nombre(ingrediente["clave"])
 

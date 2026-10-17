@@ -1,7 +1,5 @@
-# EJEMPLO: copia estos endpoints como modelo para los tuyos.
+# Endpoints de ejemplo y estado del sistema
 # Responsable: David
-#
-# Pruébalos en http://localhost:8000/docs
 
 from fastapi import APIRouter
 from pydantic import BaseModel
@@ -12,7 +10,6 @@ from db import consultar
 router = APIRouter(prefix="/api")
 
 
-# 1. GET que consulta la base de datos
 @router.get("/estado")
 def estado():
     try:
@@ -22,7 +19,6 @@ def estado():
         return {"base_de_datos": "sin conexión", "detalle": str(error)}
 
 
-# 2. GET que lee el archivo JSON de ingredientes
 @router.get("/categorias")
 def categorias():
     lista = []
@@ -33,8 +29,6 @@ def categorias():
     return lista
 
 
-# 3. POST que recibe datos
-# La clase dice qué datos esperamos recibir
 class Ingredientes(BaseModel):
     ingredientes: list[str]
 
