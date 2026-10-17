@@ -25,6 +25,7 @@ def conectar():
         user=os.getenv("DB_USER"),
         password=os.getenv("DB_PASSWORD"),
         dbname=os.getenv("DB_NAME"),
+        connect_timeout=5,  # si no conecta en 5 segundos, muestra el error
         row_factory=dict_row,  # para que cada fila sea un diccionario
     )
 

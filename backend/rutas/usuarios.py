@@ -1,3 +1,8 @@
+# Responsable: Rubí
+#
+# Endpoints:
+#   POST /api/registro  ->  crear usuario (contraseña cifrada con bcrypt)
+#   POST /api/login     ->  iniciar sesión
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
@@ -39,7 +44,14 @@ def registro(datos: Registro):
     # Validar el formato  del correo
     correo = datos.correo.strip()
 
-    if "@" not in correo or "." not in correo.split("@")[-1]:
+    partes = correo.split("@")
+    if (
+        len(partes) != 2
+        or partes[0] == ""
+        or "." not in partes[1]
+        or partes[1].startswith(".")
+        or partes[1].endswith(".")
+    ):
         raise HTTPException(
             status_code=400,
             detail="El correo no es válido"
@@ -109,11 +121,18 @@ def login(datos: Login):
 
     usuario = filas[0]
 
-    # Comparar la contraseña con bcrypt
-    if not bcrypt.checkpw(
-        datos.contrasena.encode(),
-        usuario["contrasena_hash"].encode()
-    ):
+    # Comparar la contraseña con bcrypt.
+    # Si la contraseña se guardó con el cifrado viejo (SHA-256),
+    # bcrypt da error; en ese caso la tomamos como incorrecta.
+    try:
+        correcta = bcrypt.checkpw(
+            datos.contrasena.encode(),
+            usuario["contrasena_hash"].encode()
+        )
+    except ValueError:
+        correcta = False
+
+    if not correcta:
         raise HTTPException(
             status_code=401,
             detail="Correo o contraseña incorrectos"

@@ -18,7 +18,7 @@ app = FastAPI(title="RecetApp")
 # Rutas de cada integrante
 app.include_router(ejemplo.router)
 app.include_router(ingredientes.router)    # Shanda
-app.include_router(recetas.router)         # Shanda
+app.include_router(recetas.router)         # David
 app.include_router(despensa.router)        # Shanda
 app.include_router(usuarios.router)        # Rubí
 app.include_router(recomendacion.router)   # David

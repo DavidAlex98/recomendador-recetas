@@ -1,16 +1,24 @@
+# Rutas de ingredientes
 # Responsable: Shanda
 #
-# Por hacer:
 #   GET /api/ingredientes  ->  ingredientes del JSON agrupados por categoría
-#
-# Guíate con rutas/ejemplo.py y prueba en http://localhost:8000/docs
+#   (solo los comunes de catalogo.EN_CHECKLIST, para no saturar la página)
 
 from fastapi import APIRouter
 
 import catalogo
-from db import consultar, ejecutar
 
 router = APIRouter(prefix="/api")
 
 
-# Escribe tus endpoints aquí abajo
+@router.get("/ingredientes")
+def listar_ingredientes():
+    agrupados = {}
+    for ingrediente in catalogo.INGREDIENTES:
+        if ingrediente["clave"] not in catalogo.EN_CHECKLIST:
+            continue
+        categoria = ingrediente["categoria"]
+        if categoria not in agrupados:
+            agrupados[categoria] = []
+        agrupados[categoria].append({"clave": ingrediente["clave"], "nombre": ingrediente["nombre"]})
+    return agrupados
