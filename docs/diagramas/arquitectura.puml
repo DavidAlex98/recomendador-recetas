@@ -1,0 +1,51 @@
+@startuml arquitectura
+' Arquitectura de RecetApp
+' Responsable: David
+title RecetApp - Arquitectura
+
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam ArrowColor #555555
+skinparam rectangle {
+  BackgroundColor #FFFFFF
+  BorderColor #7366FE
+}
+
+actor "Usuario" as usuario
+actor "Administrador" as admin
+
+rectangle "Navegador" {
+  [Páginas HTML\nindex, checklist, receta,\nlogin, registro, despensa,\nfavoritos, plan, proponer, admin] as paginas
+  [JavaScript\napi.js + un .js por página] as js
+}
+
+rectangle "Servidor FastAPI (Python)" {
+  [main.py\nune las rutas y sirve el frontend] as main
+  [rutas/\nusuarios, recetas, recomendacion,\ningredientes, despensa, favoritos,\nhistorial, admin] as rutas
+  [catalogo.py\nlee el JSON de ingredientes] as catalogo
+  [db.py\nconsultar(), ejecutar(), anotar()] as db
+}
+
+database "PostgreSQL\nrecetapp" as pg {
+  [Tablas\nusuarios, recetas, receta_ingredientes,\npasos, despensa, favoritos, historial,\nplan_semanal, recetas_propuestas, bitacora] as tablas
+  [Vistas y procedimientos\nvista_recetas_populares, vista_propuestas_pendientes,\nvista_resumen_usuarios, siguiente_id_receta(),\nborrar_receta(), revisar_propuesta()] as objetos
+}
+
+file "datos/ingredientes-guatemala.json\n(catálogo estático)" as json
+file "datos/recetas.json" as recetasjson
+[base_datos/importar_recetas.py] as importar
+
+usuario --> paginas
+admin --> paginas
+paginas --> js
+js --> main : HTTP / JSON\n(fetch)
+main --> rutas
+rutas --> catalogo
+rutas --> db
+catalogo --> json : lee al iniciar
+db --> pg : psycopg
+importar --> recetasjson : lee
+importar --> pg : carga recetas
+
+@enduml

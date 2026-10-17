@@ -167,6 +167,196 @@ h1 {
     margin-bottom: 15px;
 }
 
+/* ----- Barra con sesión ----- */
+.barra .activo {
+    color: #7366fe;
+    font-weight: bold;
+}
+
+.saludo {
+    color: #888888;
+}
+
+/* ----- Botones de varios tamaños y colores ----- */
+.boton-chico {
+    padding: 6px 12px;
+    font-size: 14px;
+    margin: 2px;
+}
+
+.boton-gris {
+    background-color: #e0ddf0;
+    color: #4a4270;
+}
+
+.boton-gris:hover {
+    background-color: #cfcbe6;
+}
+
+.boton-peligro {
+    background-color: #c0392b;
+}
+
+.boton-peligro:hover {
+    background-color: #a93226;
+}
+
+/* ----- Mensajes ----- */
+.mensaje-ok {
+    color: #1e8449;
+}
+
+.oculto {
+    display: none;
+}
+
+/* ----- Selectores y filas con acciones ----- */
+.selector {
+    padding: 6px 8px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    margin: 2px;
+}
+
+.acciones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.fila-plan {
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.fila-plan:last-child {
+    border-bottom: none;
+}
+
+.fila-plan .acciones {
+    margin-top: 6px;
+}
+
+.titulo-receta {
+    color: #333333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.titulo-receta:hover {
+    color: #7366fe;
+}
+
+/* Estado de una receta del plan o de una propuesta */
+.estado-cocinado .etiqueta,
+.etiqueta.estado-aprobada {
+    background-color: #d5f5e3;
+    color: #1e8449;
+}
+
+.estado-omitido .etiqueta,
+.etiqueta.estado-rechazada {
+    background-color: #fadbd8;
+    color: #a93226;
+}
+
+.estado-omitido a {
+    text-decoration: line-through;
+    color: #888888;
+}
+
+/* ----- Despensa ----- */
+.quitar {
+    border: none;
+    cursor: pointer;
+}
+
+.quitar:hover {
+    background-color: #fadbd8;
+    color: #a93226;
+}
+
+/* ----- Panel de admin ----- */
+.numeros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.numero {
+    flex: 1;
+    min-width: 120px;
+    background-color: #f5f3f2;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+}
+
+.numero strong {
+    display: block;
+    font-size: 28px;
+    color: #7366fe;
+}
+
+.numero span {
+    font-size: 14px;
+    color: #666666;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.tabla th,
+.tabla td {
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.tabla th {
+    color: #666666;
+}
+
+.formulario-ancho label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.fila-campos {
+    display: flex;
+    gap: 12px;
+}
+
+.fila-campos label {
+    flex: 1;
+}
+
+.fila-ingrediente {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+
+.fila-ingrediente .i-clave {
+    flex: 2;
+    min-width: 160px;
+}
+
+.fila-ingrediente .i-cantidad,
+.fila-ingrediente .i-unidad {
+    flex: 1;
+    min-width: 80px;
+}
+
 /* ----- Celulares ----- */
 @media (max-width: 600px) {
     .barra {
@@ -177,4 +367,24 @@ h1 {
     h1 {
         font-size: 28px;
     }
+
+    .barra .marca {
+        width: 100%;
+    }
+
+    .fila-campos {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .tabla {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* ----- Enlaces dentro de listas y tablas ----- */
+.fila-plan a,
+.tabla a {
+    color: #5a4de0;
 }

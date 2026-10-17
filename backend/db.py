@@ -9,13 +9,16 @@
 # Ejemplo:  consultar("SELECT * FROM recetas WHERE id = %s", ("gt-0001",))
 
 import os
+from pathlib import Path
 
 import psycopg
 from psycopg.rows import dict_row
 from dotenv import load_dotenv
 
-# Leer los datos de conexión del archivo .env (está en la carpeta principal)
-load_dotenv("../.env")
+# Leer los datos de conexión del archivo .env (está en la carpeta principal).
+# La ruta se arma desde este archivo, así funciona desde cualquier carpeta.
+CARPETA_PROYECTO = Path(__file__).resolve().parent.parent
+load_dotenv(CARPETA_PROYECTO / ".env")
 
 
 def conectar():
@@ -45,3 +48,12 @@ def ejecutar(sql, datos=()):
     cursor.execute(sql, datos)
     conexion.commit()
     conexion.close()
+
+
+# Guarda una acción en la bitácora, por ejemplo: anotar(5, "Inició sesión").
+# Si falla, no detiene lo demás: la bitácora es solo un registro.
+def anotar(usuario_id, accion):
+    try:
+        ejecutar("INSERT INTO bitacora (usuario_id, accion) VALUES (%s, %s)", (usuario_id, accion))
+    except Exception:
+        pass

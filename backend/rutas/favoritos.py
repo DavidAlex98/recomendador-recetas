@@ -2,7 +2,7 @@
 #
 # Endpoints:
 #   - GET, POST, DELETE /api/favoritos
-#   - POST, GET, PUT /api/plan
+#   - POST, GET, PUT, DELETE /api/plan
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
@@ -30,6 +30,7 @@ def obtener_favoritos(usuario_id: int):
         FROM favoritos
         JOIN recetas ON favoritos.receta_id = recetas.id
         WHERE favoritos.usuario_id = %s
+        ORDER BY favoritos.creado_en DESC
     """
     return consultar(sql, (usuario_id,))
 
@@ -86,7 +87,7 @@ def agregar_al_plan(usuario_id: int, item: ItemPlan):
         INSERT INTO plan_semanal (usuario_id, receta_id, dia, estado)
         VALUES (%s, %s, %s, 'planificado')
     """
-    ejecutar(sql, (usuario_id, item.receta_id, item.dia))
+    ejecutar(sql, (usuario_id, item.receta_id, item.dia.lower()))
     return {"mensaje": "Receta agregada al plan semanal"}
 
 
@@ -97,6 +98,10 @@ def obtener_plan(usuario_id: int):
         FROM plan_semanal
         JOIN recetas ON plan_semanal.receta_id = recetas.id
         WHERE plan_semanal.usuario_id = %s
+        ORDER BY array_position(
+            ARRAY['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo'],
+            plan_semanal.dia::text
+        ), plan_semanal.id
     """
     return consultar(sql, (usuario_id,))
 
@@ -117,3 +122,13 @@ def actualizar_estado_plan(id: int, datos: EstadoPlan):
     sql = "UPDATE plan_semanal SET estado = %s WHERE id = %s"
     ejecutar(sql, (nuevo_estado, id))
     return {"mensaje": "Estado actualizado a " + nuevo_estado}
+
+
+@router.delete("/plan/{id}")
+def quitar_del_plan(id: int):
+    plan = consultar("SELECT id FROM plan_semanal WHERE id = %s", (id,))
+    if not plan:
+        raise HTTPException(status_code=404, detail="Registro del plan no encontrado")
+
+    ejecutar("DELETE FROM plan_semanal WHERE id = %s", (id,))
+    return {"mensaje": "Receta quitada del plan"}

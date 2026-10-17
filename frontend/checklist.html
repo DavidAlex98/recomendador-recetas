@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>¿Qué tengo en casa? · RecetApp</title>
-    <link rel="stylesheet" href="css/estilos.css?v=6">
+    <link rel="stylesheet" href="css/estilos.css?v=7">
 </head>
 <body>
     <!-- Responsable: Manrique -->
@@ -21,6 +21,9 @@
 
         <input id="buscador" class="buscador" type="text" placeholder="Buscar ingrediente...">
 
+        <!-- checklist.js muestra este botón solo si hay sesión -->
+        <p id="caja-despensa" class="oculto"><button id="boton-despensa" class="boton boton-gris">Marcar lo de mi despensa</button></p>
+
         <!-- checklist.js llena este div con las casillas -->
         <div id="ingredientes">Cargando ingredientes...</div>
 
@@ -33,7 +36,7 @@
         <div id="resultados"></div>
     </main>
 
-    <script src="js/api.js"></script>
-    <script src="js/checklist.js?v=5"></script>
+    <script src="js/api.js?v=7"></script>
+    <script src="js/checklist.js?v=7"></script>
 </body>
 </html>

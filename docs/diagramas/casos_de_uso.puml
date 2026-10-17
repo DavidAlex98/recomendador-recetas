@@ -1,0 +1,59 @@
+@startuml casos_de_uso
+' Casos de uso de RecetApp
+' Responsable: David
+title RecetApp - Casos de uso
+
+left to right direction
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam usecase {
+  BackgroundColor #F3F1FF
+  BorderColor #7366FE
+}
+
+actor "Visitante" as visitante
+actor "Usuario registrado" as usuario
+actor "Administrador" as admin
+
+usuario -|> visitante
+admin -|> usuario
+
+rectangle RecetApp {
+  usecase "Marcar ingredientes\nque tengo en casa" as UC1
+  usecase "Ver recetas recomendadas" as UC2
+  usecase "Buscar y ver una receta" as UC3
+  usecase "Registrarse" as UC4
+  usecase "Iniciar / cerrar sesión" as UC5
+
+  usecase "Guardar mi despensa" as UC6
+  usecase "Guardar recetas favoritas" as UC7
+  usecase "Armar plan semanal" as UC8
+  usecase "Marcar receta cocinada\nu omitida" as UC9
+  usecase "Ver recetas vistas\n(historial)" as UC10
+  usecase "Proponer una receta" as UC11
+
+  usecase "Aprobar o rechazar\npropuestas" as UC12
+  usecase "Crear, editar y borrar recetas" as UC13
+  usecase "Ver reporte y bitácora" as UC14
+}
+
+visitante --> UC1
+visitante --> UC3
+visitante --> UC4
+visitante --> UC5
+UC1 ..> UC2 : <<include>>
+
+usuario --> UC6
+usuario --> UC7
+usuario --> UC8
+usuario --> UC10
+usuario --> UC11
+UC8 <.. UC9 : <<extend>>
+UC6 ..> UC2 : <<include>>
+
+admin --> UC12
+admin --> UC13
+admin --> UC14
+UC12 ..> UC13 : <<include>>\n(al aprobar se completa\ncomo receta)
+
+@enduml

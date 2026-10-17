@@ -7,8 +7,13 @@
 #   {"clave": "cebolla", "nombre": "Cebolla", "categoria": "verduras", ...}
 
 import json
+from pathlib import Path
 
-with open("../datos/ingredientes-guatemala.json", encoding="utf-8") as archivo:
+# La carpeta principal del proyecto (la que tiene backend, datos, frontend...).
+# Así funciona sin importar desde qué carpeta se encienda el servidor.
+CARPETA_PROYECTO = Path(__file__).resolve().parent.parent
+
+with open(CARPETA_PROYECTO / "datos" / "ingredientes-guatemala.json", encoding="utf-8") as archivo:
     datos = json.load(archivo)
 
 INGREDIENTES = datos["ingredientes"]

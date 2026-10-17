@@ -3,6 +3,7 @@
 #
 #   GET /api/ingredientes  ->  ingredientes del JSON agrupados por categoría
 #   (solo los comunes de catalogo.EN_CHECKLIST, para no saturar la página)
+#   GET /api/ingredientes?todos=true  ->  el catálogo completo (lo usa el admin)
 
 from fastapi import APIRouter
 
@@ -12,10 +13,10 @@ router = APIRouter(prefix="/api")
 
 
 @router.get("/ingredientes")
-def listar_ingredientes():
+def listar_ingredientes(todos: bool = False):
     agrupados = {}
     for ingrediente in catalogo.INGREDIENTES:
-        if ingrediente["clave"] not in catalogo.EN_CHECKLIST:
+        if not todos and ingrediente["clave"] not in catalogo.EN_CHECKLIST:
             continue
         categoria = ingrediente["categoria"]
         if categoria not in agrupados:

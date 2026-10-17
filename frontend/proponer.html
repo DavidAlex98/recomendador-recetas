@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proponer receta · RecetApp</title>
+    <link rel="stylesheet" href="css/estilos.css?v=7">
+</head>
+<body>
+    <!-- Responsable: Brandon -->
+
+    <nav class="barra"></nav>
+
+    <main>
+        <h1>Proponer una receta</h1>
+        <p>¿Falta una receta que te gusta? Propónla y un administrador la revisa.</p>
+
+        <form id="formulario" class="tarjeta formulario">
+            <label for="nombre">Nombre de la receta</label>
+            <input id="nombre" class="buscador" type="text" required>
+
+            <label for="descripcion">Descripción (ingredientes, cómo se hace...)</label>
+            <textarea id="descripcion" class="buscador" rows="5"></textarea>
+
+            <button class="boton" type="submit">Enviar propuesta</button>
+            <p id="mensaje"></p>
+        </form>
+
+        <h2>Mis propuestas</h2>
+        <!-- proponer.js llena este div -->
+        <div id="propuestas">Cargando...</div>
+    </main>
+
+    <script src="js/api.js?v=7"></script>
+    <script src="js/proponer.js?v=7"></script>
+</body>
+</html>

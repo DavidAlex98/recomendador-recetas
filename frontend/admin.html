@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin · RecetApp</title>
+    <link rel="stylesheet" href="css/estilos.css?v=7">
+</head>
+<body>
+    <!-- Responsable: Brandon -->
+
+    <nav class="barra"></nav>
+
+    <main>
+        <h1>Panel de administración</h1>
+        <p id="aviso-admin" class="mensaje-error"></p>
+
+        <div id="panel">
+            <!-- ----- Reporte ----- -->
+            <section class="tarjeta">
+                <h3>Reporte</h3>
+                <div id="reporte">Cargando...</div>
+            </section>
+
+            <!-- ----- Propuestas ----- -->
+            <section class="tarjeta">
+                <h3>Propuestas pendientes</h3>
+                <div id="propuestas">Cargando...</div>
+            </section>
+
+            <!-- ----- Recetas ----- -->
+            <section class="tarjeta">
+                <h3>Recetas</h3>
+                <input id="buscar-receta" class="buscador" type="text" placeholder="Buscar receta por nombre para editarla o borrarla...">
+                <div id="lista-recetas"></div>
+                <p><button id="boton-nueva" class="boton">+ Nueva receta</button></p>
+            </section>
+
+            <!-- ----- Formulario de receta (crear / editar) ----- -->
+            <section id="caja-formulario" class="tarjeta oculto">
+                <h3 id="titulo-formulario">Nueva receta</h3>
+                <form id="formulario-receta" class="formulario-ancho">
+                    <label for="r-nombre">Nombre</label>
+                    <input id="r-nombre" class="buscador" type="text" required>
+
+                    <label for="r-categoria">Categoría</label>
+                    <select id="r-categoria" class="buscador"></select>
+
+                    <label for="r-descripcion">Descripción</label>
+                    <textarea id="r-descripcion" class="buscador" rows="2"></textarea>
+
+                    <div class="fila-campos">
+                        <label>Dificultad
+                            <select id="r-dificultad" class="buscador">
+                                <option>fácil</option><option>media</option><option>alta</option>
+                            </select>
+                        </label>
+                        <label>Tiempo (min)
+                            <input id="r-tiempo" class="buscador" type="number" min="1" value="30" required>
+                        </label>
+                        <label>Porciones
+                            <input id="r-porciones" class="buscador" type="number" min="1" value="4" required>
+                        </label>
+                    </div>
+
+                    <p>
+                        <label class="casilla"><input id="r-vegetariano" type="checkbox"> Vegetariana</label>
+                        <label class="casilla"><input id="r-vegano" type="checkbox"> Vegana</label>
+                        <label class="casilla"><input id="r-sin-gluten" type="checkbox"> Sin gluten</label>
+                    </p>
+
+                    <label>Ingredientes</label>
+                    <div id="r-ingredientes"></div>
+                    <p><button type="button" id="boton-ingrediente" class="boton boton-chico boton-gris">+ Ingrediente</button></p>
+
+                    <label for="r-pasos">Pasos (uno por línea)</label>
+                    <textarea id="r-pasos" class="buscador" rows="5" required></textarea>
+
+                    <button class="boton" type="submit">Guardar receta</button>
+                    <button type="button" id="boton-cancelar" class="boton boton-gris">Cancelar</button>
+                    <p id="mensaje-receta"></p>
+                </form>
+            </section>
+
+            <!-- ----- Bitácora ----- -->
+            <section class="tarjeta">
+                <h3>Bitácora (últimas acciones)</h3>
+                <div id="bitacora">Cargando...</div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Lista de ingredientes del catálogo para los selectores -->
+    <datalist id="catalogo"></datalist>
+
+    <script src="js/api.js?v=7"></script>
+    <script src="js/admin.js?v=7"></script>
+</body>
+</html>
