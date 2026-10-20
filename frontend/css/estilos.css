@@ -1,112 +1,173 @@
 /* Estilos de RecetApp
    Responsable: Brandon */
 
+/* Colores del diseño (diseno/recetapp-pantallas-movil-v3-actualizado.pdf) */
+:root {
+    --crema: #f4eee1;       /* fondo de las páginas */
+    --papel: #ffffff;       /* tarjetas y campos */
+    --borde: #e1d8c3;       /* borde de tarjetas */
+    --linea: #d9d0bb;       /* líneas finas */
+    --acento: #c93e1f;      /* botones y lo activo */
+    --acento-oscuro: #a8321a;
+    --amarillo: #fbb925;    /* botón sobre la cabecera con degradado */
+    --verde: #1d3a33;       /* títulos */
+    --tinta: #1d2723;       /* texto principal */
+    --suave: #6b776e;       /* texto secundario */
+    --exito: #3b7456;
+    --error: #a8412c;
+    --arcilla: #a9532f;     /* enlaces */
+    --degradado: linear-gradient(90deg, #c93e1f 0%, #000000 100%);
+    --serif: Georgia, "Times New Roman", serif;
+
+    /* Tamaños que se adaptan solos al ancho de la pantalla */
+    --margen: clamp(16px, 4.5vw, 30px);
+    --relleno: clamp(14px, 3.6vw, 20px);
+    --titulo: clamp(1.75rem, 5.5vw + 0.6rem, 2.5rem);
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    overflow-x: clip;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #333333;
-    background-color: #f5f3f2;
+    font-size: 1rem;
+    line-height: 1.45;
+    color: var(--tinta);
+    background-color: var(--crema);
+    overflow-x: clip;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+a {
+    color: var(--arcilla);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--serif);
+    color: var(--verde);
 }
 
 /* Barra de arriba */
 .barra {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
-    padding: 15px 30px;
-    background-color: white;
-    border-bottom: 1px solid #dddddd;
+    gap: 8px 20px;
+    padding: 15px var(--margen);
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--linea);
 }
 
 .barra a {
-    color: #333333;
+    color: var(--tinta);
     text-decoration: none;
 }
 
 .barra a:hover {
-    color: #7366fe;
+    color: var(--acento);
 }
 
 .barra .marca {
     margin-right: auto;
-    font-size: 22px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #7366fe;
+    text-transform: lowercase;
+    color: var(--verde);
 }
 
 /* Contenido */
 main {
     max-width: 900px;
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: var(--margen);
 }
 
 h1 {
-    font-size: 36px;
+    font-size: var(--titulo);
+    line-height: 1.15;
     margin-bottom: 10px;
 }
 
 /* Tarjetas */
 .tarjeta {
-    background-color: white;
+    background-color: var(--papel);
+    border: 1px solid var(--borde);
     border-radius: 15px;
-    padding: 20px;
+    padding: var(--relleno);
     margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tarjeta h3 {
     margin-top: 0;
-    color: #7366fe;
+    color: var(--verde);
 }
 
 /* Botones */
 .boton {
     display: inline-block;
-    background-color: #7366fe;
+    background-color: var(--acento);
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
 }
 
 .boton:hover {
-    background-color: #5a4de0;
+    background-color: var(--acento-oscuro);
 }
 
 /* Etiquetas (categorías, ingredientes) */
 .etiqueta {
     display: inline-block;
-    background-color: #e8e5fb;
-    color: #5a4de0;
-    padding: 5px 12px;
+    background-color: transparent;
+    color: var(--verde);
+    border: 1px solid #b9b49f;
+    padding: 4px 12px;
     margin: 4px;
-    border-radius: 15px;
-    font-size: 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
 }
 
 /* Mensajes */
 .mensaje-error {
-    color: #c0392b;
+    color: var(--error);
 }
 
 .pendiente {
-    color: #888888;
+    color: var(--suave);
     font-style: italic;
 }
 
 /* Checklist de ingredientes */
 .buscador {
     width: 100%;
-    padding: 10px;
+    padding: 10px 14px;
     margin-bottom: 20px;
-    font-size: 16px;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--tinta);
+    background-color: var(--papel);
+    border: 1px solid #c9c0aa;
+    border-radius: 12px;
     box-sizing: border-box;
+}
+
+.buscador:focus,
+.selector:focus {
+    outline: none;
+    border-color: var(--verde);
+    box-shadow: 0 0 0 1px var(--verde);
 }
 
 .categoria::first-letter {
@@ -115,35 +176,42 @@ h1 {
 
 .casilla {
     display: inline-block;
-    width: 200px;
+    width: clamp(150px, 48%, 220px);
+    box-sizing: border-box;
     padding: 5px 0;
     cursor: pointer;
 }
 
+input[type="checkbox"] {
+    accent-color: var(--verde);
+}
+
 /* Cuadro de "¿Te falta marcar algo?" */
 .aviso {
-    background-color: #fff8e1;
+    background-color: #f8e7c1;
+    border-left: 4px solid #c0902e;
 }
 
 .sugerencia {
-    border: none;
+    border: 1px solid #b9b49f;
     cursor: pointer;
 }
 
 .sugerencia:hover {
-    background-color: #7366fe;
+    background-color: var(--verde);
+    border-color: var(--verde);
     color: white;
 }
 
 /* Recetas encontradas */
 .receta {
     display: block;
-    color: #333333;
+    color: var(--tinta);
     text-decoration: none;
 }
 
 .receta:hover {
-    border: 1px solid #7366fe;
+    border: 1px solid var(--acento);
 }
 
 /* Página de la receta */
@@ -160,6 +228,11 @@ h1 {
 .formulario label {
     display: block;
     margin-bottom: 5px;
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--suave);
 }
 
 .formulario .buscador {
@@ -168,41 +241,43 @@ h1 {
 
 /* Barra con sesión */
 .barra .activo {
-    color: #7366fe;
+    color: var(--verde);
     font-weight: bold;
+    border-bottom: 3px solid var(--acento);
+    padding-bottom: 2px;
 }
 
 .saludo {
-    color: #888888;
+    color: var(--suave);
 }
 
 /* Botones de varios tamaños y colores */
 .boton-chico {
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: 0.9rem;
     margin: 2px;
 }
 
 .boton-gris {
-    background-color: #e0ddf0;
-    color: #4a4270;
+    background-color: #d9d3c2;
+    color: var(--tinta);
 }
 
 .boton-gris:hover {
-    background-color: #cfcbe6;
+    background-color: #c9c2ae;
 }
 
 .boton-peligro {
-    background-color: #c0392b;
+    background-color: #8c2a17;
 }
 
 .boton-peligro:hover {
-    background-color: #a93226;
+    background-color: #6f2112;
 }
 
 /* Mensaje de éxito y elementos ocultos */
 .mensaje-ok {
-    color: #1e8449;
+    color: var(--exito);
 }
 
 .oculto {
@@ -212,10 +287,13 @@ h1 {
 /* Selectores y filas con acciones */
 .selector {
     padding: 6px 8px;
-    font-size: 14px;
-    border: 1px solid #dddddd;
+    font-size: 0.9rem;
+    color: var(--tinta);
+    background-color: var(--papel);
+    border: 1px solid #c9c0aa;
     border-radius: 8px;
     margin: 2px;
+    max-width: 100%;
 }
 
 .acciones {
@@ -228,7 +306,7 @@ h1 {
 
 .fila-plan {
     padding: 10px 0;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid var(--linea);
 }
 
 .fila-plan:last-child {
@@ -240,42 +318,48 @@ h1 {
 }
 
 .titulo-receta {
-    color: #333333;
+    color: var(--verde);
     text-decoration: none;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .titulo-receta:hover {
-    color: #7366fe;
+    color: var(--acento);
 }
 
 /* Estado de una receta del plan o de una propuesta */
 .estado-cocinado .etiqueta,
 .etiqueta.estado-aprobada {
-    background-color: #d5f5e3;
-    color: #1e8449;
+    background-color: var(--exito);
+    border-color: var(--exito);
+    color: white;
 }
 
 .estado-omitido .etiqueta,
 .etiqueta.estado-rechazada {
-    background-color: #fadbd8;
-    color: #a93226;
+    background-color: var(--error);
+    border-color: var(--error);
+    color: white;
 }
 
 .estado-omitido a {
     text-decoration: line-through;
-    color: #888888;
+    color: var(--suave);
 }
 
 /* Despensa */
 .quitar {
-    border: none;
+    background-color: var(--acento);
+    border: 1px solid var(--acento);
+    color: white;
+    font-weight: bold;
     cursor: pointer;
 }
 
 .quitar:hover {
-    background-color: #fadbd8;
-    color: #a93226;
+    background-color: var(--acento-oscuro);
+    border-color: var(--acento-oscuro);
 }
 
 /* Panel de admin */
@@ -288,44 +372,53 @@ h1 {
 
 .numero {
     flex: 1;
+    box-sizing: border-box;
     min-width: 120px;
-    background-color: #f5f3f2;
-    border-radius: 10px;
+    background-color: var(--papel);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
     padding: 12px;
     text-align: center;
 }
 
 .numero strong {
     display: block;
-    font-size: 28px;
-    color: #7366fe;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.9rem;
+    color: var(--verde);
 }
 
 .numero span {
-    font-size: 14px;
-    color: #666666;
+    font-size: 0.9rem;
+    color: var(--suave);
 }
 
 .tabla {
     width: 100%;
     border-collapse: collapse;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 .tabla th,
 .tabla td {
     text-align: left;
     padding: 6px 8px;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid var(--linea);
 }
 
 .tabla th {
-    color: #666666;
+    color: var(--suave);
 }
 
 .formulario-ancho label {
     display: block;
     margin-bottom: 5px;
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--suave);
 }
 
 .fila-campos {
@@ -359,22 +452,904 @@ h1 {
 /* Enlaces dentro de listas y tablas */
 .fila-plan a,
 .tabla a {
-    color: #5a4de0;
+    color: var(--arcilla);
+    text-decoration: none;
+}
+
+/* Cabecera con degradado: inicio, iniciar sesión y registro (como en el diseño) */
+body:has(#categorias) .barra,
+body:has(#correo) .barra {
+    background: var(--degradado);
+    border-bottom: none;
+}
+
+body:has(#categorias) .barra a,
+body:has(#categorias) .barra .marca,
+body:has(#categorias) .saludo,
+body:has(#correo) .barra a,
+body:has(#correo) .barra .marca,
+body:has(#correo) .saludo {
+    color: #ffffff;
+}
+
+body:has(#categorias) .barra .activo,
+body:has(#correo) .barra .activo {
+    border-bottom-color: var(--amarillo);
+}
+
+body:has(#categorias) main,
+body:has(#correo) main {
+    padding-top: 0;
+}
+
+/* Los bloques de la cabecera ocupan todo el ancho de la pantalla */
+body:has(#categorias) main > h1:first-child,
+body:has(#categorias) main > h1:first-child + p,
+body:has(#categorias) main > p:has(.boton),
+body:has(#correo) main > h1:first-child {
+    background: var(--degradado);
+    color: #ffffff;
+    margin: 0 calc(50% - 50vw);
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+}
+
+body:has(#categorias) main > h1:first-child,
+body:has(#correo) main > h1:first-child {
+    padding-top: clamp(28px, 8vw, 56px);
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+body:has(#categorias) main > h1:first-child + p {
+    padding-top: 0;
+    padding-bottom: 16px;
+    color: #d8d2cb;
+    max-width: none;
+}
+
+body:has(#categorias) main > p:has(.boton) {
+    padding-bottom: clamp(26px, 7vw, 44px);
+    margin-bottom: 24px;
+}
+
+body:has(#categorias) main > p:has(.boton) .boton {
+    background-color: var(--amarillo);
+    color: var(--verde);
+}
+
+body:has(#categorias) main > p:has(.boton) .boton:hover {
+    background-color: #e0a418;
+}
+
+body:has(#correo) main > h1:first-child {
+    margin-bottom: 24px;
+    padding-bottom: clamp(26px, 7vw, 44px);
+}
+
+/* Frase pequeña sobre el título de la cabecera */
+body:has(#categorias) main > h1:first-child::before,
+body:has(#correo) main > h1:first-child::before {
+    display: block;
+    margin-bottom: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    font-style: normal;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #d9a33a;
+}
+
+body:has(#categorias) main > h1:first-child::before {
+    content: "Recetas guatemaltecas";
+}
+
+body:has(#correo) main > h1:first-child::before {
+    content: "Bienvenido";
+}
+
+body:has(#confirmar) main > h1:first-child::before {
+    content: "Gratis";
+}
+
+/* Secciones sin tarjeta, con una línea debajo del título (como en el diseño) */
+section.tarjeta,
+form.tarjeta,
+a.tarjeta.receta {
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+section.tarjeta {
+    margin-bottom: 26px;
+}
+
+section.tarjeta > h3 {
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--linea);
+    font-size: 1.15rem;
+}
+
+/* Receta encontrada: una fila con línea abajo */
+a.tarjeta.receta {
+    padding: 14px 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--linea);
+}
+
+a.tarjeta.receta:hover {
+    border: none;
+    border-bottom: 1px solid var(--linea);
+}
+
+a.tarjeta.receta strong {
+    font-size: 1.08rem;
+    color: var(--verde);
+}
+
+a.tarjeta.receta:hover strong {
+    color: var(--acento);
+}
+
+/* Ingredientes como botones que se llenan al marcarlos */
+.casilla {
+    position: relative;
+    width: auto;
+    margin: 4px 6px 4px 0;
+    padding: 6px 14px;
+    border: 1px solid #b9b49f;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.casilla input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.casilla:has(input:checked) {
+    background-color: var(--acento);
+    border-color: var(--acento);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.casilla:has(input:focus-visible) {
+    box-shadow: 0 0 0 2px var(--verde);
+}
+
+/* En el formulario del admin las casillas se quedan como casillas normales */
+.formulario-ancho .casilla {
+    padding: 5px 14px 5px 0;
+    margin-right: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: inherit;
+    font-weight: normal;
+}
+
+.formulario-ancho .casilla input {
+    position: static;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Título grande de los resultados: "Puedes cocinar" y "17 recetas" */
+.sobretitulo {
+    margin: 22px 0 0;
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--suave);
+}
+
+h2.cifra {
+    margin: 4px 0 14px;
+    font-size: clamp(2.1rem, 8vw, 2.7rem);
+    font-style: italic;
+    line-height: 1.1;
+}
+
+/* Botones con ícono (corazón) */
+.boton svg {
+    width: 1.1em;
+    height: 1.1em;
+    margin-right: 6px;
+    vertical-align: -0.2em;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.boton svg.lleno {
+    fill: currentColor;
+}
+
+/* Página de la receta: ingredientes con puntos y pasos con números grandes */
+.tarjeta ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li.ingrediente {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+li.ingrediente .puntos {
+    flex: 1;
+    border-bottom: 1px dotted #b9b49f;
+    transform: translateY(-3px);
+}
+
+li.ingrediente b {
+    color: var(--acento);
+    white-space: nowrap;
+}
+
+.tarjeta ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: paso;
+}
+
+.tarjeta ol li {
+    display: flex;
+    gap: 14px;
+    counter-increment: paso;
+    margin-bottom: 14px;
+}
+
+.tarjeta ol li::before {
+    content: counter(paso);
+    min-width: 1.5rem;
+    font-family: var(--serif);
+    font-size: 1.9rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1;
+    color: var(--acento);
+}
+
+/* Barra de abajo y menú: solo en el celular */
+.pestanas,
+.menu-hoja {
+    display: none;
+}
+
+.pestana svg,
+.menu-cabecera svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Buscador con lupa (y botón de cámara en ¿Qué tengo en casa?) */
+.campo-busqueda {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.campo-busqueda > svg {
+    position: absolute;
+    left: 15px;
+    top: 24px;
+    width: 22px;
+    height: 22px;
+    transform: translateY(-50%);
+    fill: none;
+    stroke: var(--suave);
+    stroke-width: 2;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+.campo-busqueda .buscador {
+    margin-bottom: 0;
+    padding: 12px 14px 12px 46px;
+    border-radius: 26px;
+}
+
+.campo-busqueda.con-camara {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.boton-camara {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: var(--acento);
+}
+
+.boton-camara:hover {
+    background-color: var(--acento-oscuro);
+}
+
+.boton-camara svg {
+    width: 26px;
+    height: 26px;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Pestañas de texto (categorías de recetas y estados de la lista de compras) */
+.filtros {
+    display: flex;
+    gap: 22px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 6px 0 10px;
+    border-bottom: 1px solid var(--linea);
+}
+
+.filtros::-webkit-scrollbar {
+    display: none;
+}
+
+.filtro {
+    flex-shrink: 0;
+    padding: 10px 0 8px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font: inherit;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    color: var(--suave);
+    cursor: pointer;
+}
+
+.filtro.activo {
+    font-weight: bold;
+    color: var(--verde);
+    border-bottom-color: var(--acento);
+}
+
+/* Mi cuenta */
+body:has(#perfil) .barra {
+    background: var(--degradado);
+    border-bottom: none;
+}
+
+body:has(#perfil) .barra a,
+body:has(#perfil) .barra .marca,
+body:has(#perfil) .saludo {
+    color: #ffffff;
+}
+
+body:has(#perfil) main {
+    padding-top: 0;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 0 calc(50% - 50vw) 8px;
+    padding: clamp(24px, 7vw, 40px) calc(50vw - 50%);
+    background: var(--degradado);
+    color: #ffffff;
+}
+
+.avatar {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--amarillo);
+    color: var(--verde);
+    font-family: var(--serif);
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.perfil h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(1.7rem, 6vw, 2.2rem);
+    font-style: italic;
+}
+
+.rol {
+    margin: 4px 0 0;
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #d8d2cb;
+}
+
+.lista-cuenta a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--linea);
+    color: var(--tinta);
+    text-decoration: none;
+}
+
+.lista-cuenta a:hover {
+    color: var(--acento);
+}
+
+.lista-cuenta .flecha {
+    font-size: 1.3rem;
+    color: var(--suave);
+}
+
+.lista-cuenta .salir {
+    color: var(--error);
+    border-bottom: none;
+}
+
+/* Inicio de sesión y registro: enlace de abajo, centrado y con una línea arriba */
+body:has(#correo) main > p:last-child {
+    max-width: 380px;
+    margin-top: 32px;
+    padding-top: 26px;
+    border-top: 1px solid var(--linea);
+    text-align: center;
+}
+
+body:has(#correo) main > p:last-child a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Mensaje de éxito del formulario de proponer receta */
+form #mensaje.mensaje-ok {
+    font-weight: bold;
+}
+
+form #mensaje.mensaje-ok::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: currentColor;
+}
+
+/* Filas con casilla: lista de compras e ingredientes encontrados en una foto */
+.item-compra {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--linea);
+    cursor: pointer;
+}
+
+.item-compra input {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    accent-color: var(--acento);
+}
+
+.item-compra .cantidad {
+    margin-left: auto;
+    font-size: 0.9rem;
+    color: var(--suave);
+}
+
+.para {
+    margin: 20px 0 4px;
+    color: var(--arcilla);
+}
+
+.boton-contorno {
+    background: none;
+    color: var(--verde);
+    border: 1.5px solid var(--verde);
+}
+
+.boton-contorno:hover {
+    background-color: var(--verde);
+    color: #ffffff;
+}
+
+.botones-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 420px;
+    margin-top: 24px;
+}
+
+.botones-lista .boton {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    text-align: center;
+}
+
+.botones-lista .boton-contorno {
+    color: var(--suave);
+    border-color: var(--suave);
+}
+
+.botones-lista .boton-contorno:hover {
+    color: #ffffff;
+    background-color: var(--suave);
+}
+
+.centrado {
+    text-align: center;
+}
+
+.mensaje-claro {
+    margin: 8px 0 16px;
+    font-size: 1rem;
+}
+
+/* Escanear ingredientes: la cámara */
+body.escaner main {
+    max-width: none;
+    padding-top: 0;
+}
+
+body.escaner main > section:not(.vista-camara) {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--margen);
+}
+
+.vista-camara {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 40;
+    background-color: #1c1612;
+}
+
+.vista-camara video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.camara-capa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: max(16px, env(safe-area-inset-top)) 20px max(24px, env(safe-area-inset-bottom));
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.camara-capa header {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    align-items: center;
+    width: 100%;
+    max-width: 480px;
+}
+
+.camara-capa header a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    color: #ffffff;
+}
+
+.camara-capa header svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.camara-capa header span {
+    text-align: center;
+    font-weight: bold;
+}
+
+.marco {
+    position: relative;
+    width: min(76%, 300px);
+    aspect-ratio: 290 / 340;
+}
+
+.marco i {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 0 solid #c0902e;
+}
+
+.marco i:nth-child(1) {
+    top: 0;
+    left: 0;
+    border-top-width: 4px;
+    border-left-width: 4px;
+}
+
+.marco i:nth-child(2) {
+    top: 0;
+    right: 0;
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+
+.marco i:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+
+.marco i:nth-child(4) {
+    right: 0;
+    bottom: 0;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.consejo {
+    margin: 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #dddddd;
+}
+
+.consejo strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+
+.controles {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 380px;
+    height: 84px;
+}
+
+.galeria {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background-color: #555555;
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+
+.disparador {
+    width: 76px;
+    height: 76px;
+    border: 4px solid #1c1612;
+    border-radius: 50%;
+    background-color: #ffffff;
+    outline: 3px solid #ffffff;
+    cursor: pointer;
+}
+
+/* Escanear ingredientes: analizando y resultado */
+.foto-analisis {
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    border-radius: 20px;
+    background-color: #1d1d1b;
+}
+
+.foto-analisis img {
+    display: block;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.velo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: rgba(29, 58, 51, 0.62);
+    color: #ffffff;
+    text-align: center;
+}
+
+.velo span {
+    font-size: 0.85rem;
+    color: #d8d2cb;
+}
+
+.giro {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+    border: 4px solid #ffffff;
+    border-top-color: #c0902e;
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.resumen-foto {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 14px 0 18px;
+}
+
+.resumen-foto img {
+    flex-shrink: 0;
+    width: 96px;
+    height: 96px;
+    border-radius: 14px;
+    background-color: #3a2f28;
+    object-fit: cover;
+}
+
+.resumen-foto p {
+    margin: 4px 0 8px;
+    font-size: 0.9rem;
+    color: var(--suave);
+}
+
+.barra-confianza {
+    width: 90px;
+    height: 7px;
+    margin-left: auto;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #e4e6d6;
+}
+
+.barra-confianza i {
+    display: block;
+    height: 100%;
+    background-color: var(--exito);
+}
+
+.porcentaje {
+    width: 42px;
+    text-align: right;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--exito);
+}
+
+.aviso-lateral {
+    margin: 20px 0;
+    padding: 4px 0 4px 14px;
+    border-left: 3px solid #c0902e;
+}
+
+.aviso-lateral strong {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--verde);
+}
+
+/* Campo con aviso (por ejemplo, rechazar sin escribir el motivo) */
+.selector.con-error {
+    border-color: var(--error);
+}
+
+.selector.con-error::placeholder {
+    color: var(--error);
+}
+
+/* Subtítulos pequeños del panel de admin (Recetas más populares, Usuarios...) */
+section.tarjeta h4 {
+    margin: 24px 0 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--linea);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--suave);
+}
+
+/* Al buscar recetas la pantalla baja hasta los resultados */
+#sugerencias,
+#resultados {
+    scroll-margin-top: 16px;
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .fila-ingrediente .i-clave {
+        min-width: 200px;
+    }
 }
 
 /* Celulares */
 @media (max-width: 600px) {
+    /* La barra queda en una sola fila y se desliza hacia los lados */
     .barra {
-        flex-wrap: wrap;
-        padding: 15px;
+        flex-wrap: nowrap;
+        gap: 16px;
+        padding: 12px var(--margen);
+        overflow-x: auto;
+        scrollbar-width: none;
     }
 
-    h1 {
-        font-size: 28px;
+    .barra::-webkit-scrollbar {
+        display: none;
+    }
+
+    .barra a,
+    .barra .saludo {
+        flex-shrink: 0;
+        white-space: nowrap;
+        padding: 6px 0;
     }
 
     .barra .marca {
-        width: 100%;
+        width: auto;
+        margin-right: 8px;
+    }
+
+    .formulario {
+        max-width: none;
     }
 
     .fila-campos {
@@ -385,5 +1360,498 @@ h1 {
     .tabla {
         display: block;
         overflow-x: auto;
+    }
+
+    .numero {
+        min-width: 42%;
+    }
+
+    .fila-ingrediente .i-clave {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+}
+
+/* Celulares y tabletas: barra de arriba sencilla, barra de abajo y menú */
+@media (max-width: 1100px), (pointer: coarse) and (max-width: 1400px) {
+    body {
+        padding-bottom: calc(76px + env(safe-area-inset-bottom));
+    }
+
+    /* Arriba: la marca a la izquierda y quién eres a la derecha */
+    .barra {
+        justify-content: space-between;
+        overflow: visible;
+        background-color: var(--crema);
+        border-bottom: none;
+        padding: 14px var(--margen);
+    }
+
+    .barra .enlace-menu {
+        display: none;
+    }
+
+    .barra .marca {
+        margin-right: 0;
+    }
+
+    .barra a:not(.marca),
+    .barra .saludo {
+        font-size: 0.85rem;
+        font-weight: bold;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        color: var(--verde);
+    }
+
+    /* Abajo: cuatro opciones, siempre a la vista */
+    .pestanas {
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 30;
+        padding: 0 4px env(safe-area-inset-bottom);
+        background-color: #ffffff;
+        border-top: 1px solid var(--linea);
+    }
+
+    .pestana {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        padding: 10px 2px 8px;
+        background: none;
+        border: none;
+        border-top: 3px solid transparent;
+        margin-top: -1px;
+        font: inherit;
+        font-size: 0.68rem;
+        text-decoration: none;
+        color: #98a39a;
+        cursor: pointer;
+    }
+
+    .pestana svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Sin recuadro al tocar; solo se ve al navegar con el teclado */
+    .pestana:focus {
+        outline: none;
+    }
+
+    .pestana:focus-visible {
+        outline: 2px solid var(--verde);
+        outline-offset: -4px;
+    }
+
+    .pestana.activa {
+        color: var(--verde);
+        font-weight: bold;
+        border-top-color: var(--acento);
+    }
+
+    /* El texto de cada pestaña va en una sola línea, así no se desalinean al marcarlas */
+    .pestana {
+        min-width: 0;
+        white-space: nowrap;
+    }
+
+    /* Menú con todos los enlaces (se abre con "Menú") */
+    .menu-hoja {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: calc(62px + env(safe-area-inset-bottom));
+        z-index: 20;
+        overflow-y: auto;
+        background-color: var(--crema);
+    }
+
+    .menu-hoja.abierto {
+        display: block;
+    }
+
+    body.menu-abierto {
+        overflow: hidden;
+    }
+
+    .menu-cabecera {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px var(--margen);
+        border-bottom: 1px solid var(--linea);
+    }
+
+    .menu-cabecera .marca {
+        font-family: var(--serif);
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: lowercase;
+        color: var(--verde);
+    }
+
+    .menu-cabecera button {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        background: none;
+        border: none;
+        color: var(--verde);
+        cursor: pointer;
+    }
+
+    .menu-cabecera button svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    .menu-hoja nav {
+        padding: 8px var(--margen) 24px;
+    }
+
+    .menu-hoja nav a {
+        display: block;
+        padding: 18px 0;
+        font-family: var(--serif);
+        font-size: 1.2rem;
+        color: var(--tinta);
+        text-decoration: none;
+        border-bottom: 1px solid var(--linea);
+    }
+
+    .menu-hoja nav a.actual {
+        font-weight: bold;
+        color: var(--verde);
+        text-decoration: underline;
+        text-decoration-color: var(--acento);
+        text-decoration-thickness: 3px;
+        text-underline-offset: 8px;
+    }
+
+    .menu-sesion {
+        margin: 22px 0 4px;
+        font-size: 0.72rem;
+        font-weight: bold;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--suave);
+    }
+
+    .menu-nombre {
+        margin: 0 0 14px;
+        font-weight: bold;
+        color: var(--verde);
+    }
+
+    .menu-hoja nav a.menu-salir {
+        padding: 6px 0;
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        color: var(--error);
+    }
+
+    /* El botón de buscar recetas queda fijo sobre la barra de abajo */
+    p:has(> #boton-buscar) {
+        position: sticky;
+        bottom: calc(62px + env(safe-area-inset-bottom));
+        z-index: 5;
+        margin: 0;
+        padding: 12px 0;
+        background-color: var(--crema);
+    }
+
+    #boton-buscar {
+        width: 100%;
+        padding: 14px;
+    }
+}
+
+/* Celulares: botón de escanear, nombre en el menú, cámara y botones fijos */
+@media (max-width: 1100px), (pointer: coarse) and (max-width: 1400px) {
+    .pestana.escanear {
+        border-top-color: transparent;
+    }
+
+    .pestana.escanear.activa {
+        border-top-color: transparent;
+    }
+
+    .boton-escanear {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 58px;
+        height: 58px;
+        margin-top: -30px;
+        border-radius: 50%;
+        background-color: var(--acento);
+        color: #ffffff;
+        box-shadow: 0 0 0 5px #ffffff, 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .pestana .boton-escanear svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .pestana.escanear > span:last-child {
+        font-weight: bold;
+        color: var(--verde);
+    }
+
+    .menu-hoja nav a.menu-nombre {
+        padding: 0 0 14px;
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--verde);
+    }
+
+    p:has(> #ver-recetas) {
+        position: sticky;
+        bottom: calc(62px + env(safe-area-inset-bottom));
+        z-index: 5;
+        margin: 0;
+        padding: 12px 0;
+        background-color: var(--crema);
+    }
+
+    #ver-recetas {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .boton-contorno {
+        padding: 12px 22px;
+    }
+
+    .campo-busqueda.con-camara .buscador {
+        min-width: 0;
+    }
+}
+
+@media (min-width: 1101px) {
+    #ver-recetas {
+        margin-top: 12px;
+    }
+}
+
+/* Celulares muy angostos */
+@media (max-width: 380px) {
+    .pestana {
+        font-size: 0.62rem;
+    }
+
+    .boton {
+        padding: 10px 16px;
+    }
+}
+
+/* Pantallas táctiles: botones y campos fáciles de tocar */
+@media (pointer: coarse) {
+    .boton {
+        min-height: 44px;
+        box-sizing: border-box;
+    }
+
+    .boton-chico,
+    .quitar,
+    .sugerencia {
+        min-height: 38px;
+    }
+
+    .selector,
+    .buscador {
+        min-height: 44px;
+        font-size: 16px;
+    }
+
+    .casilla {
+        padding: 10px 14px;
+    }
+}
+
+/* Pantallas anchas */
+@media (min-width: 1200px) {
+    main {
+        max-width: 960px;
+    }
+}
+
+/* Resultados como carta de restaurante (resultados.html) */
+.carta {
+    background: var(--papel);
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+    padding: 28px var(--relleno);
+    margin-top: 12px;
+    text-align: center;
+}
+
+.carta-titulo {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    color: var(--verde);
+    margin: 0;
+    letter-spacing: 0.04em;
+}
+
+.carta-subtitulo {
+    color: var(--acento);
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin: 6px 0 22px;
+}
+
+.carta-subtitulo::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--acento);
+    margin: 12px auto 0;
+}
+
+.plato {
+    display: block;
+    text-align: left;
+    padding: 14px 0;
+    border-bottom: 1px dashed var(--linea);
+    color: var(--tinta);
+    text-decoration: none;
+}
+
+.plato:last-child {
+    border-bottom: 0;
+}
+
+.plato-linea {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.plato-nombre {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: var(--verde);
+}
+
+.plato-relleno {
+    flex: 1;
+    border-bottom: 2px dotted var(--linea);
+    transform: translateY(-4px);
+}
+
+.plato-tiempo {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--acento);
+    white-space: nowrap;
+}
+
+.plato-detalle {
+    display: block;
+    margin-top: 4px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--suave);
+}
+
+.plato:hover .plato-nombre {
+    color: var(--acento);
+}
+
+/* Movimiento: entrada de pantallas y efecto de presionar */
+@keyframes entrar {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: none; }
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(10px) scale(0.98); }
+    to { opacity: 1; transform: none; }
+}
+
+/* Al cambiar de pantalla el contenido sube suavemente */
+main {
+    animation: entrar 0.4s ease-out both;
+}
+
+/* Las tarjetas y los platos van apareciendo uno tras otro */
+.tarjeta,
+.plato,
+.item-compra {
+    animation: aparecer 0.35s ease-out both;
+}
+
+.tarjeta:nth-child(2), .plato:nth-child(2) { animation-delay: 0.05s; }
+.tarjeta:nth-child(3), .plato:nth-child(3) { animation-delay: 0.1s; }
+.tarjeta:nth-child(4), .plato:nth-child(4) { animation-delay: 0.15s; }
+.tarjeta:nth-child(5), .plato:nth-child(5) { animation-delay: 0.2s; }
+.tarjeta:nth-child(n+6), .plato:nth-child(n+6) { animation-delay: 0.25s; }
+
+/* Todo lo que se toca responde con suavidad */
+.boton, .boton-chico, .boton-gris, .boton-peligro, .boton-contorno, .boton-camara,
+.filtro, .etiqueta, .pestana, .boton-escanear, .casilla, a.tarjeta.receta, .plato {
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+/* Botones: se levantan al pasar el cursor y se hunden al presionar */
+.boton, .boton-gris, .boton-peligro, .boton-contorno {
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.22);
+}
+
+.boton:hover, .boton-gris:hover, .boton-peligro:hover, .boton-contorno:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.22);
+}
+
+.boton:active, .boton-gris:active, .boton-peligro:active, .boton-contorno:active,
+.boton-chico:active {
+    transform: translateY(2px) scale(0.98);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.22);
+}
+
+/* Etiquetas, filtros, casillas y tarjetas que son enlaces */
+.filtro:active, .etiqueta:active, .boton-camara:active, .casilla:active {
+    transform: scale(0.94);
+}
+
+a.tarjeta.receta:active, .plato:active {
+    transform: scale(0.98);
+}
+
+/* Barra de abajo */
+.pestana:active {
+    transform: scale(0.88);
+}
+
+.boton-escanear:active {
+    transform: scale(0.9);
+}
+
+/* Quien prefiere menos movimiento no ve las animaciones */
+@media (prefers-reduced-motion: reduce) {
+    main, .tarjeta, .plato, .item-compra {
+        animation: none;
+    }
+
+    .boton, .boton-gris, .boton-peligro, .boton-contorno, .filtro, .etiqueta, .pestana {
+        transition: none;
     }
 }

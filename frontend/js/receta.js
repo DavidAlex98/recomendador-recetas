@@ -32,13 +32,14 @@ async function mostrarReceta() {
 
         html += '<section class="tarjeta"><h3>Ingredientes</h3><ul>';
         for (const ingrediente of receta.ingredientes) {
-            html += "<li>";
-            html += escapar(ingrediente.nombre);
-            if (ingrediente.cantidad) {
-                html += " · " + Number(ingrediente.cantidad) + " " + escapar(ingrediente.unidad);
-            }
+            // Nombre, puntos y cantidad a la derecha
+            html += '<li class="ingrediente"><span>' + escapar(ingrediente.nombre);
             if (ingrediente.opcional) {
                 html += ' <span class="pendiente">(opcional)</span>';
+            }
+            html += '</span><span class="puntos"></span>';
+            if (ingrediente.cantidad) {
+                html += "<b>" + Number(ingrediente.cantidad) + " " + escapar(ingrediente.unidad) + "</b>";
             }
             html += "</li>";
         }
@@ -88,9 +89,9 @@ async function mostrarAcciones(recetaId) {
 
     let html = '<div class="tarjeta acciones">';
     if (esFavorita) {
-        html += '<button id="boton-favorito" class="boton boton-gris">♥ En favoritos (quitar)</button>';
+        html += '<button id="boton-favorito" class="boton boton-gris">' + ICONOS.favoritos.replace("<svg", '<svg class="lleno"') + " En favoritos (quitar)</button>";
     } else {
-        html += '<button id="boton-favorito" class="boton">♡ Guardar en favoritos</button>';
+        html += '<button id="boton-favorito" class="boton">' + ICONOS.favoritos + " Guardar en favoritos</button>";
     }
     html += '<select id="dia" class="selector">' + opciones + "</select>";
     html += '<button id="boton-plan" class="boton">Agregar al plan</button>';
