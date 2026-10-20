@@ -24,15 +24,28 @@ async function mostrarIngredientes() {
     }
 }
 
+// Sin tildes, mayúsculas ni símbolos: "Limón", "limon" y "LIMÓN!" se consideran iguales
+function simplificar(texto) {
+    return texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
+}
+
 function filtrar() {
-    const texto = document.getElementById("buscador").value.toLowerCase();
+    const texto = simplificar(document.getElementById("buscador").value);
     const casillas = document.querySelectorAll(".casilla");
     for (const casilla of casillas) {
-        if (casilla.textContent.toLowerCase().includes(texto)) {
+        if (simplificar(casilla.textContent).includes(texto)) {
             casilla.style.display = "";
         } else {
             casilla.style.display = "none";
         }
+    }
+
+    // Se esconden las categorías sin coincidencias, así el ingrediente queda justo debajo del buscador
+    for (const seccion of document.querySelectorAll("#ingredientes section")) {
+        const hayCoincidencias = Array.from(seccion.querySelectorAll(".casilla")).some(function (casilla) {
+            return casilla.style.display !== "none";
+        });
+        seccion.style.display = hayCoincidencias ? "" : "none";
     }
 }
 
