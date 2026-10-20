@@ -59,17 +59,21 @@ h3 {
     align-items: center;
     gap: 8px 20px;
     padding: 15px var(--margen);
-    background-color: #ffffff;
-    border-bottom: 1px solid var(--linea);
+    background: var(--degradado);
+    border-bottom: none;
+    position: sticky;
+    top: 0;
+    z-index: 15;
 }
 
-.barra a {
-    color: var(--tinta);
+.barra a,
+.barra .saludo {
+    color: #ffffff;
     text-decoration: none;
 }
 
 .barra a:hover {
-    color: var(--acento);
+    color: var(--amarillo);
 }
 
 .barra .marca {
@@ -79,7 +83,7 @@ h3 {
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: lowercase;
-    color: var(--verde);
+    color: #ffffff;
 }
 
 /* Contenido */
@@ -241,9 +245,9 @@ input[type="checkbox"] {
 
 /* Barra con sesión */
 .barra .activo {
-    color: var(--verde);
+    color: #ffffff;
     font-weight: bold;
-    border-bottom: 3px solid var(--acento);
+    border-bottom: 3px solid var(--amarillo);
     padding-bottom: 2px;
 }
 
@@ -1311,7 +1315,7 @@ section.tarjeta h4 {
 /* Al buscar recetas la pantalla baja hasta los resultados */
 #sugerencias,
 #resultados {
-    scroll-margin-top: 16px;
+    scroll-margin-top: 84px;   /* deja ver el título debajo de la barra fija */
 }
 
 /* Pantallas medianas (tabletas) */
@@ -1382,8 +1386,6 @@ section.tarjeta h4 {
     .barra {
         justify-content: space-between;
         overflow: visible;
-        background-color: var(--crema);
-        border-bottom: none;
         padding: 14px var(--margen);
     }
 
@@ -1401,7 +1403,7 @@ section.tarjeta h4 {
         font-weight: bold;
         text-decoration: underline;
         text-underline-offset: 4px;
-        color: var(--verde);
+        color: #ffffff;
     }
 
     /* Abajo: cuatro opciones, siempre a la vista */
