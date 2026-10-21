@@ -14,7 +14,6 @@ if (usuario) {
         ["Mis recetas favoritas", "favoritos.html"],
         ["Plan de la semana", "plan.html"],
         ["Mi despensa", "despensa.html"],
-        ["Lista de compras", "lista-compras.html"],
         ["Lo último que viste", "historial.html"],
         ["Buscar recetas", "recetas.html"],
         ["Proponer receta", "proponer.html"],

@@ -799,7 +799,7 @@ li.ingrediente b {
     stroke-linejoin: round;
 }
 
-/* Pestañas de texto (categorías de recetas y estados de la lista de compras) */
+/* Pestañas de texto (categorías de recetas) */
 .filtros {
     display: flex;
     gap: 22px;
@@ -942,7 +942,7 @@ form #mensaje.mensaje-ok::before {
     background-color: currentColor;
 }
 
-/* Filas con casilla: lista de compras e ingredientes encontrados en una foto */
+/* Filas con casilla: ingredientes encontrados en una foto */
 .item-compra {
     display: flex;
     align-items: center;
