@@ -126,6 +126,19 @@ La primera vez, la base crea sola las tablas, vistas y procedimientos. El segund
 comando (cargar recetas) solo se corre la primera vez o si cambian las recetas.
 Nunca uses `docker compose down -v`: borra el volumen con todos los datos.
 
+## Reconocer ingredientes con foto (AWS)
+
+La página de escanear manda la foto a `POST /api/reconocer`, que usa **AWS Rekognition** con `boto3`.
+Para que funcione, agrega al `.env` las llaves que te pase David en privado:
+
+```
+AWS_ACCESS_KEY_ID=...
+AWS_SECRET_ACCESS_KEY=...
+AWS_DEFAULT_REGION=us-east-1
+```
+
+Nunca pongas las llaves en el código ni en el chat del grupo.
+
 ## Crear un administrador
 
 Regístrate normal en `registro.html` y luego, en pgAdmin (*Query Tool* sobre `recetapp`):
