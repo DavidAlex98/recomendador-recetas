@@ -105,7 +105,9 @@ TRADUCCION = {
 
 # Nombres generales que no son un ingrediente en sí
 GENERALES = ["Food", "Produce", "Vegetable", "Fruit", "Plant", "Meal", "Dish", "Ingredient",
-             "Citrus Fruit", "Meat", "Seafood", "Dairy", "Herbs", "Bowl", "Plate", "Grocery Store", "Market"]
+             "Citrus Fruit", "Meat", "Seafood", "Dairy", "Herbs", "Bowl", "Plate", "Grocery Store", "Market",
+             "Breakfast", "Brunch", "Lunch", "Dinner", "Food Presentation", "Cup", "Cookware", "Pot",
+             "Cereal Bowl", "Dessert", "Grain", "Seed", "Snack", "Salad", "Platter", "Kitchen", "Table"]
 
 
 # Rekognition acepta fotos de máximo 5 MB, por eso se achica la foto antes de mandarla
@@ -138,9 +140,12 @@ async def reconocer(foto: UploadFile):
     ingredientes = []
     claves_vistas = []
     no_reconocidos = 0
+    etiquetas = []
 
     for etiqueta in respuesta["Labels"]:
         nombre_ingles = etiqueta["Name"]
+        # Lo que respondió AWS tal cual, para revisar el diccionario
+        etiquetas.append(nombre_ingles + " " + str(round(etiqueta["Confidence"])) + "%")
 
         if nombre_ingles in TRADUCCION:
             clave = TRADUCCION[nombre_ingles]
@@ -158,4 +163,4 @@ async def reconocer(foto: UploadFile):
                 if categoria["Name"] == "Food and Beverage":
                     no_reconocidos = no_reconocidos + 1
 
-    return {"ingredientes": ingredientes, "no_reconocidos": no_reconocidos}
+    return {"ingredientes": ingredientes, "no_reconocidos": no_reconocidos, "etiquetas_aws": etiquetas}
