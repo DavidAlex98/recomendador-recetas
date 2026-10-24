@@ -1,6 +1,9 @@
 // ¿Qué tengo en casa?
 // Responsable: Manrique
 
+// Si no se marcaron, se le pregunta al usuario por ellos
+const COMUNES = ["ajo", "cebolla", "tomate", "limon", "huevo", "tortilla_maiz", "frijol_negro", "arroz"];
+
 async function mostrarIngredientes() {
     const contenedor = document.getElementById("ingredientes");
     try {
@@ -25,8 +28,29 @@ async function mostrarIngredientes() {
 }
 
 // Sin tildes, mayúsculas ni símbolos: "Limón", "limon" y "LIMÓN!" se consideran iguales
+const SIN_TILDE = { "á": "a", "é": "e", "í": "i", "ó": "o", "ú": "u", "ü": "u" };
+
 function simplificar(texto) {
-    return texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
+    texto = texto.toLowerCase();
+    let resultado = "";
+    let huboEspacio = false;
+    for (let i = 0; i < texto.length; i++) {
+        let letra = texto[i];
+        if (SIN_TILDE[letra]) {
+            letra = SIN_TILDE[letra];
+        }
+        const esLetra = letra >= "a" && letra <= "z";
+        const esNumero = letra >= "0" && letra <= "9";
+        const esN = letra === "ñ";
+        if (esLetra || esNumero || esN) {
+            resultado = resultado + letra;
+            huboEspacio = false;
+        } else if (!huboEspacio) {
+            resultado = resultado + " ";
+            huboEspacio = true;
+        }
+    }
+    return resultado.trim();
 }
 
 function filtrar() {
@@ -42,10 +66,17 @@ function filtrar() {
 
     // Se esconden las categorías sin coincidencias, así el ingrediente queda justo debajo del buscador
     for (const seccion of document.querySelectorAll("#ingredientes section")) {
-        const hayCoincidencias = Array.from(seccion.querySelectorAll(".casilla")).some(function (casilla) {
-            return casilla.style.display !== "none";
-        });
-        seccion.style.display = hayCoincidencias ? "" : "none";
+        let hayCoincidencias = false;
+        for (const casilla of seccion.querySelectorAll(".casilla")) {
+            if (casilla.style.display !== "none") {
+                hayCoincidencias = true;
+            }
+        }
+        if (hayCoincidencias) {
+            seccion.style.display = "";
+        } else {
+            seccion.style.display = "none";
+        }
     }
 }
 
@@ -104,7 +135,37 @@ async function alternarDespensa() {
 function contarMarcados() {
     const total = document.querySelectorAll(".casilla input:checked").length;
     const boton = document.getElementById("boton-buscar");
-    boton.textContent = total > 0 ? "Ver qué puedo cocinar · " + total : "Ver qué puedo cocinar";
+    if (total > 0) {
+        boton.textContent = "Ver qué puedo cocinar · " + total;
+    } else {
+        boton.textContent = "Ver qué puedo cocinar";
+    }
+    mostrarSugerencias();
+}
+
+// Cuadro de "¿Te falta marcar algo?" con los ingredientes comunes que no están marcados
+function mostrarSugerencias() {
+    const cuadro = document.getElementById("sugerencias");
+    let botones = "";
+    for (const clave of COMUNES) {
+        const casilla = document.querySelector('.casilla input[value="' + clave + '"]');
+        if (casilla && !casilla.checked) {
+            const nombre = casilla.parentElement.textContent.trim();
+            botones += '<button type="button" class="etiqueta sugerencia" onclick="agregar(\'' + clave + '\')">+ ' + escapar(nombre) + "</button>";
+        }
+    }
+
+    if (botones === "") {
+        cuadro.innerHTML = "";
+    } else {
+        cuadro.innerHTML = '<div class="tarjeta aviso"><strong>¿Te falta marcar algo?</strong> ' +
+            "Casi toda casa tiene esto. Si lo tienes, tócalo:<br>" + botones + "</div>";
+    }
+}
+
+function agregar(clave) {
+    document.querySelector('.casilla input[value="' + clave + '"]').checked = true;
+    contarMarcados();
 }
 
 // Si llegaste desde "Escanear", marca los ingredientes encontrados y busca las recetas
@@ -124,7 +185,10 @@ function marcarEscaneados() {
     buscarRecetas();
 }
 
-mostrarIngredientes().then(marcarEscaneados);
+mostrarIngredientes().then(function () {
+    contarMarcados();
+    marcarEscaneados();
+});
 document.getElementById("ingredientes").addEventListener("change", contarMarcados);
 if (usuarioActual()) {
     document.getElementById("caja-despensa").classList.remove("oculto");

@@ -36,8 +36,12 @@ async function mostrarResultados() {
             return;
         }
 
+        let palabra = " platillos";
+        if (recetas.length === 1) {
+            palabra = " platillo";
+        }
         let html = '<section class="carta"><h2 class="carta-titulo">La carta de hoy</h2>';
-        html += '<p class="carta-subtitulo">' + recetas.length + (recetas.length === 1 ? " platillo" : " platillos") + "</p>";
+        html += '<p class="carta-subtitulo">' + recetas.length + palabra + "</p>";
         for (const receta of recetas) {
             html += '<a class="plato" href="receta.html?id=' + escapar(receta.id) + '">';
             html += '<span class="plato-linea"><span class="plato-nombre">' + escapar(receta.nombre) + "</span>";

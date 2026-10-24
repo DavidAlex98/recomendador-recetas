@@ -49,9 +49,18 @@ services:
     image: nginx:alpine
     ports:
       - "8080:80"
+      - "8443:443"
     volumes:
       - ./frontend:/usr/share/nginx/html:ro
       - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      # HTTPS local: cada PC genera su propio certificado al arrancar (ver entrypoint abajo),
+      # así nadie tiene que compartir archivos de certificado ni rutas de su propia máquina.
+      - certs_web:/etc/nginx/certs
+    # Si no existe el certificado todavía, lo crea antes de arrancar nginx (solo para la red local, no es de verdad)
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - >
+        if [ ! -f /etc/nginx/certs/local.crt ]; then apk add --no-cache openssl >/dev/null; openssl req -x509 -nodes -newkey rsa:2048 -keyout /etc/nginx/certs/local.key -out /etc/nginx/certs/local.crt -days 825 -subj '/CN=recetapp local' -addext 'subjectAltName=DNS:localhost,IP:127.0.0.1'; fi; nginx -g 'daemon off;'
     depends_on:
       - app
     networks:
@@ -64,3 +73,4 @@ networks:
 
 volumes:
   datos_db:
+  certs_web:
