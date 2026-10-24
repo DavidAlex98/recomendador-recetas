@@ -80,20 +80,28 @@ function filtrar() {
     }
 }
 
+// Lleva la pantalla a las recetas encontradas
+function irAResultados() {
+    document.getElementById("resultados").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 async function verRecetas() {
     const resultados = document.getElementById("resultados");
     if (guardados.length === 0) {
         resultados.innerHTML = '<p class="mensaje-error">Primero guarda algún ingrediente.</p>';
+        irAResultados();
         return;
     }
     resultados.innerHTML = "<p>Buscando...</p>";
+    irAResultados();
     try {
         const recetas = await enviarPOST("/api/recomendaciones", { ingredientes: guardados });
         if (recetas.length === 0) {
             resultados.innerHTML = "<p>Con tu despensa todavía no sale ninguna receta. Agrega más ingredientes.</p>";
+            irAResultados();
             return;
         }
-        let html = "<h2>Puedes cocinar " + recetas.length + " recetas</h2>";
+        let html = '<p class="sobretitulo">Puedes cocinar</p><h2 class="cifra">' + recetas.length + " recetas</h2>";
         for (const receta of recetas.slice(0, 30)) {
             html += '<a class="tarjeta receta" href="receta.html?id=' + escapar(receta.id) + '">';
             html += "<strong>" + escapar(receta.nombre) + "</strong><br>";
@@ -103,8 +111,10 @@ async function verRecetas() {
             html += "</a>";
         }
         resultados.innerHTML = html;
+        irAResultados();
     } catch (error) {
         resultados.innerHTML = '<p class="mensaje-error">No se pudo buscar. Revisa que el servidor esté encendido.</p>';
+        irAResultados();
     }
 }
 

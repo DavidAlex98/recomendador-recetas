@@ -1,22 +1,6 @@
 // Página de inicio
 // Responsable: David
 
-async function mostrarEstado() {
-    const parrafo = document.getElementById("estado");
-    try {
-        const estado = await pedirGET("/api/estado");
-        if (estado.base_de_datos === "conectada") {
-            parrafo.textContent = "Base de datos conectada: " + estado.total_recetas + " recetas disponibles.";
-        } else {
-            parrafo.textContent = "La base de datos no está conectada. Revisa PostgreSQL y tu archivo .env.";
-            parrafo.className = "mensaje-error";
-        }
-    } catch (error) {
-        parrafo.textContent = "No se pudo conectar con el servidor.";
-        parrafo.className = "mensaje-error";
-    }
-}
-
 async function mostrarCategorias() {
     const contenedor = document.getElementById("categorias");
     try {
@@ -53,6 +37,5 @@ async function mostrarHistorial() {
     }
 }
 
-mostrarEstado();
 mostrarCategorias();
 mostrarHistorial();

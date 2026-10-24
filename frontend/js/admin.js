@@ -110,7 +110,12 @@ async function rechazar(id) {
         mostrarReporte();
         mostrarBitacora();
     } catch (error) {
-        document.getElementById("motivo-" + id).placeholder = error.message;
+        const campo = document.getElementById("motivo-" + id);
+        campo.placeholder = error.message;
+        campo.classList.add("con-error");
+        campo.addEventListener("input", function () {
+            campo.classList.remove("con-error");
+        }, { once: true });
     }
 }
 
@@ -318,6 +323,23 @@ async function cargarListas() {
     document.getElementById("catalogo").innerHTML = lista;
 }
 
+// Estado del sistema: si la base de datos responde y cuántas recetas tiene
+async function mostrarEstado() {
+    const parrafo = document.getElementById("estado");
+    try {
+        const estado = await pedirGET("/api/estado");
+        if (estado.base_de_datos === "conectada") {
+            parrafo.textContent = "Base de datos conectada: " + estado.total_recetas + " recetas disponibles.";
+        } else {
+            parrafo.textContent = "La base de datos no está conectada. Revisa PostgreSQL y tu archivo .env.";
+            parrafo.className = "mensaje-error";
+        }
+    } catch (error) {
+        parrafo.textContent = "No se pudo conectar con el servidor.";
+        parrafo.className = "mensaje-error";
+    }
+}
+
 async function iniciar() {
     if (!usuario) {
         return;
@@ -327,6 +349,7 @@ async function iniciar() {
         document.getElementById("panel").classList.add("oculto");
         return;
     }
+    mostrarEstado();
     mostrarReporte();
     mostrarPropuestas();
     mostrarBitacora();

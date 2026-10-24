@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Escanear ingredientes · RecetApp</title>
+    <link rel="stylesheet" href="css/estilos.css?v=14">
+</head>
+<body class="escaner">
+    <!-- Responsable: Brandon -->
+
+    <nav class="barra"></nav>
+
+    <main>
+        <!-- 1. La cámara, a pantalla completa -->
+        <section id="vista-camara" class="vista-camara">
+            <video id="video" autoplay playsinline muted></video>
+            <div class="camara-capa">
+                <header>
+                    <a href="javascript:history.back()" aria-label="Cerrar">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+                    </a>
+                    <span>Escanear ingredientes</span>
+                </header>
+                <div class="marco" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                <p class="consejo">
+                    <strong>Pon tus ingredientes dentro del marco</strong>
+                    Mejor con buena luz y sin amontonar
+                </p>
+                <div class="controles">
+                    <label class="galeria" for="galeria">Galería</label>
+                    <input id="galeria" type="file" accept="image/*" hidden>
+                    <button type="button" id="disparar" class="disparador" aria-label="Tomar foto"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Analizando la foto -->
+        <section id="vista-analizando" class="oculto">
+            <h1>Escanear</h1>
+            <div class="foto-analisis">
+                <img id="vista-foto" alt="">
+                <div class="velo">
+                    <div class="giro"></div>
+                    <strong>Reconociendo ingredientes…</strong>
+                    <span>Esto toma unos segundos</span>
+                </div>
+            </div>
+            <p class="centrado"><button type="button" id="cancelar" class="boton boton-contorno">Cancelar</button></p>
+        </section>
+
+        <!-- 3. Lo que se encontró -->
+        <section id="vista-resultado" class="oculto">
+            <h1>Esto encontramos</h1>
+            <div class="resumen-foto">
+                <img id="miniatura" alt="">
+                <div>
+                    <strong id="cuantos"></strong>
+                    <p>Revisa y quita lo que no sea.</p>
+                    <a href="#" id="otra-foto" class="boton boton-chico">Tomar foto de otro ingrediente</a>
+                </div>
+            </div>
+            <p class="sobretitulo">Detectados</p>
+            <div id="detectados"></div>
+            <div id="no-reconocidos" class="aviso-lateral oculto"></div>
+            <p class="fijo"><button type="button" id="ver-recetas" class="boton">Ver qué puedo cocinar</button></p>
+        </section>
+
+        <!-- 4. Cuando algo sale mal -->
+        <section id="vista-error" class="oculto">
+            <h1>Escanear</h1>
+            <p id="error-titulo" class="sobretitulo"></p>
+            <p id="error-mensaje" class="mensaje-claro"></p>
+            <p><button type="button" id="error-boton" class="boton boton-contorno"></button></p>
+        </section>
+    </main>
+
+    <script src="js/api.js?v=8"></script>
+    <script src="js/escanear.js?v=10"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recetas · RecetApp</title>
+    <link rel="stylesheet" href="css/estilos.css?v=14">
+</head>
+<body>
+    <!-- Responsable: Brandon -->
+
+    <nav class="barra"></nav>
+
+    <main>
+        <h1>Recetas</h1>
+
+        <div class="campo-busqueda">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.500 15.500 21 21"/></svg>
+            <input id="buscador" class="buscador" type="search" placeholder="Buscar por nombre…" autocomplete="off">
+        </div>
+
+        <!-- recetas.js llena las categorías y las recetas -->
+        <div id="filtros" class="filtros"></div>
+        <div id="resultados">Cargando...</div>
+    </main>
+
+    <script src="js/api.js?v=8"></script>
+    <script src="js/recetas.js?v=8"></script>
+</body>
+</html>

@@ -27,67 +27,131 @@ async function mostrarIngredientes() {
     }
 }
 
+// Sin tildes, mayúsculas ni símbolos: "Limón", "limon" y "LIMÓN!" se consideran iguales
+const SIN_TILDE = { "á": "a", "é": "e", "í": "i", "ó": "o", "ú": "u", "ü": "u" };
+
+function simplificar(texto) {
+    texto = texto.toLowerCase();
+    let resultado = "";
+    let huboEspacio = false;
+    for (let i = 0; i < texto.length; i++) {
+        let letra = texto[i];
+        if (SIN_TILDE[letra]) {
+            letra = SIN_TILDE[letra];
+        }
+        const esLetra = letra >= "a" && letra <= "z";
+        const esNumero = letra >= "0" && letra <= "9";
+        const esN = letra === "ñ";
+        if (esLetra || esNumero || esN) {
+            resultado = resultado + letra;
+            huboEspacio = false;
+        } else if (!huboEspacio) {
+            resultado = resultado + " ";
+            huboEspacio = true;
+        }
+    }
+    return resultado.trim();
+}
+
 function filtrar() {
-    const texto = document.getElementById("buscador").value.toLowerCase();
+    const texto = simplificar(document.getElementById("buscador").value);
     const casillas = document.querySelectorAll(".casilla");
     for (const casilla of casillas) {
-        if (casilla.textContent.toLowerCase().includes(texto)) {
+        if (simplificar(casilla.textContent).includes(texto)) {
             casilla.style.display = "";
         } else {
             casilla.style.display = "none";
         }
     }
+
+    // Se esconden las categorías sin coincidencias, así el ingrediente queda justo debajo del buscador
+    for (const seccion of document.querySelectorAll("#ingredientes section")) {
+        let hayCoincidencias = false;
+        for (const casilla of seccion.querySelectorAll(".casilla")) {
+            if (casilla.style.display !== "none") {
+                hayCoincidencias = true;
+            }
+        }
+        if (hayCoincidencias) {
+            seccion.style.display = "";
+        } else {
+            seccion.style.display = "none";
+        }
+    }
 }
 
-async function buscarRecetas() {
-    const resultados = document.getElementById("resultados");
-
+// Guarda lo marcado y abre la página con las recetas
+function buscarRecetas() {
     const marcados = [];
-    const casillas = document.querySelectorAll(".casilla input:checked");
-    for (const casilla of casillas) {
+    for (const casilla of document.querySelectorAll(".casilla input:checked")) {
         marcados.push(casilla.value);
     }
 
     if (marcados.length === 0) {
-        resultados.innerHTML = '<p class="mensaje-error">Marca al menos un ingrediente.</p>';
+        document.getElementById("resultados").innerHTML = '<p class="mensaje-error">Marca al menos un ingrediente.</p>';
         return;
     }
 
-    mostrarSugerencias(marcados);
-    resultados.innerHTML = "<p>Buscando...</p>";
+    sessionStorage.setItem("marcados_busqueda", JSON.stringify(marcados));
+    window.location.href = "resultados.html";
+}
+
+// Con sesión, marca lo que el usuario tiene en su despensa
+// Es un botón de dos estados: la segunda vez desmarca lo que había marcado la primera
+let marcadosPorDespensa = [];
+
+async function alternarDespensa() {
+    const boton = document.getElementById("boton-despensa");
+
+    if (marcadosPorDespensa.length > 0) {
+        for (const casilla of marcadosPorDespensa) {
+            casilla.checked = false;
+        }
+        marcadosPorDespensa = [];
+        boton.textContent = "Marcar lo de mi despensa";
+        contarMarcados();
+        return;
+    }
+
+    const usuario = usuarioActual();
     try {
-        const recetas = await enviarPOST("/api/recomendaciones", { ingredientes: marcados });
-
-        if (recetas.length === 0) {
-            resultados.innerHTML = "<p>Con eso todavía no sale ninguna receta. Prueba marcando más ingredientes.</p>";
-            return;
+        const despensa = await pedirGET("/api/despensa/" + usuario.id);
+        for (const ingrediente of despensa) {
+            const casilla = document.querySelector('.casilla input[value="' + ingrediente.clave + '"]');
+            if (casilla && !casilla.checked) {
+                casilla.checked = true;
+                marcadosPorDespensa.push(casilla);
+            }
         }
-
-        let html = "<h2>Puedes cocinar " + recetas.length + " recetas</h2>";
-        for (const receta of recetas) {
-            html += '<a class="tarjeta receta" href="receta.html?id=' + escapar(receta.id) + '">';
-            html += "<strong>" + escapar(receta.nombre) + "</strong><br>";
-            html += '<span class="etiqueta">Usa ' + receta.usados + " de lo que tienes</span>";
-            html += '<span class="etiqueta">' + escapar(receta.categoria) + "</span>";
-            html += '<span class="etiqueta">' + receta.tiempo_min + " min</span>";
-            html += '<span class="etiqueta">' + escapar(receta.dificultad) + "</span>";
-            html += "</a>";
+        if (marcadosPorDespensa.length > 0) {
+            boton.textContent = "Desmarcar lo de mi despensa";
         }
-        resultados.innerHTML = html;
+        contarMarcados();
     } catch (error) {
-        resultados.innerHTML = '<p class="mensaje-error">No se pudo buscar. Revisa que el servidor esté encendido.</p>';
     }
 }
 
-// Cuadro de "¿Te falta marcar algo?"
-function mostrarSugerencias(marcados) {
+// Muestra en el botón cuántos ingredientes hay marcados
+function contarMarcados() {
+    const total = document.querySelectorAll(".casilla input:checked").length;
+    const boton = document.getElementById("boton-buscar");
+    if (total > 0) {
+        boton.textContent = "Ver qué puedo cocinar · " + total;
+    } else {
+        boton.textContent = "Ver qué puedo cocinar";
+    }
+    mostrarSugerencias();
+}
+
+// Cuadro de "¿Te falta marcar algo?" con los ingredientes comunes que no están marcados
+function mostrarSugerencias() {
     const cuadro = document.getElementById("sugerencias");
     let botones = "";
     for (const clave of COMUNES) {
-        if (!marcados.includes(clave)) {
-            const casilla = document.querySelector('.casilla input[value="' + clave + '"]');
+        const casilla = document.querySelector('.casilla input[value="' + clave + '"]');
+        if (casilla && !casilla.checked) {
             const nombre = casilla.parentElement.textContent.trim();
-            botones += '<button class="etiqueta sugerencia" onclick="agregar(\'' + clave + '\')">+ ' + escapar(nombre) + "</button>";
+            botones += '<button type="button" class="etiqueta sugerencia" onclick="agregar(\'' + clave + '\')">+ ' + escapar(nombre) + "</button>";
         }
     }
 
@@ -95,34 +159,40 @@ function mostrarSugerencias(marcados) {
         cuadro.innerHTML = "";
     } else {
         cuadro.innerHTML = '<div class="tarjeta aviso"><strong>¿Te falta marcar algo?</strong> ' +
-            "Casi toda casa tiene esto. Si lo tienes, tócalo y buscamos otra vez:<br>" + botones + "</div>";
+            "Casi toda casa tiene esto. Si lo tienes, tócalo:<br>" + botones + "</div>";
     }
 }
 
 function agregar(clave) {
     document.querySelector('.casilla input[value="' + clave + '"]').checked = true;
+    contarMarcados();
+}
+
+// Si llegaste desde "Escanear", marca los ingredientes encontrados y busca las recetas
+function marcarEscaneados() {
+    const guardados = sessionStorage.getItem("marcados");
+    if (!guardados) {
+        return;
+    }
+    sessionStorage.removeItem("marcados");
+    for (const clave of JSON.parse(guardados)) {
+        const casilla = document.querySelector('.casilla input[value="' + clave + '"]');
+        if (casilla) {
+            casilla.checked = true;
+        }
+    }
+    contarMarcados();
     buscarRecetas();
 }
 
-// Con sesión, marca lo que el usuario tiene en su despensa
-async function marcarDespensa() {
-    const usuario = usuarioActual();
-    try {
-        const despensa = await pedirGET("/api/despensa/" + usuario.id);
-        for (const ingrediente of despensa) {
-            const casilla = document.querySelector('.casilla input[value="' + ingrediente.clave + '"]');
-            if (casilla) {
-                casilla.checked = true;
-            }
-        }
-    } catch (error) {
-    }
-}
-
-mostrarIngredientes();
+mostrarIngredientes().then(function () {
+    contarMarcados();
+    marcarEscaneados();
+});
+document.getElementById("ingredientes").addEventListener("change", contarMarcados);
 if (usuarioActual()) {
     document.getElementById("caja-despensa").classList.remove("oculto");
-    document.getElementById("boton-despensa").addEventListener("click", marcarDespensa);
+    document.getElementById("boton-despensa").addEventListener("click", alternarDespensa);
 }
 document.getElementById("buscador").addEventListener("input", filtrar);
 document.getElementById("boton-buscar").addEventListener("click", buscarRecetas);
