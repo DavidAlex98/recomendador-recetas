@@ -19,7 +19,15 @@ class Despensa(BaseModel):
 
 @router.post("/recomendaciones")
 def recomendar(despensa: Despensa):
-    marcados = despensa.ingredientes
+    marcados = []
+    for clave in despensa.ingredientes:
+        marcados.append(clave)
+
+    # Si marcaste alitas, pierna, etc., también cuentas con pollo
+    for clave in despensa.ingredientes:
+        if clave in catalogo.PARTES_POLLO and "pollo_granja" not in marcados:
+            marcados.append("pollo_granja")
+
     tengo = marcados + catalogo.BASICOS
 
     recetas = consultar("SELECT id, nombre, categoria, dificultad, tiempo_min FROM recetas ORDER BY nombre")

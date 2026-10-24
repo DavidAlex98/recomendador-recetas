@@ -36,11 +36,12 @@ for ingrediente in INGREDIENTES:
 # Ingredientes comunes que salen en el checklist
 EN_CHECKLIST = [
     # carnes y mariscos
-    "pollo_granja", "res_lomo", "res_falda", "cerdo_lomo", "cerdo_costilla", "higado_res",
+    "pollo_granja", "pechuga_pollo", "alas_pollo", "pierna_pollo", "muslo_pollo",
+    "res_lomo", "res_falda", "cerdo_lomo", "cerdo_costilla", "higado_res",
     "chorizo", "longaniza", "salchicha", "camaron", "pescado_blanco", "atun", "sardina",
-    "surimi", "pulpo", "concha_negra", "caracol_mar", "camaron_seco",
+    "surimi", "pulpo", "concha_negra", "caracol_mar", "camaron_seco", "carne_molida", "jamon", "tocino",
     # huevo y lácteos
-    "huevo", "leche", "crema", "queso_fresco", "queso_seco", "mantequilla",
+    "huevo", "leche", "crema", "queso_fresco", "queso_seco", "mantequilla", "yogur",
     # verduras
     "cebolla", "tomate", "ajo", "papa", "zanahoria", "guisquil", "ejote", "chile_pimiento",
     "repollo", "brocoli", "coliflor", "ayote_tierno", "elote_tierno", "espinaca", "lechuga",
@@ -50,9 +51,14 @@ EN_CHECKLIST = [
     "arroz", "frijol_negro", "pasta_fideo", "avena", "harina_trigo", "tortilla_maiz", "pan_frances",
     # frutas
     "limon", "naranja", "banano", "mango", "pina", "papaya", "melon", "sandia", "fresa", "manzana",
+    "pera", "uva", "mandarina", "arandano", "cereza", "lichi",
     # otros
     "mayonesa", "consome", "cafe_molido", "chocolate_mesa",
 ]
+
+
+# Las partes del pollo cuentan como pollo para las recetas
+PARTES_POLLO = ["pechuga_pollo", "alas_pollo", "pierna_pollo", "muslo_pollo", "patas_pollo"]
 
 
 # Las recetas con proteína salen primero en la recomendación
