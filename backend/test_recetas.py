@@ -81,3 +81,10 @@ def test_checklist_no_muestra_lo_basico():
     assert "sal" not in claves
     assert "aceite" not in claves
     assert "cebolla" in claves
+
+
+def test_alitas_cuentan_como_pollo():
+    con_pollo = recomendar(["pollo_granja", "cebolla", "tomate"])
+    con_alitas = recomendar(["alas_pollo", "cebolla", "tomate"])
+    assert len(con_alitas) > 0
+    assert con_alitas == con_pollo

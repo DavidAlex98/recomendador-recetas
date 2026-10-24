@@ -22,7 +22,7 @@ class RekognitionFalso:
             {"Name": "Lemon", "Confidence": 91.0, "Categories": [{"Name": "Food and Beverage"}]},
             {"Name": "Lime", "Confidence": 80.0, "Categories": [{"Name": "Food and Beverage"}]},
             {"Name": "Vegetable", "Confidence": 99.0, "Categories": [{"Name": "Food and Beverage"}]},
-            {"Name": "Kiwi", "Confidence": 75.0, "Categories": [{"Name": "Food and Beverage"}]},
+            {"Name": "Durian", "Confidence": 75.0, "Categories": [{"Name": "Food and Beverage"}]},
             {"Name": "Table", "Confidence": 88.0, "Categories": [{"Name": "Furniture"}]},
         ]}
 
