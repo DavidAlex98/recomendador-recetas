@@ -461,35 +461,35 @@ input[type="checkbox"] {
 }
 
 /* Cabecera con degradado: inicio, iniciar sesión y registro (como en el diseño) */
-body:has(#categorias) .barra,
+body.inicio .barra,
 body:has(#correo) .barra {
     background: var(--degradado);
     border-bottom: none;
 }
 
-body:has(#categorias) .barra a,
-body:has(#categorias) .barra .marca,
-body:has(#categorias) .saludo,
+body.inicio .barra a,
+body.inicio .barra .marca,
+body.inicio .saludo,
 body:has(#correo) .barra a,
 body:has(#correo) .barra .marca,
 body:has(#correo) .saludo {
     color: #ffffff;
 }
 
-body:has(#categorias) .barra .activo,
+body.inicio .barra .activo,
 body:has(#correo) .barra .activo {
     border-bottom-color: var(--amarillo);
 }
 
-body:has(#categorias) main,
+body.inicio main,
 body:has(#correo) main {
     padding-top: 0;
 }
 
 /* Los bloques de la cabecera ocupan todo el ancho de la pantalla */
-body:has(#categorias) main > h1:first-child,
-body:has(#categorias) main > h1:first-child + p,
-body:has(#categorias) main > p:has(.boton),
+body.inicio main > h1:first-child,
+body.inicio main > h1:first-child + p,
+body.inicio main > p:has(.boton),
 body:has(#correo) main > h1:first-child {
     background: var(--degradado);
     color: #ffffff;
@@ -498,31 +498,31 @@ body:has(#correo) main > h1:first-child {
     padding-right: calc(50vw - 50%);
 }
 
-body:has(#categorias) main > h1:first-child,
+body.inicio main > h1:first-child,
 body:has(#correo) main > h1:first-child {
     padding-top: clamp(28px, 8vw, 56px);
     padding-bottom: 10px;
     font-style: italic;
 }
 
-body:has(#categorias) main > h1:first-child + p {
+body.inicio main > h1:first-child + p {
     padding-top: 0;
     padding-bottom: 16px;
     color: #d8d2cb;
     max-width: none;
 }
 
-body:has(#categorias) main > p:has(.boton) {
+body.inicio main > p:has(.boton) {
     padding-bottom: clamp(26px, 7vw, 44px);
     margin-bottom: 24px;
 }
 
-body:has(#categorias) main > p:has(.boton) .boton {
+body.inicio main > p:has(.boton) .boton {
     background-color: var(--amarillo);
     color: var(--verde);
 }
 
-body:has(#categorias) main > p:has(.boton) .boton:hover {
+body.inicio main > p:has(.boton) .boton:hover {
     background-color: #e0a418;
 }
 
@@ -532,7 +532,7 @@ body:has(#correo) main > h1:first-child {
 }
 
 /* Frase pequeña sobre el título de la cabecera */
-body:has(#categorias) main > h1:first-child::before,
+body.inicio main > h1:first-child::before,
 body:has(#correo) main > h1:first-child::before {
     display: block;
     margin-bottom: 14px;
@@ -544,7 +544,7 @@ body:has(#correo) main > h1:first-child::before {
     color: #d9a33a;
 }
 
-body:has(#categorias) main > h1:first-child::before {
+body.inicio main > h1:first-child::before {
     content: "Recetas guatemaltecas";
 }
 

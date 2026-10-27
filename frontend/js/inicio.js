@@ -1,21 +1,6 @@
 // Página de inicio
 // Responsable: David
 
-async function mostrarCategorias() {
-    const contenedor = document.getElementById("categorias");
-    try {
-        const categorias = await pedirGET("/api/categorias");
-        let html = "";
-        for (const categoria of categorias) {
-            html += '<span class="etiqueta">' + escapar(categoria) + "</span>";
-        }
-        contenedor.innerHTML = html;
-    } catch (error) {
-        contenedor.textContent = "No se pudieron cargar las categorías.";
-        contenedor.className = "mensaje-error";
-    }
-}
-
 // Con sesión: las últimas recetas que vio
 async function mostrarHistorial() {
     const usuario = usuarioActual();
@@ -37,5 +22,4 @@ async function mostrarHistorial() {
     }
 }
 
-mostrarCategorias();
 mostrarHistorial();
