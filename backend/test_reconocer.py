@@ -153,6 +153,71 @@ def test_etiquetas_sin_repetir(monkeypatch):
     assert len(datos["etiquetas_aws"]) == len(set(datos["etiquetas_aws"]))
 
 
+def leer(lineas):
+    encontrados = {}
+    respuesta = {"TextDetections": []}
+    for linea in lineas:
+        respuesta["TextDetections"].append({"Type": "LINE", "DetectedText": linea})
+    reconocer.revisar_texto(respuesta, encontrados)
+    return list(encontrados.keys())
+
+
+def test_lee_marcas_de_guatemala():
+    assert leer(["MARUCHAN"]) == ["sopa_instantanea"]
+    assert leer(["Ducal", "Frijoles Volteados"]) == ["frijol_lata"]
+    assert leer(["MASECA"]) == ["harina_maiz"]
+
+
+def test_sabor_pollo_no_es_pollo():
+    claves = leer(["Sopa instantánea", "sabor POLLO"])
+    assert claves == ["sopa_instantanea"]
+
+
+def test_lee_palabras_completas():
+    # "sal" no está en "salsa", y "tortillas de harina" no es tortilla de maíz
+    assert leer(["SALSA PICANTE"]) == ["salsa_picante"]
+    assert leer(["TORTILLAS DE HARINA"]) == ["tortilla_harina"]
+
+
+def test_lee_bolsas_y_latas_en_plural():
+    assert leer(["FRIJOLES NEGROS"]) == ["frijol_negro"]
+    assert leer(["ARROZ PRECOCIDO"]) == ["arroz"]
+    assert leer(["DURAZNOS EN ALMIBAR"]) == ["durazno_almibar"]
+    assert leer(["LIMONES"]) == ["limon"]
+    assert leer(["Tomates"]) == ["tomate"]
+
+
+def test_lee_cada_empaque_por_columnas():
+    # Dos empaques lado a lado: AWS da las líneas mezcladas
+    def linea(texto, izquierda, arriba):
+        return {"Type": "LINE", "DetectedText": texto,
+                "Geometry": {"BoundingBox": {"Left": izquierda, "Top": arriba}}}
+
+    respuesta = {"TextDetections": [
+        linea("ARROZ", 0.05, 0.6), linea("DURAZNOS", 0.55, 0.6),
+        linea("PRECOCIDO", 0.05, 0.7), linea("EN ALMIBAR", 0.55, 0.7),
+    ]}
+    encontrados = {}
+    reconocer.revisar_texto(respuesta, encontrados)
+    assert "durazno_almibar" in encontrados
+    assert "arroz" in encontrados
+
+
+def test_plurales():
+    assert reconocer.plural("tomate") == "tomates"
+    assert reconocer.plural("frijol") == "frijoles"
+    assert reconocer.plural("maiz") == "maices"
+    assert reconocer.plural_de_frase("frijol negro") == "frijoles negros"
+    assert reconocer.plural_de_frase("pasta de tomate") == "pastas de tomates"
+
+
+def test_marcas_y_palabras_existen_en_el_catalogo():
+    for clave in reconocer.PALABRAS_EMPAQUE.values():
+        assert catalogo.existe(clave), clave
+    for clave in reconocer.MARCAS.values():
+        assert catalogo.existe(clave), clave
+
+
 def test_archivo_que_no_es_foto():
     respuesta = cliente.post("/api/reconocer", files={"foto": ("nota.txt", b"hola", "text/plain")})
     assert respuesta.status_code == 400

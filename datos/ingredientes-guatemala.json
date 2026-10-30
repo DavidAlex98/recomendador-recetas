@@ -1,5 +1,5 @@
 {
- "total": 268,
+ "total": 290,
  "moneda": "GTQ",
  "ingredientes": [
   {
@@ -419,6 +419,40 @@
    "alergenos": []
   },
   {
+   "clave": "chicharron",
+   "nombre": "Chicharrón",
+   "nombre_local": "chicharrón",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 30.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 2400,
+    "proteina_g": 280,
+    "grasa_g": 140,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "nuggets_pollo",
+   "nombre": "Nuggets de pollo",
+   "nombre_local": "nuggets",
+   "categoria": "carnes",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 30.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1200,
+    "proteina_g": 70,
+    "grasa_g": 75,
+    "carbohidratos_g": 60
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "gluten"
+   ]
+  },
+  {
    "clave": "chorizo",
    "nombre": "Chorizo",
    "nombre_local": "chorizo criollo",
@@ -526,6 +560,22 @@
     "proteina_g": 100,
     "grasa_g": 140,
     "carbohidratos_g": 5
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "mortadela",
+   "nombre": "Mortadela",
+   "nombre_local": "mortadela",
+   "categoria": "embutidos",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 20.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 1400,
+    "proteina_g": 55,
+    "grasa_g": 125,
+    "carbohidratos_g": 10
    },
    "temporada": "todo el año",
    "alergenos": []
@@ -1064,6 +1114,60 @@
     "proteina_g": 90,
     "grasa_g": 125,
     "carbohidratos_g": 20
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "lacteos"
+   ]
+  },
+  {
+   "clave": "leche_polvo",
+   "nombre": "Leche en polvo",
+   "nombre_local": "leche en polvo",
+   "categoria": "lácteos y huevo",
+   "unidad_compra": "libra",
+   "precio_referencia_gtq": 30.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 2260,
+    "proteina_g": 120,
+    "grasa_g": 120,
+    "carbohidratos_g": 175
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "lacteos"
+   ]
+  },
+  {
+   "clave": "leche_evaporada",
+   "nombre": "Leche evaporada",
+   "nombre_local": "leche evaporada",
+   "categoria": "lácteos y huevo",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 10.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 340,
+    "proteina_g": 17,
+    "grasa_g": 19,
+    "carbohidratos_g": 25
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "lacteos"
+   ]
+  },
+  {
+   "clave": "queso_crema",
+   "nombre": "Queso crema",
+   "nombre_local": "queso crema",
+   "categoria": "lácteos y huevo",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 3.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 100,
+    "proteina_g": 2,
+    "grasa_g": 10,
+    "carbohidratos_g": 1
    },
    "temporada": "todo el año",
    "alergenos": [
@@ -2980,6 +3084,24 @@
    ]
   },
   {
+   "clave": "pan_dulce",
+   "nombre": "Pan dulce",
+   "nombre_local": "pan dulce",
+   "categoria": "pan y harinas",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 1.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 250,
+    "proteina_g": 5,
+    "grasa_g": 9,
+    "carbohidratos_g": 38
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "gluten"
+   ]
+  },
+  {
    "clave": "albahaca",
    "nombre": "Albahaca",
    "nombre_local": "albahaca",
@@ -4145,6 +4267,232 @@
    ]
   },
   {
+   "clave": "sopa_sobre",
+   "nombre": "Sopa en sobre",
+   "nombre_local": "sopa de sobre",
+   "categoria": "de la tienda",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 5.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 220,
+    "proteina_g": 6,
+    "grasa_g": 5,
+    "carbohidratos_g": 38
+   },
+   "temporada": "todo el año",
+   "alergenos": [
+    "gluten"
+   ]
+  },
+  {
+   "clave": "gelatina",
+   "nombre": "Gelatina en polvo",
+   "nombre_local": "gelatina",
+   "categoria": "de la tienda",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 4.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 320,
+    "proteina_g": 8,
+    "grasa_g": 0,
+    "carbohidratos_g": 75
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "salsa_bbq",
+   "nombre": "Salsa barbacoa",
+   "nombre_local": "salsa BBQ",
+   "categoria": "de la tienda",
+   "unidad_compra": "cucharada",
+   "precio_referencia_gtq": 0.75,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 30,
+    "proteina_g": 0,
+    "grasa_g": 0,
+    "carbohidratos_g": 7
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "champinon_lata",
+   "nombre": "Champiñones en lata",
+   "nombre_local": "hongos de lata",
+   "categoria": "de la tienda",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 60,
+    "proteina_g": 5,
+    "grasa_g": 1,
+    "carbohidratos_g": 9
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "elote_lata",
+   "nombre": "Elote en lata",
+   "nombre_local": "maíz dulce",
+   "categoria": "de la tienda",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 10.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 250,
+    "proteina_g": 8,
+    "grasa_g": 3,
+    "carbohidratos_g": 55
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "jalapeno_lata",
+   "nombre": "Chiles jalapeños en lata",
+   "nombre_local": "jalapeños en escabeche",
+   "categoria": "de la tienda",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 50,
+    "proteina_g": 2,
+    "grasa_g": 1,
+    "carbohidratos_g": 9
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "vegetales_mixtos",
+   "nombre": "Vegetales mixtos",
+   "nombre_local": "mixtura de verduras",
+   "categoria": "de la tienda",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 10.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 180,
+    "proteina_g": 8,
+    "grasa_g": 1,
+    "carbohidratos_g": 35
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "coctel_frutas",
+   "nombre": "Coctel de frutas",
+   "nombre_local": "coctel de frutas en almíbar",
+   "categoria": "de la tienda",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 14.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 300,
+    "proteina_g": 2,
+    "grasa_g": 0,
+    "carbohidratos_g": 75
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "durazno_almibar",
+   "nombre": "Duraznos en almíbar",
+   "nombre_local": "melocotones de lata",
+   "categoria": "de la tienda",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 14.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 320,
+    "proteina_g": 2,
+    "grasa_g": 0,
+    "carbohidratos_g": 80
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "pina_almibar",
+   "nombre": "Piña en almíbar",
+   "nombre_local": "piña de lata",
+   "categoria": "de la tienda",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 330,
+    "proteina_g": 2,
+    "grasa_g": 0,
+    "carbohidratos_g": 85
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "arvejas_lata",
+   "nombre": "Arvejas en lata",
+   "nombre_local": "petit pois",
+   "categoria": "de la tienda",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 200,
+    "proteina_g": 13,
+    "grasa_g": 1,
+    "carbohidratos_g": 35
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "ejote_lata",
+   "nombre": "Ejotes en lata",
+   "nombre_local": "ejotes de lata",
+   "categoria": "de la tienda",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 8.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 70,
+    "proteina_g": 4,
+    "grasa_g": 0,
+    "carbohidratos_g": 15
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "pimiento_morron",
+   "nombre": "Pimiento morrón",
+   "nombre_local": "chile morrón en lata",
+   "categoria": "de la tienda",
+   "unidad_compra": "lata",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 60,
+    "proteina_g": 2,
+    "grasa_g": 1,
+    "carbohidratos_g": 12
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "pure_papa",
+   "nombre": "Puré de papa instantáneo",
+   "nombre_local": "puré en caja",
+   "categoria": "de la tienda",
+   "unidad_compra": "unidad",
+   "precio_referencia_gtq": 12.0,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 450,
+    "proteina_g": 10,
+    "grasa_g": 2,
+    "carbohidratos_g": 100
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
    "clave": "achiote_polvo",
    "nombre": "Achiote en polvo",
    "nombre_local": "achiote molido",
@@ -4395,6 +4743,22 @@
     "calorias_kcal": 1900,
     "proteina_g": 0,
     "grasa_g": 216,
+    "carbohidratos_g": 0
+   },
+   "temporada": "todo el año",
+   "alergenos": []
+  },
+  {
+   "clave": "margarina",
+   "nombre": "Margarina",
+   "nombre_local": "margarina",
+   "categoria": "grasas",
+   "unidad_compra": "onza",
+   "precio_referencia_gtq": 1.5,
+   "nutricion_por_unidad": {
+    "calorias_kcal": 200,
+    "proteina_g": 0,
+    "grasa_g": 23,
     "carbohidratos_g": 0
    },
    "temporada": "todo el año",

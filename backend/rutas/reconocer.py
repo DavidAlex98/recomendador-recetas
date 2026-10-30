@@ -5,7 +5,7 @@
 #   1. La foto completa: AWS marca con un cuadro los platos, tazones, cajas y frutas
 #   2. Cada cuadro se recorta, se agranda y se pregunta solo por la comida (máximo 10)
 #   3. Si casi no hubo cuadros, la foto se parte en 4
-#   4. El texto de los empaques ("LECHE", "MAYONESA")
+#   4. El texto de los empaques: nombres ("LECHE"), plurales ("FRIJOLES VOLTEADOS") y marcas ("MARUCHAN")
 # Un ingrediente se acepta si AWS está muy seguro (70% o más), o si lo vio en 2 pedazos o más
 # con más de 55%. Lo que sale una sola vez con poca seguridad casi siempre es un error.
 # Son entre 2 y 12 llamadas por foto, cerca de 1 centavo de dólar.
@@ -225,6 +225,110 @@ GENERALES = ["Food", "Produce", "Vegetable", "Fruit", "Plant", "Meal", "Dish", "
              "Condiments", "Spice", "Nut", "Berry", "Leaf", "Root", "Vegetation", "Flora"]
 
 
+# Palabras que traen los empaques y no son el nombre exacto del catálogo (sin tildes y en minúscula)
+PALABRAS_EMPAQUE = {
+    "frijoles volteados": "frijol_lata",
+    "frijoles negros volteados": "frijol_lata",
+    "frijoles refritos": "frijol_lata",
+    "frijoles negros": "frijol_negro",
+    "frijoles": "frijol_negro",
+    "frijol": "frijol_negro",
+    "frijol rojo": "frijol_rojo",
+    "frijoles rojos": "frijol_rojo",
+    "arroz precocido": "arroz",
+    "arroz blanco": "arroz",
+    "elotes": "elote_tierno",
+    "duraznos en almibar": "durazno_almibar",
+    "melocotones en almibar": "durazno_almibar",
+    "pina en almibar": "pina_almibar",
+    "petit pois": "arvejas_lata",
+    "pure de papa": "pure_papa",
+    "chiles en vinagre": "jalapeno_lata",
+    "huevos": "huevo",
+    "tortillas": "tortilla_maiz",
+    "tortillas de harina": "tortilla_harina",
+    "tostadas": "tostada",
+    "sardinas": "sardina",
+    "atun": "atun",
+    "salchichas": "salchicha",
+    "pollo": "pollo_granja",
+    "pechuga": "pechuga_pollo",
+    "alitas": "alas_pollo",
+    "consome": "consome",
+    "caldo de pollo": "consome",
+    "sopa instantanea": "sopa_instantanea",
+    "sopa de vaso": "sopa_instantanea",
+    "instant noodles": "sopa_instantanea",
+    "ramen": "sopa_instantanea",
+    "sopa": "sopa_sobre",
+    "spaghetti": "pasta_fideo",
+    "espagueti": "pasta_fideo",
+    "fideos": "pasta_fideo",
+    "coditos": "pasta_fideo",
+    "tallarines": "pasta_fideo",
+    "macarrones": "pasta_fideo",
+    "harina para tortillas": "harina_maiz",
+    "pure de tomate": "pasta_tomate",
+    "ketchup": "salsa_tomate",
+    "catsup": "salsa_tomate",
+    "yogurt": "yogur",
+    "yoghurt": "yogur",
+    "queso": "queso_fresco",
+    "crema acida": "crema",
+    "cafe": "cafe_molido",
+    "cafe instantaneo": "cafe_molido",
+    "chocolate": "chocolate_mesa",
+    "champinones": "champinon_lata",
+    "jalapenos": "jalapeno_lata",
+    "chiles jalapenos": "jalapeno_lata",
+    "maiz dulce": "elote_lata",
+    "elote dulce": "elote_lata",
+    "garbanzos": "garbanzo",
+    "lentejas": "lenteja",
+    "jalea": "mermelada",
+    "gelatina": "gelatina",
+    "salsa bbq": "salsa_bbq",
+    "barbecue": "salsa_bbq",
+    "salsa china": "salsa_soya",
+    "worcestershire": "salsa_inglesa",
+    "pan blanco": "pan_molde",
+    "pan integral": "pan_molde",
+    "corn flakes": "cereal_hojuelas",
+    "hojuelas de maiz": "cereal_hojuelas",
+    "cereal": "cereal_hojuelas",
+    "miel": "miel",
+    "nuggets": "nuggets_pollo",
+}
+
+# Marcas que se venden en Guatemala y hacen un solo tipo de producto.
+# Las que venden de todo (Toledo, Malher, Dos Pinos) no van aquí: para esas se lee la palabra
+# del producto que también trae el empaque ("SALCHICHA", "CONSOME", "LECHE").
+MARCAS = {
+    "maruchan": "sopa_instantanea",
+    "nissin": "sopa_instantanea",
+    "cup noodles": "sopa_instantanea",
+    "ducal": "frijol_lata",
+    "maseca": "harina_maiz",
+    "quaker": "avena",
+    "mosh": "avena",
+    "pollo rey": "pollo_granja",
+    "bimbo": "pan_molde",
+    "tia rosa": "tortilla_harina",
+    "nescafe": "cafe_molido",
+    "incasa": "cafe_molido",
+    "abuelita": "chocolate_mesa",
+    "hellmann's": "mayonesa",
+    "hellmanns": "mayonesa",
+    "sardimar": "atun",
+}
+
+# Frases que se leen pero no son un ingrediente: "sopa sabor pollo" no quiere decir que tengas pollo
+IGNORAR = []
+for sabor in ["pollo", "res", "camaron", "queso", "tomate", "chile", "limon", "carne", "costilla", "cerdo"]:
+    IGNORAR.append("sabor " + sabor)
+    IGNORAR.append("sabor a " + sabor)
+    IGNORAR.append("sabor de " + sabor)
+
 MAXIMO_RECORTES = 10
 MUY_SEGURO = 70      # con este porcentaje basta que AWS lo vea una vez
 DUDOSO = 55          # si lo vio en 2 pedazos, tiene que pasar de este porcentaje
@@ -340,31 +444,84 @@ def revisar_etiquetas(respuesta, encontrados, no_reconocidos, etiquetas):
         guardar(encontrados, clave, mejores[clave])
 
 
-# Busca en el texto de la foto nombres de ingredientes del catálogo
-def revisar_texto(respuesta, encontrados):
-    palabras = []
-    for texto in respuesta["TextDetections"]:
-        if texto["Type"] == "LINE":
-            palabras.append(sin_tildes(texto["DetectedText"]))
-    # Se dejan espacios a los lados para buscar palabras completas ("sal" no está en "salsa")
-    todo = " " + " ".join(palabras) + " "
+# Palabras que no se pasan a plural
+CONECTORES = ["de", "en", "la", "el", "con", "y", "a", "al", "del", "para"]
 
-    # Primero los nombres largos: si dice "salsa de tomate" no debe contar también "tomate"
-    ingredientes = []
+
+# "tomate" -> "tomates", "frijol" -> "frijoles", "maiz" -> "maices"
+def plural(palabra):
+    if palabra in CONECTORES:
+        return palabra
+    if palabra.endswith("z"):
+        return palabra[:-1] + "ces"
+    if palabra[-1] in "aeiou":
+        return palabra + "s"
+    return palabra + "es"
+
+
+# "frijol negro" -> "frijoles negros"
+def plural_de_frase(frase):
+    palabras = []
+    for palabra in frase.split(" "):
+        palabras.append(plural(palabra))
+    return " ".join(palabras)
+
+
+# Todas las frases que se buscan en el texto: nombres del catálogo (y su plural),
+# palabras de empaque y marcas
+def frases_a_buscar():
+    frases = []
     for ingrediente in catalogo.INGREDIENTES:
         if ingrediente["clave"] not in catalogo.BASICOS:
-            ingredientes.append(ingrediente)
-    ingredientes.sort(key=largo_del_nombre, reverse=True)
+            nombre = sin_tildes(ingrediente["nombre"])
+            frases.append([nombre, ingrediente["clave"]])
+            frases.append([plural_de_frase(nombre), ingrediente["clave"]])
+    for palabra in PALABRAS_EMPAQUE:
+        frases.append([palabra, PALABRAS_EMPAQUE[palabra]])
+    for marca in MARCAS:
+        frases.append([marca, MARCAS[marca]])
+    for frase in IGNORAR:
+        frases.append([frase, None])
+    # Primero las largas: si dice "salsa de tomate" no debe contar también "tomate"
+    frases.sort(key=largo_de_frase, reverse=True)
+    return frases
 
-    for ingrediente in ingredientes:
-        nombre = " " + sin_tildes(ingrediente["nombre"]) + " "
-        if nombre in todo:
-            guardar(encontrados, ingrediente["clave"], 90.0)
-            todo = todo.replace(nombre, " ")
+
+# La foto se divide en 5 columnas; primero se ordena por columna y luego de arriba a abajo
+def posicion_de_linea(linea):
+    caja = linea.get("Geometry", {}).get("BoundingBox", {"Left": 0, "Top": 0})
+    columna = int(caja["Left"] * 5)
+    return (columna, caja["Top"])
 
 
-def largo_del_nombre(ingrediente):
-    return len(ingrediente["nombre"])
+def largo_de_frase(frase):
+    return len(frase[0])
+
+
+# Busca en el texto de la foto nombres de ingredientes, palabras de empaque y marcas
+def revisar_texto(respuesta, encontrados):
+    lineas = []
+    for texto in respuesta["TextDetections"]:
+        if texto["Type"] == "LINE":
+            lineas.append(texto)
+    # Se ordenan por columnas y de arriba a abajo, así cada empaque se lee completo
+    # ("DURAZNOS" y abajo "EN ALMIBAR") aunque haya otro empaque al lado
+    lineas.sort(key=posicion_de_linea)
+
+    textos = []
+    for linea in lineas:
+        textos.append(sin_tildes(linea["DetectedText"]))
+    # Se dejan espacios a los lados para buscar palabras completas ("sal" no está en "salsa")
+    todo = " " + " ".join(textos) + " "
+
+    vistos = []
+    for frase in frases_a_buscar():
+        buscar = " " + frase[0] + " "
+        if buscar in todo:
+            if frase[1] is not None and frase[1] not in vistos:
+                vistos.append(frase[1])
+                guardar(encontrados, frase[1], 90.0)
+            todo = todo.replace(buscar, " ")
 
 
 @router.post("/reconocer")
